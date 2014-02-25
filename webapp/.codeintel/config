@@ -1,0 +1,5 @@
+{
+    "JavaScript": {
+        "javascriptExtraPaths": ["bower_components/jquery/jquery.js"]
+    }
+}
