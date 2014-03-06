@@ -11,7 +11,7 @@ app.use(logfmt.requestLogger());
 
 //Static file serving from public directory
 console.log(__dirname);
-app.use(express.static(__dirname + '/../webapp/dist/')); //or whatever you want it to be
+app.use(express.static(__dirname + '/../webapp/app/')); //or whatever you want it to be
 
 //Alternative 1, nice if you need to do more with the webserver, fx. use websockets
 var server = http.createServer(app);
