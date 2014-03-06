@@ -26,37 +26,9 @@ $(document).ready(function() {
         weight: 1,
         opacity: 1,
     };
-    //var railStations = new L.LayerGroup();
-    /*var railStations = L.geoJson(rail2, {
-        onEachFeature: visPopup,
-        /*pointToLayer: function (feature, latlng) {
-            var popupOptions = {maxWidth: 20};
-            var popupContent = feature.properties.tags.name;
-            if (popupContent != undefined)
-         	 return L.marker(latlng).bindPopup(popupContent);
-         	else
-         	 return L.circleMarker(latlng);
-        }
-        pointToLayer: function(feature, latlng) {
-            return L.circleMarker(latlng, geojsonMarkerOptions);
-        }
-        pointToLayer: function (feature, latlng) {
-            var popupOptions = {maxWidth: 20};
-            var popupContent = feature.properties.tags.name;
-            if (popupContent != undefined)
-             return L.marker(latlng);
-            else
-             return L.circleMarker(latlng,geojsonMarkerOptions);
-        }
-    }); //.addTo(railStations)*/
 
     //start clustermotoren
     var markers = new L.MarkerClusterGroup({animateAddingMarkers: true});
-
-    //legg til stasjons-laget til clustermotoren og legg til kartet
-    
-    //legg også til som eget lag i layer control
-    //map.LayerControl.addOverlay(markers, "Datalag (cluster)");
 
     var map = L.map('map', {
         center: new L.LatLng(59.9102, 10.75656),
@@ -69,7 +41,6 @@ $(document).ready(function() {
         "Rail and road": railAndRoad
     };
     var overlayMaps = {
-        //"Rail stations" : railStations,
         "Datalag (cluster)" : markers
     }
     map.layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);  
@@ -122,10 +93,6 @@ $(document).ready(function() {
         //legg til punktene til "layer control"
         markers.addLayer(railStations);
         map.layerControl.addOverlay(railStations, "Datalag (geojson)");
-    })
-	.fail(function( jqxhr, textStatus, error ) {
-	    var err = textStatus + ", " + error;
-	    console.log( "Request Failed: " + err );
-	});
+    });
 
 });
