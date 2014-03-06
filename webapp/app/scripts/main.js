@@ -27,7 +27,7 @@ $(document).ready(function() {
         opacity: 1,
     };
     //var railStations = new L.LayerGroup();
-    var railStations = L.geoJson(rail2, {
+    /*var railStations = L.geoJson(rail2, {
         onEachFeature: visPopup,
         /*pointToLayer: function (feature, latlng) {
             var popupOptions = {maxWidth: 20};
@@ -39,7 +39,7 @@ $(document).ready(function() {
         }
         pointToLayer: function(feature, latlng) {
             return L.circleMarker(latlng, geojsonMarkerOptions);
-        }*/
+        }
         pointToLayer: function (feature, latlng) {
             var popupOptions = {maxWidth: 20};
             var popupContent = feature.properties.tags.name;
@@ -48,13 +48,13 @@ $(document).ready(function() {
             else
              return L.circleMarker(latlng,geojsonMarkerOptions);
         }
-    }); //.addTo(railStations)
+    }); //.addTo(railStations)*/
 
     //start clustermotoren
     var markers = new L.MarkerClusterGroup({animateAddingMarkers: true});
 
     //legg til stasjons-laget til clustermotoren og legg til kartet
-    markers.addLayer(railStations);
+    
     //legg også til som eget lag i layer control
     //map.LayerControl.addOverlay(markers, "Datalag (cluster)");
 
@@ -69,10 +69,10 @@ $(document).ready(function() {
         "Rail and road": railAndRoad
     };
     var overlayMaps = {
-        "Rail stations" : railStations,
+        //"Rail stations" : railStations,
         "Datalag (cluster)" : markers
     }
-    L.control.layers(baseMaps, overlayMaps).addTo(map);  
+    map.layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);  
 
     /*
     L.marker([63.40909, 10.40641]).addTo(map)
@@ -100,5 +100,32 @@ $(document).ready(function() {
     }
 
     map.on('click', onMapClick);*/
+
+    $.getJSON("/lib/rail2.geojson")
+    	.done(function(data) {
+        //Start "geoJson"-motoren til Leaflet. Den tar inn et JSON-objekt i en variabel. Denne har vi definert i JSON-filen i index.html
+        var railStations = L.geoJson(data, {
+            onEachFeature: visPopup,//vi refererer til funksjonen vi skal kalle. Husk at funksjonen også er et objekt
+
+		    pointToLayer: function (feature, latlng) {
+		        var popupOptions = {maxWidth: 20};
+		        var popupContent = feature.properties.tags.name;
+		        if (popupContent != undefined)
+		         return L.marker(latlng);
+		        else
+		         return L.circleMarker(latlng,geojsonMarkerOptions);
+		    }
+        });
+
+    	
+
+        //legg til punktene til "layer control"
+        markers.addLayer(railStations);
+        map.layerControl.addOverlay(railStations, "Datalag (geojson)");
+    })
+	.fail(function( jqxhr, textStatus, error ) {
+	    var err = textStatus + ", " + error;
+	    console.log( "Request Failed: " + err );
+	});
 
 });
