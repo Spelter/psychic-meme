@@ -1,0 +1,17 @@
+{
+  "name": "appname",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "main":"app.js",
+  "dependencies": {
+    "express": "3.4.8",
+    "logfmt": "~0.21.0"
+  },
+  "scripts": {
+    "test":  "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

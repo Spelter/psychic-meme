@@ -1,151 +1,104 @@
-'use strict';
+$(document).ready(function() {
+    var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/733e599a1fe841afaceb855b0ac0f833/{styleId}/256/{z}/{x}/{y}.png',
+        cloudmadeAttribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade';
 
-console.log('\'Allo \'Allo!');
+    var rail   = L.tileLayer(cloudmadeUrl, {styleId: 33738, attribution: cloudmadeAttribution});
+    var railAndRoad  = L.tileLayer(cloudmadeUrl, {styleId: 12790,   attribution: cloudmadeAttribution});
 
+    //definerer en liste vi skal samle punktene våre i
+    var pointList = [];
+    //definer en funksjon som vi skal kalle for hver feature som leses i L.geoJson()
+    function visPopup(feature, layer) {
+        //legg til et punkt i punktlisten. Punktet er en liste med "lat, lng"
+        pointList.push([feature.geometry.coordinates[1], feature.geometry.coordinates[0]]);
 
-var card = function(header){
-	this.header = header;
+        //knytter en popup til hver feature med strengen vi nettopp bygde
+        var popupContent = feature.properties.tags.name;
+        if (popupContent != undefined)
+            layer.bindPopup(feature.properties.tags.name);
+    };
 
-	this.createObject = function(){
-		return $('<div/>',{
-			'class': 'card'
-		}).append($('<h3/>', { 'text': this.header}));
-	};
-};
+    //Sett opp stil til de nye sirkelmarkørene
+    var geojsonMarkerOptions = {
+        radius: 8,
+        fillColor: "#ff7800",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+    };
+    //var railStations = new L.LayerGroup();
+    var railStations = L.geoJson(rail2, {
+        onEachFeature: visPopup,
+        /*pointToLayer: function (feature, latlng) {
+            var popupOptions = {maxWidth: 20};
+            var popupContent = feature.properties.tags.name;
+            if (popupContent != undefined)
+         	 return L.marker(latlng).bindPopup(popupContent);
+         	else
+         	 return L.circleMarker(latlng);
+        }
+        pointToLayer: function(feature, latlng) {
+            return L.circleMarker(latlng, geojsonMarkerOptions);
+        }*/
+        pointToLayer: function (feature, latlng) {
+            var popupOptions = {maxWidth: 20};
+            var popupContent = feature.properties.tags.name;
+            if (popupContent != undefined)
+             return L.marker(latlng);
+            else
+             return L.circleMarker(latlng,geojsonMarkerOptions);
+        }
+    }); //.addTo(railStations)
 
-function drawLoop(canvas){
-	// var c=$('#'+canvas.attr('id'));
-	//document.getElementById(canvas.attr('id'));
-	var ctx = canvas[0].getContext('2d');
-	ctx.strokeStyle='white';
-	ctx.beginPath();
-	ctx.arc(150,70,40,0,2*Math.PI);
-	// ctx.closePath();
-	ctx.stroke();
-	
-	
-	var x = 10;
-	var y = 10;
-	var incX = 1;
-	var incY = -1;
-	(function timer(){
-		ctx.clearRect(x-5,y-5,10,10);
-		
-		if(x > 50 || x < 10){
-			incX *= -1;
-		}
-		if(y > 100 || y < 10){
-			incY *= -1;
-		}
+    //start clustermotoren
+    var markers = new L.MarkerClusterGroup({animateAddingMarkers: true});
 
-		x += incX;
-		y += incY;
-		
-		ctx.beginPath();
-		ctx.arc(x,y,3,0,2*Math.PI);
-		ctx.fillStyle = 'red';
-		// ctx.closePath();
-		ctx.fill();
-		ctx.fillStyle = 'white';
-		// ctx.clearRect(placement,placement,5,5);
-		// ctx.fillRect(placement,placement+10,10,10);
-		setTimeout(timer, 16);
-	}());
-}
+    //legg til stasjons-laget til clustermotoren og legg til kartet
+    markers.addLayer(railStations);
+    //legg også til som eget lag i layer control
+    //map.LayerControl.addOverlay(markers, "Datalag (cluster)");
 
-function createBarGraphs(){
-	var html = '';
-	var text = ['Temp', 'BatTemp','RPM', 'Charge'];
-	for (var i = 0; i < text.length; i++){
-		var container = $('<div/>',{
-			'class':'gauge-container'
-		});
-		container.append($('<div/>', {
-			'class':'gauge-text'
-		}).html(text[i] + ':'));
-		html += container.append($('<div/>',{
-			'class':'gauge-line'
-		}))[0].outerHTML;
-	}
-	return html;
-}
+    var map = L.map('map', {
+        center: new L.LatLng(59.9102, 10.75656),
+        zoom: 12,
+        layers: [rail, markers]
+    });
 
-function createStats(){
-	var div = $('<div/>',{
-		'id':'gauges'
-	});
-	div.html(createBarGraphs());
-	return div;
-}
+    var baseMaps = {
+        "Rail": rail,
+        "Rail and road": railAndRoad
+    };
+    var overlayMaps = {
+        "Rail stations" : railStations,
+        "Datalag (cluster)" : markers
+    }
+    L.control.layers(baseMaps, overlayMaps).addTo(map);  
 
-/**
- * Returns a random integer between min and max
- * Using Math.round() will give you a non-uniform distribution!
- */
-function getRandomInt (min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+    /*
+    L.marker([63.40909, 10.40641]).addTo(map)
+    	.bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
 
-function animateStats(){
-	var gauges = $('.gauge-line');
-	(function timer(){
-		gauges.each(function(){
-			var percentage = getRandomInt(1,70);
-			$(this).width(percentage + '%');
-		});
-		setTimeout(timer, 100);
-	}());
-}
+    L.circle([63.41696, 10.43367], 500, {
+    	color: 'red',
+    	fillColor: '#f03',
+    	fillOpacity: 0.5
+    }).addTo(map).bindPopup("I am a circle.");
 
-function createSpeedo(){
-	var div = $('<div/>', {
-		'class':'speedo'
-	});
-	div.append($('<img/>', {
-		'src':'../images/needle.png',
-		'class':'needle'
-	}));
-	return div;
-}
+    L.polygon([
+    	[63.41266, 10.38826],
+    	[63.40624, 10.40607],
+    	[63.40361, 10.38367]
+    ]).addTo(map).bindPopup("I am a polygon.");
 
-function animateSpeedo(){
-	var needle = $('.needle');
-	var position = -50;
-	var inc = 1;
-	(function timer(){
-		needle.css('transform', 'rotate(' + position + 'deg)');
-		position += inc;
-		if(position > 180 || position < -50){
-			inc *= -1;
-		}
-		setTimeout(timer, 10);
-	}());
-}
+    var popup = L.popup();
 
-$(function(){
-	var firstRow = $('.row').each(function(){
-		var canvasTest = new card('Canvas test').createObject();
-		var canvas = $('<canvas/>', {
-			'id':'canvasTest',
-			'width' : '100%',
-			'height': '100%'
-		});
-		canvasTest.append(canvas);
-		$(this).append(canvasTest);
+    function onMapClick(e) {
+    	popup
+    		.setLatLng(e.latlng)
+    		.setContent("You clicked the map at " + e.latlng.toString())
+    		.openOn(map);
+    }
 
-		var statTest = new card('Stat test').createObject();
-		statTest.append(createStats());
-		$(this).append(statTest);
+    map.on('click', onMapClick);*/
 
-		var speedoTest = new card('col3').createObject();
-		speedoTest.append(createSpeedo());
-
-		$(this).append(speedoTest);
-		drawLoop(canvas);
-	});
-
-
-
-	animateStats();
-	animateSpeedo();
 });
