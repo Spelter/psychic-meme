@@ -1,36 +1,6 @@
 [
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ABT"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ABØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
+  
+  
   {
     "type": "Feature",
     "properties": {
@@ -47,7 +17,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -63,7 +33,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -79,23 +49,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "AKR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -111,7 +65,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -127,7 +81,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -143,7 +97,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -159,23 +113,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ARS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -191,23 +129,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ARV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -223,7 +145,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -239,7 +161,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -255,7 +177,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -271,23 +193,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ASS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -303,7 +209,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -319,7 +225,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -335,7 +241,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -351,55 +257,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "AUS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "AVI"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BEA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -415,7 +273,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -431,7 +289,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -447,7 +305,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -463,7 +321,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -479,7 +337,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -495,7 +353,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -511,23 +369,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BGN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -543,7 +385,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -559,7 +401,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -575,23 +417,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BJL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -607,23 +433,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BJS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -639,23 +449,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BKK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -671,7 +465,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -687,7 +481,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -703,7 +497,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -719,23 +513,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BLM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -751,7 +529,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -767,7 +545,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -783,7 +561,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -799,7 +577,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -815,7 +593,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -831,23 +609,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BOE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -863,7 +625,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -879,7 +641,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -895,7 +657,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -911,7 +673,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -927,7 +689,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -943,7 +705,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -959,23 +721,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BRC"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -991,7 +737,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1007,7 +753,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1023,7 +769,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1039,7 +785,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1055,7 +801,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1071,7 +817,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1087,7 +833,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1103,7 +849,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1119,7 +865,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1135,23 +881,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BUK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1167,7 +897,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1183,7 +913,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1199,7 +929,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1215,7 +945,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1231,23 +961,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BVS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1263,7 +977,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1279,7 +993,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1295,7 +1009,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1311,7 +1025,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1327,7 +1041,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1343,7 +1057,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1359,7 +1073,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1375,7 +1089,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1391,7 +1105,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1407,7 +1121,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1423,23 +1137,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "DBH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1455,23 +1153,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "DEG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1487,7 +1169,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1503,39 +1185,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "DJA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "DJU"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1551,7 +1201,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1567,7 +1217,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1583,7 +1233,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1599,23 +1249,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "DNM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1631,7 +1265,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1647,7 +1281,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1663,7 +1297,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1679,23 +1313,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "DRI"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1711,7 +1329,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1727,23 +1345,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "DRU"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1759,7 +1361,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1775,23 +1377,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "DUV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1807,7 +1393,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1823,7 +1409,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1839,7 +1425,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1855,7 +1441,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1871,7 +1457,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1887,7 +1473,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1903,7 +1489,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1919,7 +1505,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1935,7 +1521,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -1951,87 +1537,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "EKB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "EKØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "EK1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ELB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ELI"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2047,7 +1553,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2063,39 +1569,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "EN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ENA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2111,7 +1585,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2127,7 +1601,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2143,7 +1617,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2159,7 +1633,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2175,7 +1649,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2191,23 +1665,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "EVT"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2223,7 +1681,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2239,7 +1697,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2255,23 +1713,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FBS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2287,7 +1729,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2303,23 +1745,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FGL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2335,55 +1761,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FGÅ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FHM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FH1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2399,7 +1777,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2415,7 +1793,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2431,7 +1809,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2447,7 +1825,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2463,7 +1841,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2479,7 +1857,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2495,7 +1873,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2511,7 +1889,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2527,7 +1905,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2543,23 +1921,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FLK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2575,7 +1937,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2591,7 +1953,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2607,23 +1969,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FMS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2639,55 +1985,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FOL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FOM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FRC"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2703,23 +2001,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FRH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2735,7 +2017,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2751,7 +2033,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2767,55 +2049,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FRY"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FUB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "FUH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2831,7 +2065,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2847,7 +2081,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2863,7 +2097,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2879,23 +2113,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GAE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2911,7 +2129,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2927,7 +2145,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2943,7 +2161,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -2959,55 +2177,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GDS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GEA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GGS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3023,7 +2193,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3039,7 +2209,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3055,7 +2225,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3071,7 +2241,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3087,7 +2257,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3103,23 +2273,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GLI"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3135,7 +2289,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3151,23 +2305,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GMO"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3183,7 +2321,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3199,7 +2337,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3215,7 +2353,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3231,7 +2369,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3247,7 +2385,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3263,39 +2401,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GRH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GRI"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3311,7 +2417,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3327,7 +2433,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3343,71 +2449,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GRØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GRÅ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GR1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GSL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3423,23 +2465,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "GSX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3455,7 +2481,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3471,7 +2497,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3487,7 +2513,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3503,7 +2529,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3519,7 +2545,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3535,7 +2561,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3551,7 +2577,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3567,7 +2593,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3583,7 +2609,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3599,7 +2625,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3615,7 +2641,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3631,7 +2657,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3647,7 +2673,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3663,23 +2689,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HAM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3695,7 +2705,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3711,7 +2721,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3727,39 +2737,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HBD"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HBG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3775,7 +2753,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3791,7 +2769,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3807,7 +2785,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3823,7 +2801,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3839,7 +2817,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3855,7 +2833,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3871,7 +2849,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3887,7 +2865,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3903,23 +2881,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HER"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3935,7 +2897,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3951,7 +2913,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3967,7 +2929,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -3983,103 +2945,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HGM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HGS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HG1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HIN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HIS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HIX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4095,39 +2961,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HJØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HLB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4143,7 +2977,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4159,7 +2993,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4175,7 +3009,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4191,7 +3025,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4207,7 +3041,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4223,7 +3057,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4239,7 +3073,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4255,7 +3089,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4271,7 +3105,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4287,7 +3121,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4303,7 +3137,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4319,23 +3153,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HOG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4351,7 +3169,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4367,7 +3185,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4383,7 +3201,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4399,39 +3217,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HOR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HOS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4447,39 +3233,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HOV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HOX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4495,7 +3249,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4511,39 +3265,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HRG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HSA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4559,7 +3281,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4575,23 +3297,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HSH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4607,7 +3313,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4623,7 +3329,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4639,7 +3345,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4655,7 +3361,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4671,7 +3377,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4687,39 +3393,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HTS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HUG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4735,7 +3409,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4751,7 +3425,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4767,7 +3441,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4783,7 +3457,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4799,7 +3473,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4815,23 +3489,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HYK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4847,7 +3505,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4863,55 +3521,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HØR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HØY"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "HÅB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4927,7 +3537,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4943,39 +3553,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "H01"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "IFS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -4991,7 +3569,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5007,7 +3585,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5023,7 +3601,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5039,7 +3617,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5055,7 +3633,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5071,39 +3649,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "JEN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "JER"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5119,7 +3665,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5135,7 +3681,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5151,7 +3697,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5167,7 +3713,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5183,23 +3729,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KAH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5215,7 +3745,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5231,7 +3761,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5247,7 +3777,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5263,39 +3793,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KBH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KC"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5311,23 +3809,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KIL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5343,7 +3825,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5359,7 +3841,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5375,7 +3857,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5391,23 +3873,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KJK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5423,7 +3889,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5439,7 +3905,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5455,55 +3921,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KJX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KJØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KKS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5519,23 +3937,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KLR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5551,7 +3953,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5567,23 +3969,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KMB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5599,7 +3985,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5615,7 +4001,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5631,7 +4017,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5647,7 +4033,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5663,23 +4049,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KOS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5695,23 +4065,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KPP"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5727,23 +4081,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KPÅ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5759,39 +4097,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KRH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KRO"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5807,7 +4113,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5823,39 +4129,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KST"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KTD"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5871,23 +4145,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KVB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5903,23 +4161,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KVH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5935,7 +4177,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5951,23 +4193,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KVÆ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5983,7 +4209,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -5999,7 +4225,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6015,23 +4241,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KÅL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6047,7 +4257,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6063,7 +4273,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6079,7 +4289,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6095,7 +4305,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6111,7 +4321,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6127,7 +4337,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6143,23 +4353,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LBU"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6175,39 +4369,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LB1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LDL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6223,23 +4385,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LDN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6255,23 +4401,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LEN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6287,7 +4417,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6303,7 +4433,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6319,7 +4449,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6335,7 +4465,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6351,7 +4481,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6367,23 +4497,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LIN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6399,7 +4513,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6415,23 +4529,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LLD"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6447,7 +4545,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6463,7 +4561,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6479,7 +4577,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6495,7 +4593,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6511,7 +4609,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6527,7 +4625,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6543,7 +4641,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6559,7 +4657,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6575,7 +4673,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6591,23 +4689,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LRT"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6623,23 +4705,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6655,7 +4721,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6671,7 +4737,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6687,7 +4753,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6703,7 +4769,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6719,7 +4785,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6735,23 +4801,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LTS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6767,23 +4817,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LUE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6799,23 +4833,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LVG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6831,23 +4849,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LVL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6863,39 +4865,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LY1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "LY2"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6911,7 +4881,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6927,7 +4897,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6943,7 +4913,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6959,23 +4929,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MAH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -6991,7 +4945,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7007,23 +4961,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MAS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7039,7 +4977,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7055,7 +4993,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7071,23 +5009,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MCS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7103,7 +5025,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7119,7 +5041,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7135,7 +5057,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7151,7 +5073,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7167,7 +5089,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7183,23 +5105,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MIS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7215,23 +5121,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MLI"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7247,23 +5137,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MLØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7279,23 +5153,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MOB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7311,7 +5169,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7327,7 +5185,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7343,7 +5201,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7359,55 +5217,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MO1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MPS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MRA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7423,23 +5233,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MRS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7455,7 +5249,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7471,7 +5265,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7487,7 +5281,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7503,23 +5297,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MUS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7535,39 +5313,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MVK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MVS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7583,23 +5329,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MVX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7615,7 +5345,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7631,7 +5361,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7647,7 +5377,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7663,7 +5393,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7679,7 +5409,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7695,7 +5425,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7711,7 +5441,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7727,7 +5457,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7743,7 +5473,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7759,7 +5489,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7775,7 +5505,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7791,7 +5521,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7807,7 +5537,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7823,23 +5553,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "NIS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7855,7 +5569,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7871,39 +5585,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "NKH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "NKL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -7919,87 +5601,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "NOA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "NOR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "NOS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "NOV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "NO1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8015,7 +5617,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8031,7 +5633,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8047,7 +5649,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8063,7 +5665,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8079,7 +5681,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8095,7 +5697,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8111,7 +5713,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8127,7 +5729,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8143,7 +5745,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8159,7 +5761,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8175,7 +5777,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8191,7 +5793,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8207,39 +5809,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ODE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ODS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8255,7 +5825,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8271,7 +5841,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8287,7 +5857,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8303,23 +5873,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "OLU"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8335,7 +5889,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8351,7 +5905,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8367,7 +5921,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8383,23 +5937,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ORN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8415,7 +5953,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8431,7 +5969,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8447,7 +5985,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8463,23 +6001,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "OT"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8495,7 +6017,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8511,7 +6033,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8527,7 +6049,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8543,7 +6065,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8559,55 +6081,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "POT"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "PTB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8623,23 +6097,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RAF"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8655,23 +6113,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RAN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8687,7 +6129,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8703,7 +6145,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8719,7 +6161,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8735,7 +6177,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8751,23 +6193,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RES"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8783,7 +6209,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8799,7 +6225,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8815,7 +6241,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8831,7 +6257,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8847,7 +6273,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8863,23 +6289,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RKR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8895,23 +6305,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RLR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8927,23 +6321,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RNM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8959,23 +6337,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RO"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -8991,7 +6353,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9007,23 +6369,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ROH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9039,7 +6385,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9055,7 +6401,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9071,7 +6417,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9087,55 +6433,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RO1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RPS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9151,7 +6449,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9167,23 +6465,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RSS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9199,7 +6481,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9215,39 +6497,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RS1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RTS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9263,7 +6513,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9279,7 +6529,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9295,7 +6545,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9311,23 +6561,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RVS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9343,7 +6577,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9359,23 +6593,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RÆR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9391,7 +6609,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9407,7 +6625,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9423,7 +6641,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9439,7 +6657,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9455,23 +6673,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "RÅX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9487,7 +6689,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9503,23 +6705,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SAE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9535,23 +6721,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SAL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9567,7 +6737,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9583,23 +6753,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SAV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9615,7 +6769,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9631,7 +6785,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9647,39 +6801,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SBS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SBT"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9695,7 +6817,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9711,7 +6833,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9727,23 +6849,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SDB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9759,7 +6865,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9775,7 +6881,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9791,23 +6897,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SEF"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9823,7 +6913,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9839,7 +6929,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9855,23 +6945,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SES"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9887,23 +6961,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SEU"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9919,23 +6977,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SEÅ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9951,7 +6993,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9967,7 +7009,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9983,7 +7025,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -9999,7 +7041,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10015,7 +7057,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10031,7 +7073,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10047,7 +7089,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10063,23 +7105,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SJB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10095,23 +7121,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SJØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10127,39 +7137,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SKD"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SKE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10175,7 +7153,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10191,7 +7169,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10207,7 +7185,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10223,7 +7201,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10239,23 +7217,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SKM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10271,7 +7233,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10287,7 +7249,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10303,7 +7265,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10319,23 +7281,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SKU"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10351,23 +7297,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SKX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10383,39 +7313,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SKÅ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SK2"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10431,23 +7329,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SLD"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10463,7 +7345,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10479,23 +7361,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SLN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10511,7 +7377,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10527,7 +7393,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10543,39 +7409,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SLØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SL1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10591,7 +7425,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10607,7 +7441,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10623,7 +7457,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10639,7 +7473,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10655,7 +7489,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10671,7 +7505,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10687,7 +7521,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10703,7 +7537,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10719,7 +7553,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10735,7 +7569,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10751,7 +7585,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10767,23 +7601,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SO1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10799,7 +7617,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10815,7 +7633,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10831,7 +7649,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10847,39 +7665,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SP0"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SP3"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10895,7 +7681,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10911,7 +7697,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10927,7 +7713,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10943,7 +7729,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10959,7 +7745,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -10975,23 +7761,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "STC"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11007,7 +7777,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11023,7 +7793,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11039,7 +7809,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11055,7 +7825,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11071,7 +7841,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11087,7 +7857,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11103,7 +7873,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11119,7 +7889,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11135,7 +7905,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11151,7 +7921,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11167,7 +7937,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11183,23 +7953,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SUC"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11215,7 +7969,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11231,23 +7985,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SUM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11263,23 +8001,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SVE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11295,23 +8017,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SVK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11327,7 +8033,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11343,7 +8049,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11359,7 +8065,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11375,23 +8081,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SÆR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11407,39 +8097,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SØD"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SØE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11455,7 +8113,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11471,23 +8129,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SØV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11503,7 +8145,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11519,7 +8161,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11535,23 +8177,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TAK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11567,23 +8193,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TAS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11599,23 +8209,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TCS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11631,55 +8225,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TDS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TFØ"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TGS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11695,7 +8241,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11711,7 +8257,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11727,7 +8273,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11743,7 +8289,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11759,7 +8305,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11775,7 +8321,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11791,7 +8337,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11807,23 +8353,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TON"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11839,7 +8369,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11855,7 +8385,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11871,7 +8401,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11887,7 +8417,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11903,23 +8433,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TRN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11935,7 +8449,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11951,7 +8465,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11967,7 +8481,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -11983,55 +8497,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TUS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TU1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TVE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12047,23 +8513,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TV1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12079,7 +8529,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12095,39 +8545,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TØF"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TØN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12143,23 +8561,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TØ1"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12175,7 +8577,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12191,55 +8593,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ULR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "UND"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "UPP"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12255,7 +8609,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12271,7 +8625,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12287,7 +8641,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12303,7 +8657,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12319,7 +8673,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12335,7 +8689,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12351,23 +8705,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VBG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12383,7 +8721,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12399,7 +8737,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12415,23 +8753,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VEL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12447,7 +8769,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12463,7 +8785,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12479,39 +8801,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VES"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VET"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12527,7 +8817,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12543,7 +8833,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12559,23 +8849,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VGS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12591,7 +8865,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12607,7 +8881,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12623,7 +8897,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12639,23 +8913,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VIR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12671,7 +8929,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12687,55 +8945,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VLE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VLU"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VLX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12751,7 +8961,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12767,7 +8977,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12783,7 +8993,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12799,7 +9009,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12815,7 +9025,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12831,7 +9041,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12847,71 +9057,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VTN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VTS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VUD"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12927,23 +9073,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "VÅL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12959,7 +9089,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12975,7 +9105,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -12991,39 +9121,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "YGR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "YTR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13039,7 +9137,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13055,7 +9153,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13071,7 +9169,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13087,135 +9185,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØMS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØND"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØPS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØRM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØRS"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØSB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØST"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØSV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13231,7 +9201,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13247,7 +9217,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13263,7 +9233,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13279,7 +9249,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13295,7 +9265,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13311,7 +9281,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13327,7 +9297,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13343,23 +9313,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ÅLB"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13375,7 +9329,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13391,7 +9345,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13407,71 +9361,7 @@
       ]
     }
   },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ÅNG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ÅNN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ÅRE"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ÅRH"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13487,7 +9377,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13503,7 +9393,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13519,7 +9409,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13535,7 +9425,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13551,7 +9441,7 @@
       ]
     }
   },
-  {
+	{
     "type": "Feature",
     "properties": {
       "type": "node",
@@ -13564,1046 +9454,6 @@
       "coordinates": [
         10.36483,
         59.74147
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ÅT"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ÅV"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "118"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "141"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "191"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "192"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "196"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "197"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "198"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "202"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "206"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "249"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "253"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "256"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "257"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "258"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "259"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "267"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "284"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "301"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "303"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "312"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "314"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "321"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "323"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "332"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "334"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "341"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "354"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "461"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "464"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "590"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "592"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "595"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "597"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "603"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "622"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "623"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "625"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "632"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "646"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "656"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "701"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "703"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "704"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "712"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "714"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "824"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ORG"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BAL"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "BAX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KOK"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KOX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SLM"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "SLX"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "TEN"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "412"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "413"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "431"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "434"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MCT"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "MI"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "KLA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "PEA"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "type": "Feature",
-    "properties": {
-      "type": "node",
-      "tags": {
-        "name": "ØR"
-      }
-    },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [
-        0,
-        0
       ]
     }
   }
