@@ -72,7 +72,7 @@ $(document).ready(function() {
 
     map.on('click', onMapClick);*/
 
-    $.getJSON("/lib/rail2.geojson")
+    $.getJSON("/lib/latlon-pretty.geojson")
     	.done(function(data) {
         //Start "geoJson"-motoren til Leaflet. Den tar inn et JSON-objekt i en variabel. Denne har vi definert i JSON-filen i index.html
         var railStations = L.geoJson(data, {
