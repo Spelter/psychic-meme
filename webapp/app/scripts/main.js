@@ -31,8 +31,8 @@ $(document).ready(function() {
     var markers = new L.MarkerClusterGroup({animateAddingMarkers: true});
 
     var map = L.map('map', {
-        center: new L.LatLng(59.9102, 10.75656),
-        zoom: 12,
+        center: new L.LatLng(64.4367, 16.39882),
+        zoom: 5,
         layers: [rail, markers]
     });
 
