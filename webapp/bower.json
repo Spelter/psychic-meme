@@ -1,5 +1,5 @@
 {
-  "name": "webapp",
+  "name": "temp",
   "private": true,
   "dependencies": {
     "sass-bootstrap": "~3.0.0",

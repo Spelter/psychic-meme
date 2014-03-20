@@ -1,4 +1,4 @@
-// Generated on 2014-01-31 using generator-webapp 0.4.7
+// Generated on 2014-03-19 using generator-webapp 0.4.7
 'use strict';
 
 // # Globbing
@@ -67,7 +67,7 @@ module.exports = function (grunt) {
                 port: 9000,
                 livereload: 35729,
                 // Change this to '0.0.0.0' to access the server from outside
-                hostname: '0.0.0.0'
+                hostname: 'localhost'
             },
             livereload: {
                 options: {
@@ -305,6 +305,9 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
+                        'lib/*',
+                        'lib/images/*',
+                        '{,*/}*.css',
                         'styles/fonts/{,*/}*.*',
                         'bower_components/' + (this.includeCompass ? 'sass-' : '') + 'bootstrap/' + (this.includeCompass ? 'fonts/' : 'dist/fonts/') +'*.*'
                     ]
