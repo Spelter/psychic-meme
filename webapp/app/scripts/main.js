@@ -5,6 +5,7 @@ $(document).ready(function() {
     var rail   = L.tileLayer(cloudmadeUrl, {styleId: 33738, attribution: cloudmadeAttribution});
     var railAndRoad  = L.tileLayer(cloudmadeUrl, {styleId: 12790,   attribution: cloudmadeAttribution});
 
+    
     //start clustermotoren
     var markers = new L.MarkerClusterGroup({
             maxClusterRadius: 120,
