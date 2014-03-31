@@ -62,9 +62,9 @@ $(document).ready(function() {
             maxClusterRadius: 120,
             iconCreateFunction: function (cluster) {
                 var markers = cluster.getAllChildMarkers();
-                console.log(cluster.getLatLng());
+                //console.log(cluster.getLatLng());
                 return L.divIcon({ html: markers.length, className: 'mycluster', iconSize: L.point(40, 30) });
-                //generatePieChartForCluster(cluster.getLatLng())
+                //return L.divIcon({ html: generatePieChartForCluster(cluster.getLatLng) + markers.length});
             }
         });
 
@@ -80,14 +80,15 @@ $(document).ready(function() {
         var railStations = L.geoJson(data, {
             //onEachFeature: visPopup,//vi refererer til funksjonen vi skal kalle. Husk at funksjonen også er et objekt
 
-            onEachFeature: function (feature, layer) {
+            /*onEachFeature: function (feature, layer) {
                 layer.bindPopup(feature.properties.tags.name);
-            }
-            /*pointToLayer: function (feature, latlng) {
-                //var popupOptions = {maxWidth: 20};
-                var popupContent = feature.properties.tags.name;
-                return L.marker(latlng).bindPopup(popupContent);
             }*/
+            pointToLayer: function (feature, latlng) {
+                //var popupOptions = {maxWidth: 20};
+                //var popupContent = feature.properties.tags.name;
+                return generatePieChartForCluster(latlng);
+                //return L.marker(latlng).bindPopup(popupContent);
+            }
         });
  
 
