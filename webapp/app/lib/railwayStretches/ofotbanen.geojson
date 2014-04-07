@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "NK"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.44142,
+          68.44175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "SMS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.65629,
+          68.43384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "ROM"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.79091,
+          68.40368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "KAT"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.96575,
+          68.39747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "SØS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.00357,
+          68.43511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "BJF"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.07108,
+          68.43213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "RGS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.12853,
+          68.42505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "VJG"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.2611,
+          68.4289
+        ]
+      }
+    }
+  ]
+}

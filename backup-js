@@ -1,0 +1,143 @@
+
+    var generatePieChartForCluster = function (latlng) {
+        var colorValue = Math.random() * 360;
+        var options = {
+            color: '#000',
+            weight: 1,
+            fillColor: 'hsl(' + colorValue + ',100%,50%)',
+            radius: 20,
+            fillOpacity: 0.7,
+            rotation: 0.0,
+            position: {
+                x: 0,
+                y: 0
+            },
+            offset: 0,
+            numberOfSides: 50,
+            barThickness: 10
+        };
+        var delayedRandom = Math.random() * 100;
+        options.data = {
+            'On time': 100 - delayedRandom,
+            'Delayed': delayedRandom
+        };
+
+        options.chartOptions = {
+            'On time': {
+                fillColor: '#00FF00',
+                minValue: 0,
+                maxValue: 100,
+                maxHeight: 20,
+                displayText: function (value) {
+                    return value.toFixed(2) + '%';
+                }
+            },
+            'Delayed': {
+                fillColor: '#FF0000',
+                minValue: 0,
+                maxValue: 100,
+                maxHeight: 20,
+                displayText: function (value) {
+                    return value.toFixed(2) + '%';
+                }
+            }
+        };
+
+        return new L.PieChartMarker(latlng, options);
+    };
+
+
+    var createLayerGroup = function (name) {
+        var layerGroup = new L.LayerGroup();
+
+        map.addLayer(layerGroup);
+        map.layerControl.addOverlay(layerGroup, name);
+
+        return layerGroup;
+    };
+
+    var addMarkers = function (layerGroupName, lat, lng, deltaLng, count, markerFunction, text) {
+
+        var layerGroup = createLayerGroup(layerGroupName);
+
+        var callout = new L.Callout(new L.LatLng(lat, lng), {
+            direction: L.CalloutLine.DIRECTION.NW,
+            lineStyle: L.CalloutLine.LINESTYLE.STRAIGHT,
+            numberOfSides: 3,
+            arrow: true,
+            color: '#C0C0C0',
+            fillColor: '#C0C0C0',
+            position: new L.Point(-60, 0),
+            size: new L.Point(40, 0),
+            icon: new L.DivIcon({
+                iconSize: new L.Point(80, 50),
+                html: '<div>' + layerGroupName + '</div>',
+                className: 'callout-text'
+            })
+        });
+
+        layerGroup.addLayer(callout);
+
+        for (var i = 0; i < count; ++i) {
+            layerGroup.addLayer(markerFunction(new L.LatLng(lat, lng + i * deltaLng), i));
+        }
+    };
+
+    addMarkers('Pie Charts', 61.54364, 10.32715, 2.0, 5, function (latlng) {
+        var colorValue = Math.random() * 360;
+        var options = {
+            color: '#000',
+            weight: 1,
+            fillColor: 'hsl(' + colorValue + ',100%,50%)',
+            radius: 20,
+            fillOpacity: 0.7,
+            rotation: 0.0,
+            position: {
+                x: 0,
+                y: 0
+            },
+            offset: 0,
+            numberOfSides: 50,
+            barThickness: 10
+        };
+        var delayedRandom = Math.random() * 100;
+        options.data = {
+            'On time': 100 - delayedRandom,
+            'Delayed': delayedRandom
+        };
+
+        options.chartOptions = {
+            'On time': {
+                fillColor: '#00FF00',
+                minValue: 0,
+                maxValue: 100,
+                maxHeight: 20,
+                displayText: function (value) {
+                    return value.toFixed(2) + '%';
+                }
+            },
+            'Delayed': {
+                fillColor: '#FF0000',
+                minValue: 0,
+                maxValue: 100,
+                maxHeight: 20,
+                displayText: function (value) {
+                    return value.toFixed(2) + '%';
+                }
+            }
+        };
+
+        return new L.PieChartMarker(latlng, options);
+    });
+
+
+    /*var popup = L.popup();
+
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(map);
+    }
+
+    map.on('click', onMapClick);*/

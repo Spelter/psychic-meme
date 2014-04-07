@@ -63,8 +63,8 @@ $(document).ready(function() {
             iconCreateFunction: function (cluster) {
                 var markers = cluster.getAllChildMarkers();
                 //console.log(cluster.getLatLng());
-                return L.divIcon({ html: markers.length, className: 'mycluster', iconSize: L.point(40, 30) });
-                //return L.divIcon({ html: generatePieChartForCluster(cluster.getLatLng) + markers.length});
+                //return L.divIcon({ html: markers.length, className: 'mycluster', iconSize: L.point(40, 30) });
+                return L.divIcon({ html: generatePieChartForCluster(cluster.getLatLng)});
             }
         });
 
@@ -85,9 +85,9 @@ $(document).ready(function() {
             }*/
             pointToLayer: function (feature, latlng) {
                 //var popupOptions = {maxWidth: 20};
-                //var popupContent = feature.properties.tags.name;
-                return generatePieChartForCluster(latlng);
-                //return L.marker(latlng).bindPopup(popupContent);
+                var popupContent = feature.properties.tags.name;
+                //return generatePieChartForCluster(latlng);
+                return L.marker(latlng).bindPopup(popupContent);
             }
         });
  
