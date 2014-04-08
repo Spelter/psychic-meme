@@ -102,6 +102,22 @@
       "properties": {
         "type": "node",
         "tags": {
+          "name": "GUL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.16022,
+          59.74379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
           "name": "KOB"
         }
       },

@@ -342,6 +342,22 @@
       "properties": {
         "type": "node",
         "tags": {
+          "name": "VHG"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.64648,
+          58.61807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
           "name": "VIG"
         }
       },

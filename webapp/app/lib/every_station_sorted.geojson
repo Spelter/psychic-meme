@@ -883,8 +883,8 @@
         "banestrekningid": "0010",
         "banestrekning": "Oslo S",
         "status":"I DRIFT",
-        "frakm":"69.572",
-        "tilkm":"127.534",
+        "frakm":"-2.069",
+        "tilkm":"3.79",
         "stasjoner":[
           {
             "type": "Feature",
@@ -903,20 +903,4327 @@
             }
           }
         ]
+      },
+      {
+        "baneid":"B19",
+        "banestrekningid": "0020",
+        "banestrekning": "Lodalen",
+        "status":"I DRIFT",
+        "frakm":"1.115",
+        "tilkm":"2.118",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LOD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.77452,
+                59.90505
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B19",
+        "banestrekningid": "0030",
+        "banestrekning": "Alnabru skiftestasjon",
+        "status":"I DRIFT",
+        "frakm":"3.317",
+        "tilkm":"9.61",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ALB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.84044,
+                59.93507
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GRD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.87305,
+                59.94302
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B19",
+        "banestrekningid": "0040",
+        "banestrekning": "Loenga",
+        "status":"I DRIFT",
+        "frakm":"0.82",
+        "tilkm":"2.882",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LOE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.76437,
+                59.90234
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B19",
+        "banestrekningid": "0210",
+        "banestrekning": "(Oslo S) - Aker",
+        "status":"I DRIFT",
+        "frakm":"2.517",
+        "tilkm":"9.056",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LOE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.76437,
+                59.90234
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.81968,
+                59.90846
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BRB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.8241,
+                59.91041
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LAL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                11.15963,
+                60.12719
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "AKE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.85142,
+                59.93934
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B19",
+        "banestrekningid": "0220",
+        "banestrekning": "(Aker) - (Lillestrøm)",
+        "status":"I DRIFT",
+        "frakm":"9.056",
+        "tilkm":"19.732",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NYL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.87123,
+                59.94406
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GRO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.88745,
+                59.9498
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HGA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.90846,
+                59.9515
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HØB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.9278,
+                59.94808
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LØR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.94423,
+                59.94524
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HAB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.96623,
+                59.93882
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FJE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.98179,
+                59.9407
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "RÅS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.99464,
+                59.9482
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "STN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                11.00189,
+                59.94947
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SDA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                11.01561,
+                59.95627
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FJR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                11.02512,
+                59.95283
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B20",
+        "banestrekningid": "1400",
+        "banestrekning": "(Oslo S) - Lysaker",
+        "status":"I DRIFT",
+        "frakm":"2.069",
+        "tilkm":"7.93",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NTH"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.72974,
+                59.9149
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SKØ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.67985,
+                59.922
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LYS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.63658,
+                59.91348
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B30",
+        "banestrekningid": "1410",
+        "banestrekning": "(Lysaker) - Asker",
+        "status":"I DRIFT",
+        "frakm":"7.93",
+        "tilkm":"36.605",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "STB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.60715,
+                59.90794
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HVK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.58206,
+                59.90097
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "RAM"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.56003,
+                59.89943
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BL1"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.55574,
+                59.89765
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BLO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.55466,
+                59.89721
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.52602,
+                59.89302
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SLE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.50256,
+                59.88593
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TMÅ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.50728,
+                59.89068
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BST"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.48327,
+                59.87458
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ÅSB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.46206,
+                59.86773
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HVA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.46196,
+                59.85834
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VAK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.46689,
+                59.84977
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VÅS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.46152,
+                59.84582
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HØN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.45511,
+                59.84327
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ASR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.43455,
+                59.83375
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B30",
+        "banestrekningid": "1414",
+        "banestrekning": "Lysaker - Asker Askerbanen",
+        "status":"I DRIFT",
+        "frakm":"6.488",
+        "tilkm":"36.605",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LYS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.63658,
+                59.91348
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.52602,
+                59.89302
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ÅSA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.46189,
+                59.86781
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ASR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.43455,
+                59.83375
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B29",
+        "banestrekningid": "1450",
+        "banestrekning": "Filipstad stasjon",
+        "status":"I DRIFT",
+        "frakm":"0",
+        "tilkm":"2.478",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FIL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.71439,
+                59.91079
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B24",
+        "banestrekningid": "1460",
+        "banestrekning": "(Asker) - Spikkestad",
+        "status":"I DRIFT",
+        "frakm":"25.357",
+        "tilkm":"37.7111",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BON"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.43272,
+                59.82048
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GHA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.43619,
+                59.80705
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HEG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.43099,
+                59.78694
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HSG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.41911,
+                59.77377
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "RØY"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.38945,
+                59.7471
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ÅSÅ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.36483,
+                59.74147
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SPI"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.34087,
+                59.74541
+              ]
+            }
+          }
+        ]
       }
     ]
-  }{
-    "banesjef": "eksempel",
+  },
+  {
+    "banesjef": "Vestfoldbanen",
     "banestrekninger":[
       {
-        "baneid":"eksempel",
-        "banestrekningid": "eksempel",
-        "banestrekning": "eksempel",
+        "baneid":"B20",
+        "banestrekningid": "1420",
+        "banestrekning": "(Asker) - Gulskogen",
         "status":"I DRIFT",
-        "frakm":"eksempel",
-        "tilkm":"eksempel",
-        "stasjoner":[]
+        "frakm":"36.605",
+        "tilkm":"56.163",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LIE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.28992,
+                59.76332
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HB1"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.24888,
+                59.7491
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BRA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.23277,
+                59.74349
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HMS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.21922,
+                59.73732
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DRM"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.20484,
+                59.74016
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SUD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.17618,
+                59.74242
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GUL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.16022,
+                59.74379
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B09",
+        "banestrekningid": "1510",
+        "banestrekning": "(Drammen) - (Eidanger)",
+        "status":"I DRIFT",
+        "frakm":"54.07",
+        "tilkm":"192.136",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KOB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.2465,
+                59.68369
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SKG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.240895,
+                59.670604
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GAB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.22585,
+                59.62932
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SND"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.20469,
+                59.58512
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HOM"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.22989,
+                59.55332
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HSD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.31145,
+                59.49267
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NYK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.38442,
+                59.42443
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SKP"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.41109,
+                59.39112
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TBG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.40957,
+                59.27207
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SEM"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.33323,
+                59.28144
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SKK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.30047,
+                59.22153
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TOR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.26626,
+                59.16542
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SFJ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.22308,
+                59.13532
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LAU"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.15004,
+                59.06145
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LVK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.03148,
+                59.05022
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KJO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.97078,
+                59.10126
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KJS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.9196,
+                59.10702
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "EIK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.89625,
+                59.14697
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "OKL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.80775,
+                59.17892
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B09",
+        "banestrekningid": "1510",
+        "banestrekning": "(Eidanger) - Brevik",
+        "status":"I DRIFT",
+        "frakm":"193.414",
+        "tilkm":"201.75",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BRE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.69883,
+                59.05272
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B13",
+        "banestrekningid": "1830",
+        "banestrekning": "Skien - Eidanger",
+        "status":"I DRIFT",
+        "frakm":"179.762",
+        "tilkm":"193.855",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SKN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.60321,
+                59.21908
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BOS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.64521,
+                59.16696
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "PG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.65914,
+                59.13994
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "EID"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.69595,
+                59.12397
+              ]
+            }
+          }
+        ]
       }
     ]
-  }
+  },
+  {
+    "banesjef": "Bergensbanen_ost",
+    "banestrekninger":[
+      {
+        "baneid":"B11",
+        "banestrekningid": "0670",
+        "banestrekning": "(Roa) - Hønefoss",
+        "status":"I DRIFT",
+        "frakm":"58.428",
+        "tilkm":"90.623",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KAL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.57719,
+                60.29347
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GVL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.48916,
+                60.29611
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "JEV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.40464,
+                60.2401
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.30591,
+                60.18835
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HFS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.24919,
+                60.16903
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B12",
+        "banestrekningid": "1610",
+        "banestrekning": "(Hokksund) - (Hønefoss)",
+        "status":"I DRIFT",
+        "frakm":"71.397",
+        "tilkm":"123.515",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SEV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.89593,
+                59.84613
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ÅMO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.91344,
+                59.89125
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LRU"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.93975,
+                59.91477
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KFO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.95284,
+                59.9289
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GHS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.96995,
+                59.93338
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VKS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.99818,
+                59.96926
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DSU"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.02666,
+                60.01487
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NRU"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.05794,
+                60.04352
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TYR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.10632,
+                60.08396
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B12",
+        "banestrekningid": "1610",
+        "banestrekning": "(Hønefoss) - Bergmoen snupl",
+        "status":"I DRIFT",
+        "frakm":"125.303",
+        "tilkm":"140.5",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HEN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.22812,
+                60.21887
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B07",
+        "banestrekningid": "1680",
+        "banestrekning": "(Hønefoss) - Nesbyen",
+        "status":"I DRIFT",
+        "frakm":"90.6",
+        "tilkm":"186.059",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VEM"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.09263,
+                60.20658
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SOK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.92655,
+                60.24107
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TDA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.68982,
+                60.29137
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GUV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.60694,
+                60.38283
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FLÅ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.47333,
+                60.43221
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BGH"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.24837,
+                60.4761
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NES"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.11333,
+                60.5768
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B07",
+        "banestrekningid": "2301",
+        "banestrekning": "(Nesbyen) - Ål",
+        "status":"I DRIFT",
+        "frakm":"186.059",
+        "tilkm":"228.811",
+        "stasjoner":[    
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GOL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.97133,
+                60.69905
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TPO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.71631,
+                60.65971
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ÅL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.56238,
+                60.62626
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B07",
+        "banestrekningid": "2310",
+        "banestrekning": "(Ål) - (Haugastøl)",
+        "status":"I DRIFT",
+        "frakm":"228.811",
+        "tilkm":"274.597",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HOL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.36698,
+                60.57583
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GLO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.20665,
+                60.53472
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "UST"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.04487,
+                60.49655
+              ]
+            }
+          }
+        ]
+      },  
+    ]
+  },
+  {
+    "banesjef": "Bergensbanen_vest",
+    "banestrekninger":[
+      {
+        "baneid":"B07",
+        "banestrekningid": "2311",
+        "banestrekning": "Haugastøl - Myrdal",
+        "status":"I DRIFT",
+        "frakm":"274.597",
+        "tilkm":"336.7",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HAU"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.87005,
+                60.51142
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TNG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.78595,
+                60.53163
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FIN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.50412,
+                60.60189
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FGN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.37938,
+                60.63351
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HAL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.25256,
+                60.66794
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "MYR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.1228,
+                60.73524
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B07",
+        "banestrekningid": "2312",
+        "banestrekning": "(Myrdal) - Reimegrend",
+        "status":"I DRIFT",
+        "frakm":"336.7",
+        "tilkm":"363.575",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "UPS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.01253,
+                60.72546
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VRN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.98559,
+                60.71098
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ØBG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.94081,
+                60.70377
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LJB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.9014,
+                60.70865
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "MFJ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.84006,
+                60.6939
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "EGJ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.80628,
+                60.6702
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VOL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.76325,
+                60.66963
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "RMG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.73089,
+                60.67817
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B07",
+        "banestrekningid": "2320",
+        "banestrekning": "(Reimegrend) - Voss",
+        "status":"I DRIFT",
+        "frakm":"363.575",
+        "tilkm":"386.233",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SPL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.67986,
+                60.68119
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ØFL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.62739,
+                60.68021
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "URD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.59287,
+                60.67943
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KLV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.536,
+                60.66694
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "YGH"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.50732,
+                60.64523
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GJÅ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.46379,
+                60.63946
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VOS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.41071,
+                60.62923
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B07",
+        "banestrekningid": "2330",
+        "banestrekning": "(Voss) - Dale",
+        "status":"I DRIFT",
+        "frakm":"386.233",
+        "tilkm":"425.866",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BUL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.28484,
+                60.63052
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SGR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.23635,
+                60.63245
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "EVG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.10947,
+                60.64699
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "JVI"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.01524,
+                60.64629
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BOL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.95771,
+                60.63786
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.81603,
+                60.58623
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B07",
+        "banestrekningid": "2340",
+        "banestrekning": "(Dale) - Bergen",
+        "status":"I DRIFT",
+        "frakm":"425.866",
+        "tilkm":"471.25",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "STH"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.73302,
+                60.54888
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VAD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.73534,
+                60.47869
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BOG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.73978,
+                60.46216
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TRD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.62439,
+                60.42899
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TKV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.52393,
+                60.42063
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ARN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.46671,
+                60.42026
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BRG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.3345,
+                60.38983
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B22",
+        "banestrekningid": "2313",
+        "banestrekning": "(Myrdal) - Flåm",
+        "status":"I DRIFT",
+        "frakm":"335.905",
+        "tilkm":"356.08",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VTH"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.12974,
+                60.74392
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "RNU"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.13906,
+                60.74392
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KJF"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.1356,
+                60.74699
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KÅD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.10606,
+                60.75642
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BLH"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.10188,
+                60.7717
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BER"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.09582,
+                60.78822
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DBT"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.12412,
+                60.81238
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HÅR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.12323,
+                60.8391
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LND"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.11394,
+                60.85078
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FM"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.11403,
+                60.86298
+              ]
+            }
+          }
+        ]
+      },
+    ]
+  },
+  {
+    "banesjef": "Sorlandsbanen_ost",
+    "banestrekninger":[
+      {
+        "baneid":"B08",
+        "banestrekningid": "1600",
+        "banestrekning": "(Gulskogen) - Hokksund",
+        "status":"I DRIFT",
+        "frakm":"56.163",
+        "tilkm":"71.397",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DLR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.08198,
+                59.74814
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "MJD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                10.01137,
+                59.75121
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SBG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.9612,
+                59.75948
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HOK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.91052,
+                59.76702
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B08",
+        "banestrekningid": "1650",
+        "banestrekning": "(Hokksund) - Kongsberg",
+        "status":"I DRIFT",
+        "frakm":"71.375",
+        "tilkm":"100.743",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VFS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.86691,
+                59.73433
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DAR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.79996,
+                59.70163
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KRE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.76661,
+                59.66889
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SKL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.69511,
+                59.62233
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KBG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.65128,
+                59.6722
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B08",
+        "banestrekningid": "1660",
+        "banestrekning": "(Kongsberg) - Nordagutu",
+        "status":"I DRIFT",
+        "frakm":"99.994",
+        "tilkm":"146.582",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SAG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.60464,
+                59.6329
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "MEH"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.50102,
+                59.6301
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ØYS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.38479,
+                59.56581
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HBØ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.33395,
+                59.49243
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HÅS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.33743,
+                59.45678
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NGU"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.32283,
+                59.41819
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B18",
+        "banestrekningid": "1700",
+        "banestrekning": "(Kongsberg) - Rollag",
+        "status":"I DRIFT",
+        "frakm":"100.743",
+        "tilkm":"147.17",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FBG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.42886,
+                59.86295
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ROL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.29678,
+                59.9852
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B32",
+        "banestrekningid": "1800",
+        "banestrekning": "(Hjuksebø) - Tinnoset",
+        "status":"I DRIFT",
+        "frakm":"100.743",
+        "tilkm":"147.17",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TRY"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.33627,
+                59.5121
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TVN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.3062,
+                59.52948
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TIG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.30347,
+                59.5305
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NTD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.26779,
+                59.55894
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "TIN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.02649,
+                59.72389
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B13",
+        "banestrekningid": "1820",
+        "banestrekning": "(Nordagutu) - (Skien)",
+        "status":"I DRIFT",
+        "frakm":"100.743",
+        "tilkm":"147.17",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DAV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.32991,
+                59.38641
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VBØ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.34686,
+                59.34173
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NTR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.48514,
+                59.30056
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "banesjef": "Sorlandsbanen_midt",
+    "banestrekninger":[
+      {
+        "baneid":"B08",
+        "banestrekningid": "2000",
+        "banestrekning": "(Nordagutu) - Nelaug",
+        "status":"I DRIFT",
+        "frakm":"146.518",
+        "tilkm":"282.003",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.17789,
+                59.3893
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BØ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.0692,
+                59.40918
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LUN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.10088,
+                59.29891
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NAK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.08779,
+                59.18582
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DRD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.06449,
+                59.0962
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NVT"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.15626,
+                58.97125
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LSR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.10877,
+                58.91562
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GJE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.02311,
+                58.87007
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SST"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                9.02603,
+                58.79239
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VGH"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.85521,
+                58.76078
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SÅV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.72678,
+                58.69192
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NEL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.63034,
+                58.65753
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B08",
+        "banestrekningid": "2120",
+        "banestrekning": "(Nelaug) - Kristiansand",
+        "status":"I DRIFT",
+        "frakm":"282.003",
+        "tilkm":"368.229",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HDM"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.52313,
+                58.62881
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HRF"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.35221,
+                58.53588
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FID"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.23221,
+                58.52205
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "OGV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.11003,
+                58.44386
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GRV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.98024,
+                58.29514
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VNL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.96771,
+                58.25299
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "LMY"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.94165,
+                58.17476
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "DNE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.95149,
+                58.16256
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KRS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.98799,
+                58.14575
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B17",
+        "banestrekningid": "2160",
+        "banestrekning": "(Nelaug) - Arendal",
+        "status":"I DRIFT",
+        "frakm":"282.111",
+        "tilkm":"317.73",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FLA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.70735,
+                58.61408
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BØY"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.70578,
+                58.57657
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FRL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.65441,
+                58.52949
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BLA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.64842,
+                58.50731
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "RIS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.62364,
+                58.46842
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BÅS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.68963,
+                58.46271
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SOA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.70943,
+                58.46602
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ADL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                8.76917,
+                58.46528
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "banesjef": "Sorlandsbanen_vest",
+    "banestrekninger":[
+      {
+        "baneid":"B08",
+        "banestrekningid": "2130",
+        "banestrekning": "(Kristiansand) - Egersund",
+        "status":"I DRIFT",
+        "frakm":"368.229",
+        "tilkm":"526.581",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SUL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.94795,
+                58.15482
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NDL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.83501,
+                58.15725
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BRL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.7199,
+                58.19959
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ØYB"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.57289,
+                58.17546
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "MDL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.51208,
+                58.21282
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "AUD"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.36707,
+                58.31898
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SNA"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.21135,
+                58.33156
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SVT"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                7.01776,
+                58.36777
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "STO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.95778,
+                58.37964
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GYL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.83743,
+                58.38418
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BVO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.73674,
+                58.40949
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SIR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.66076,
+                58.41781
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "MOI"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.55134,
+                58.45816
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HSK"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.36352,
+                58.47368
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "UAL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.34324,
+                58.52868
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HLL"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.15562,
+                58.53369
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "EGS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                6.00231,
+                58.4613
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "baneid":"B08",
+        "banestrekningid": "2220",
+        "banestrekning": "(Egersund) - Stavanger",
+        "status":"I DRIFT",
+        "frakm":"526.581",
+        "tilkm":"598.767",
+        "stasjoner":[
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "HEV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.89754,
+                58.48572
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SVÅ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.80719,
+                58.50274
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "OGN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.8031,
+                58.51977
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BRS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.74904,
+                58.54042
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VHG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.64648,
+                58.61807
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "VIG"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.68749,
+                58.57023
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "NBØ"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.64042,
+                58.66579
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "BRY"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.64957,
+                58.73481
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "KLP"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.67893,
+                58.77235
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ØKP"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.70145,
+                58.78656
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "ORS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.7052,
+                58.79928
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GAN"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.71707,
+                58.82353
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SAS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.73343,
+                58.84719
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "SSE"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.73646,
+                58.85224
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "FUS"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.74704,
+                58.889
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "GAU"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.74019,
+                58.90081
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "JÅT"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.72931,
+                58.91366
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "MRO"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.75357,
+                58.9352
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "PAR"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.74268,
+                58.95516
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "type": "node",
+              "tags": {
+                "name": "STV"
+              }
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                5.73277,
+                58.9664
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  } 
 ]
+
+{
+    "banesjef": "Sorlandsbanen_ost",
+    "banestrekninger":[
+      {
+        "baneid":"B18",
+        "banestrekningid": "1700",
+        "banestrekning": "(Kongsberg) - Rollag",
+        "status":"I DRIFT",
+        "frakm":"100.743",
+        "tilkm":"147.17",
+        "stasjoner":[
+        ]
+      },
+    ]
+  }         
