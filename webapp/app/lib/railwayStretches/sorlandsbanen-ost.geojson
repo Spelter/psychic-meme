@@ -1,0 +1,405 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "DLR"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.08198,
+          59.74814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "MJD"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.01137,
+          59.75121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "SBG"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9612,
+          59.75948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HOK"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.91052,
+          59.76702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "VFS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.86691,
+          59.73433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "DAR"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.79996,
+          59.70163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "KRE"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.76661,
+          59.66889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "SKL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.69511,
+          59.62233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "KBG"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.65128,
+          59.6722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "SAG"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.60464,
+          59.6329
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "MEH"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.50102,
+          59.6301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "ØYS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.38479,
+          59.56581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HBØ"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.33395,
+          59.49243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HÅS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.33743,
+          59.45678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "NGU"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.32283,
+          59.41819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "FBG"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.42886,
+          59.86295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "ROL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.29678,
+          59.9852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TRY"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.33627,
+          59.5121
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TVN"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.3062,
+          59.52948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TIG"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.30347,
+          59.5305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "NTD"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.26779,
+          59.55894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TIN"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.02649,
+          59.72389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "DAV"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.32991,
+          59.38641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "VBØ"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.34686,
+          59.34173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "NTR"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.48514,
+          59.30056
+        ]
+      }
+    }
+  ]
+}

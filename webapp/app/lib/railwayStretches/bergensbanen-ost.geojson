@@ -1,0 +1,453 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "KAL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.57719,
+          60.29347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "GVL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.48916,
+          60.29611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "JEV"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.40464,
+          60.2401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HV"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.30591,
+          60.18835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HFS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.24919,
+          60.16903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "SEV"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.89593,
+          59.84613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "ÅMO"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.91344,
+          59.89125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "LRU"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.93975,
+          59.91477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "KFO"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.95284,
+          59.9289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "GHS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.96995,
+          59.93338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "VKS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.99818,
+          59.96926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "DSU"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.02666,
+          60.01487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "NRU"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.05794,
+          60.04352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TYR"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.10632,
+          60.08396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HEN"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.22812,
+          60.21887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "VEM"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.09263,
+          60.20658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "SOK"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.92655,
+          60.24107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TDA"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.68982,
+          60.29137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "GUV"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.60694,
+          60.38283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "FLÅ"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.47333,
+          60.43221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "BGH"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.24837,
+          60.4761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "NES"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.11333,
+          60.5768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "GOL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.97133,
+          60.69905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TPO"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.71631,
+          60.65971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "ÅL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.56238,
+          60.62626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HOL"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.36698,
+          60.57583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "GLO"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.20665,
+          60.53472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "UST"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.04487,
+          60.49655
+        ]
+      }
+    }
+  ]
+}
