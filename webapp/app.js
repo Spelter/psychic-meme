@@ -2,6 +2,8 @@ var express = require('express');
 var logfmt = require('logfmt'); //heroku logger
 var app = express();
 var http = require('http');
+var db = require('monk')(process.env.MONGOLAB_URI || 'localhost/rail');
+var baner = db.get('baner');
 
 
 
@@ -17,3 +19,26 @@ var server = http.createServer(app);
 server.listen(openPort, function(){
   console.log('Listening on port ' + openPort);	
 });
+
+app.get('/rail/stretches', baneSjefer);
+//app.get('/rail/stretches', omradeSjefer);
+
+function baneSjefer(request, response){
+	baner.find({}, '-banestrekninger.stasjoner', function(err, docs){
+		if (err) {
+			console.log(err);
+		} else {
+			response.json(docs);
+		}
+	});
+}
+
+function omradeSjefer(request, response){
+	baner.find({}, '-banestrekninger', function(err, docs){
+		if (err) {
+			console.log(err);
+		} else {
+			response.json(docs);
+		}
+	});
+}

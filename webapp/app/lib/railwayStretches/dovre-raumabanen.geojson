@@ -1,6 +1,118 @@
 {
   "type": "FeatureCollection",
   "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "FÅB"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.40521,
+          61.17095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HSS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.43857,
+          61.22455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "HAF"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.4298,
+          61.24007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "ØYE"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.40704,
+          61.26354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TRE"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.29548,
+          61.31201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "LOS"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.22612,
+          61.38491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "FÅV"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.18531,
+          61.44905
+        ]
+      }
+    },
   	{
       "type": "Feature",
       "properties": {

@@ -1,11 +1,35 @@
 {
   "type": "FeatureCollection",
   "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "TUE"
+        }
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.04437,
-          59.9532
+          11.09999,
+          59.94344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "type": "node",
+        "tags": {
+          "name": "NER"
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.14218,
+          59.92252
         ]
       }
     },

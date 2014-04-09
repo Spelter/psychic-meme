@@ -6,22 +6,6 @@
       "properties": {
         "type": "node",
         "tags": {
-          "name": "OSL"
-        }
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          10.75533,
-          59.9102
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "type": "node",
-        "tags": {
           "name": "BEK"
         }
       },
