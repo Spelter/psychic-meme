@@ -20,25 +20,87 @@ server.listen(openPort, function(){
   console.log('Listening on port ' + openPort);	
 });
 
-//app.get('/rail/stretches', baneSjefer);
-app.get('/rail/stretches', omradeSjefer);
+app.get('/rail/area', omradeSjefer);
+app.get('/rail/line', baneSjefer)
+app.get('/rail/section', seksjoner);
+app.get('/rail/station', station);
+
 
 function baneSjefer(request, response){
-	baner.find({}, '-baner.banestrekninger.stasjoner', function(err, docs){
+	baner.find({}, '-baner.banestrekninger', function(err, docs){
 		if (err) {
 			console.log(err);
 		} else {
-			response.json(docs);
+			console.dir(docs);
+			var ret = [];
+			for (var i = 0; i < docs.length; i++) {
+				for (var j = 0; j < docs[i].baner.length; j++) {
+					ret.push(docs[i].baner[j]);
+				};
+				
+			};
+			response.json(ret);
+			//response.json(docs);
 		}
 	});
 }
 
 function omradeSjefer(request, response){
-	baner.find({}, '-baner.banestrekninger', function(err, docs){
+	baner.find({}, '-baner -_id', function(err, docs){
 		if (err) {
 			console.log(err);
 		} else {
-			response.json(docs);
+			var ret = [];
+			for (var i = 0; i < docs.length; i++) {
+					ret.push(docs[i].omrade);
+				
+			};
+			response.json(ret);
+			//response.json(docs);
 		}
 	});
 }
+
+function seksjoner(request, response){
+	baner.find({}, '-baner.banestrekninger.stasjoner', function(err, docs){
+		if (err) {
+			console.log(err);
+		} else {
+			var ret = [];
+			for (var i = 0; i < docs.length; i++) {
+				for (var j = 0; j < docs[i].baner.length; j++) {
+					for (var k = 0; k < docs[i].baner[j].banestrekninger.length; k++) {
+							ret.push(docs[i].baner[j].banestrekninger[k]);
+					};
+				};
+			};
+			response.json(ret);
+			//response.json(docs);
+		}
+	});
+}
+
+function station(request, response){
+	baner.find({}, 'baner.banestrekninger.stasjoner', function(err, docs){
+		if (err) {
+			console.log(err);
+		} else {
+			var features = {};
+			features.type = "FeatureCollection";
+			var ret = [];
+			for (var i = 0; i < docs.length; i++) {
+				for (var j = 0; j < docs[i].baner.length; j++) {
+					for (var k = 0; k < docs[i].baner[j].banestrekninger.length; k++) {
+						for (var l = 0; l < docs[i].baner[j].banestrekninger[k].stasjoner.length; l++) {
+							ret.push(docs[i].baner[j].banestrekninger[k].stasjoner[l]);
+						};
+					};
+				};
+			};
+			features.features = ret;
+			response.json(features);
+			//response.json(docs);
+		}
+	});
+}
+

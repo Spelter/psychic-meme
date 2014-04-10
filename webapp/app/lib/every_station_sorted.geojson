@@ -9501,6 +9501,13 @@
                   "tags": {
                     "name": "GRG"
                   }
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    12.33708,
+                    64.45837
+                  ]
                 }
               }
             ]
