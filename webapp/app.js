@@ -20,11 +20,11 @@ server.listen(openPort, function(){
   console.log('Listening on port ' + openPort);	
 });
 
-app.get('/rail/stretches', baneSjefer);
-//app.get('/rail/stretches', omradeSjefer);
+//app.get('/rail/stretches', baneSjefer);
+app.get('/rail/stretches', omradeSjefer);
 
 function baneSjefer(request, response){
-	baner.find({}, '-banestrekninger.stasjoner', function(err, docs){
+	baner.find({}, '-baner.banestrekninger.stasjoner', function(err, docs){
 		if (err) {
 			console.log(err);
 		} else {
@@ -34,7 +34,7 @@ function baneSjefer(request, response){
 }
 
 function omradeSjefer(request, response){
-	baner.find({}, '-banestrekninger', function(err, docs){
+	baner.find({}, '-baner.banestrekninger', function(err, docs){
 		if (err) {
 			console.log(err);
 		} else {
