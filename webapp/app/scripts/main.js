@@ -1,11 +1,50 @@
 'use strict';
+var map;
 $(document).ready(function() {
+    L.Icon.Default.imagePath = '/images/';
     var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/733e599a1fe841afaceb855b0ac0f833/{styleId}/256/{z}/{x}/{y}.png',
         cloudmadeAttribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade';
 
     var Thunderforest_Transport = L.tileLayer('http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
     });
+
+    var htmlList = "";
+       /* var htmlList = ' <div id="listContainer">
+                        <ul id="expList">
+                          <li>Item A
+                            <ul>
+                              <li>Item A.1
+                                <ul>
+                                  <li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis ultricies arcu, quis porttitor risus placerat et. Proin quis metus diam, quis bibendum dolor. Nulla nec dapibus nunc. Quisque ac erat sit amet nisl venenatis consequat nec in nibh. Aliquam viverra vestibulum elit faucibus sollicitudin.</span>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>Item A.2</li>
+                              <li>Item A.3
+                                <ul>
+                                  <li>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis ultricies arcu, quis porttitor risus placerat et. Proin quis metus diam, quis bibendum dolor. Nulla nec dapibus nunc. Quisque ac erat sit amet nisl venenatis consequat nec in nibh. Aliquam viverra vestibulum elit faucibus sollicitudin.</span>
+                                  </li>
+                                </ul>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>Item B</li>
+                        <li>Item C
+                          <ul>
+                            <li>Item C.1</li>
+                            <li>Item C.2
+                              <ul>
+                                <li>
+                                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis ultricies arcu, quis porttitor risus placerat et. Proin quis metus diam, quis bibendum dolor. Nulla nec dapibus nunc. Quisque ac erat sit amet nisl venenatis consequat nec in nibh. Aliquam viverra vestibulum elit faucibus sollicitudin.</span>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>';*/
 
     var rail   = L.tileLayer(cloudmadeUrl, {styleId: 33738, attribution: cloudmadeAttribution});
     var railAndRoad  = L.tileLayer(cloudmadeUrl, {styleId: 12790,   attribution: cloudmadeAttribution});
@@ -58,7 +97,7 @@ $(document).ready(function() {
     };
 
     //start clustermotoren
-    var markers = new L.MarkerClusterGroup({
+    /*var markers = new L.MarkerClusterGroup({
             maxClusterRadius: 120,
             iconCreateFunction: function (cluster) {
                 var markers = cluster.getAllChildMarkers();
@@ -66,15 +105,14 @@ $(document).ready(function() {
                 //return L.divIcon({ html: markers.length, className: 'mycluster', iconSize: L.point(40, 30) });
                 return L.divIcon({ html: generatePieChartForCluster(cluster.getLatLng)});
             }
-        });
+        });*/
 
-    var map = L.map('map', {
+    map = L.map('map', {
         center: new L.LatLng(64.4367, 16.39882),
         zoom: 5,
-        layers: [Thunderforest_Transport, markers]
+        layers: [Thunderforest_Transport]
     });
-
-    $.getJSON('lib/latlon-pretty.geojson')
+    $.getJSON('http://localhost:8080/rail/station')
         .done(function(data) {
         //Start "geoJson"-motoren til Leaflet. Den tar inn et JSON-objekt i en variabel. Denne har vi definert i JSON-filen i index.html
         var railStations = L.geoJson(data, {
@@ -89,12 +127,12 @@ $(document).ready(function() {
                 //return generatePieChartForCluster(latlng);
                 return L.marker(latlng).bindPopup(popupContent);
             }
-        });
+        }).addTo(map);
  
 
         //legg til punktene til "layer control"
-        markers.addLayer(railStations);
-        map.layerControl.addOverlay(railStations, 'Datalag (geojson)');
+        //markers.addLayer(railStations);
+//        map.layerControl.addOverlay(railStations, 'Datalag (geojson)');
     });
 
 
@@ -103,10 +141,61 @@ $(document).ready(function() {
         'Rail and road': railAndRoad,
         'Thunderforest Transport' : Thunderforest_Transport
     };
-    var overlayMaps = {
+    /*var overlayMaps = {
         'Datalag (cluster)' : markers
+    };*/
+    function showAlert() {
+        window.alert("helloWorld!")
+        return false;
+    }
+
+    var info = L.control();
+
+    info.onAdd = function (map) {
+        this._div = L.DomUtil.create('div', 'info');
+        this.update();
+        return this._div;
     };
-    map.layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+    info.update = function (props) {
+        this._div.innerHTML = htmlList;
+    };
+
+    $.getJSON('http://localhost:8080/rail/section').done( function generateLayoutList(jsonList) {
+                        var htmlListFromJson = '<div id="listContainer"><ul id="expList"><li>Norge<ul>';
+                        for (var i = 0; i < jsonList.length; i++) {
+                            htmlListFromJson += '<li>' + jsonList[i].omrade + '<ul>';
+
+                            for (var j = 0; j < jsonList[i].baner.length; j++) {
+                                htmlListFromJson += '<li>' + jsonList[i].baner[j].banesjef + '<ul>';
+                                for (var k = 0; k < jsonList[i].baner[j].banestrekninger.length; k++) {
+                                    htmlListFromJson += '<li>' + jsonList[i].baner[j].banestrekninger[k].banestrekning + '</li>';
+                                };
+                                htmlListFromJson += '</ul></li>';
+                            };
+                            htmlListFromJson += '</ul></li>';
+                        };
+                        htmlListFromJson += '</ul></li></ul></div>';
+                        info._div.innerHTML = htmlListFromJson; 
+                        createDemoList();
+                    })
+            .fail(function(jqxhr, textStatus, error){
+                console.dir(arguments);
+            });
+
+    info.addTo(map);
+
+    $('#theLink').click(function (event) {
+
+    // This stops the link from actually being followed which is the 
+    // default action 
+    event.preventDefault();
+    showAlert();
+  });
+
+
+    //map.layerControl = L.control.layers(baseMaps, overlayMaps, {position:'topRight'}).addTo(map);
+    //map.layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
 
     //definerer en liste vi skal samle punktene våre i
     var pointList = [];
@@ -122,7 +211,6 @@ $(document).ready(function() {
             layer.bindPopup(feature.properties.tags.name);
         }
     }
-
     //Sett opp stil til de nye sirkelmarkørene
     var geojsonMarkerOptions = {
         radius: 8,
@@ -132,7 +220,7 @@ $(document).ready(function() {
         opacity: 1,
     };
     
-    var popup = L.popup();
+    /*var popup = L.popup();
 
     function onMapClick(e) {
         popup
@@ -141,7 +229,34 @@ $(document).ready(function() {
             .openOn(map);
     }
 
-    map.on('click', onMapClick);
+    map.on('click', onMapClick);*/
 
-    
+    function createDemoList () {                    
+        $('#expList').find('li:has(ul)')
+        .click( function(event) {
+            if (this == event.target) {
+                $(this).toggleClass('expanded');
+                //fetasdcdhufvbiwqkdnsfbbbbbbb(oslo)
+                $(this).children('ul').toggle('medium');
+            }
+            console.log(event.target.firstChild.nodeValue);
+            return false;
+        })
+        .addClass('collapsed')
+        .children('ul').hide();
+
+        //Create the button funtionality
+        $('#expandList')
+        .unbind('click')
+        .click( function() {
+            $('.collapsed').addClass('expanded');
+            $('.collapsed').children().show('medium');
+        })
+        $('#collapseList')
+        .unbind('click')
+        .click( function() {
+            $('.collapsed').removeClass('expanded');
+            $('.collapsed').children().hide('medium');
+        })
+    }
 });
