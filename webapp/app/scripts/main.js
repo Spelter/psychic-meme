@@ -231,32 +231,33 @@ $(document).ready(function() {
 
     map.on('click', onMapClick);*/
 
-    function createDemoList () {                    
-        $('#expList').find('li:has(ul)')
-        .click( function(event) {
-            if (this == event.target) {
-                $(this).toggleClass('expanded');
-                //fetasdcdhufvbiwqkdnsfbbbbbbb(oslo)
-                $(this).children('ul').toggle('medium');
-            }
-            console.log(event.target.firstChild.nodeValue);
-            return false;
-        })
-        .addClass('collapsed')
-        .children('ul').hide();
-
-        //Create the button funtionality
-        $('#expandList')
-        .unbind('click')
-        .click( function() {
-            $('.collapsed').addClass('expanded');
-            $('.collapsed').children().show('medium');
-        })
-        $('#collapseList')
-        .unbind('click')
-        .click( function() {
-            $('.collapsed').removeClass('expanded');
-            $('.collapsed').children().hide('medium');
-        })
-    }
 });
+
+function createDemoList () {                    
+    $('#expList').find('li:has(ul)')
+    .click( function(event) {
+        if (this == event.target) {
+            $(this).toggleClass('expanded');
+            //fetasdcdhufvbiwqkdnsfbbbbbbb(oslo)
+            $(this).children('ul').toggle('medium');
+        }
+        console.log(event.target.firstChild.nodeValue);
+        return false;
+    })
+    .addClass('collapsed')
+    .children('ul').hide();
+
+    //Create the button funtionality
+    $('#expandList')
+    .unbind('click')
+    .click( function() {
+        $('.collapsed').addClass('expanded');
+        $('.collapsed').children().show('medium');
+    })
+    $('#collapseList')
+    .unbind('click')
+    .click( function() {
+        $('.collapsed').removeClass('expanded');
+        $('.collapsed').children().hide('medium');
+    })
+}
