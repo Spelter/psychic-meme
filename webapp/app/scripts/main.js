@@ -194,7 +194,7 @@ $(document).ready(function() {
     event.preventDefault();
     showAlert();
   });
-    adaptMapToCurrentSelection('Norge');
+    //adaptMapToCurrentSelection('Norge');
 
 
     //map.layerControl = L.control.layers(baseMaps, overlayMaps, {position:'topRight'}).addTo(map);
