@@ -167,7 +167,7 @@ function databaseLocateWantedLocation(areaName, response, callback) {
 }
 
 function generateCoordinatesForNorway (returnValue) {
-	baner.find({}, '-baner -_id', function(err, docs){
+	baner.find({}, function(err, docs){
 		if (err) {
 			console.log(err);
 		} else {
