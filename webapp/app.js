@@ -185,8 +185,7 @@ function generateCoordinatesForLine (line) {
 	var subStretchesArray = [];
 	for (var i = 0; i < line.banestrekninger.length; i++) {
 		subStretchesArray.push(generateCoordinatesForStretch(line.banestrekninger[i]));
-	};	
-	subStretches += ']';
+	};
 	var stretchesCounter = 0;
 	var lat = 0;
 	var lon = 0;
