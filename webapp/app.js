@@ -176,6 +176,7 @@ function generateCoordinatesForNorway (callback) {
 			var subStretchesArray = [];
 			for (var i = 0; i < docs.length; i++) {
 				subStretchesArray.push(generateCoordinatesForArea(docs[i]));
+				console.log(subStretchesArray[i]);
 			};
 			console.log(subStretchesArray)
 			callback(subStretchesArray);
