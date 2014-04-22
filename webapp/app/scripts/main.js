@@ -279,7 +279,7 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
         });
-        console.log(railStations);
+        console.log(coordinates);
         map.fitBounds(new L.latLngBounds(coordinates));
         //map.fitBounds(railStations.getBounds());
     };
