@@ -117,10 +117,10 @@ function handleViewQuery(request, response){
 		returnValue = generateCoordinatesForNorway(function (returnObjectForNorway) {
 			if (returnObjectForNorway.size > 0) {
 				returnValue = returnObjectForNorway;
-				response.json(returnValue);
 			} else {
-				response.send(500);
+				returnValue = 500;
 			}
+			response.json(returnValue);
 		});
 		console.log(returnValue);
 		response.json(returnValue);
