@@ -197,21 +197,25 @@ function generateCoordinatesForLine (line) {
 	};
 	lat = lat / stretchesCounter;
 	lon = lon / stretchesCounter;
-	returnValue += '{ "type": "Feature",' +
-                '"properties": {' +
-                  '"type": "node",' +
-                  '"tags": {' +
-                    '"name": ' + line.banesjef + 
-                  '}' +
-                '},' +
-                '"geometry": {' +
-                  '"type": "Point",' +
-                  '"coordinates": [' +
-                    + lat + ',' +
-                    + lon + 
-                  ']' +
-                '}' +
-              '}';
+
+	var newLocation = new Object();
+	newLocation.type = "Feature";
+	var properties = new Object();
+	properties.type = "node";
+	var tags = new Object();
+	tags.name = line.banesjef;
+	properties.tags = tags;
+	newLocation.properties = properties;
+
+	var geometry = new Object();
+	geometry.type = "Point";
+	var coordinates = [];
+	coordinates.push(lat);
+	coordinates.push(lon);
+	geometry.coordinates = coordinates;
+	newLocation.geometry = geometry;
+
+	return newLocation;
 }
 
 function generateCoordinatesForStretch (stretch) {
@@ -225,6 +229,7 @@ function generateCoordinatesForStretch (stretch) {
 	};
 	lat = lat / stationCounter;
 	lon = lon / stationCounter;
+
 	var newLocation = new Object();
 	newLocation.type = "Feature";
 	var properties = new Object();
@@ -241,6 +246,6 @@ function generateCoordinatesForStretch (stretch) {
 	coordinates.push(lon);
 	geometry.coordinates = coordinates;
 	newLocation.geometry = geometry;
-	
+
 	return newLocation;
 }
