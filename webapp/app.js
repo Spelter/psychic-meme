@@ -276,7 +276,7 @@ function generateCoordinatesForLine (line) {
 	return subStretchesArray;
 }
 
-function generateDummyClusterForLine (stretch) {
+function generateDummyClusterForStretch (stretch) {
 	var stationCounter = 0;
 	var lat = 0;
 	var lon = 0;
