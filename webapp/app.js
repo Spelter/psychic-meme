@@ -194,7 +194,7 @@ function generateCoordinatesForArea (area) {
 	};
 	lat = lat / stretchesCounter;
 	lon = lon / stretchesCounter;
-	console.log(subStretchesArray);
+	console.log(area);
 	var newLocation = new Object();
 	newLocation.type = "Feature";
 	var properties = new Object();
