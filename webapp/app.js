@@ -240,5 +240,5 @@ function generateCoordinatesForStretch (stretch) {
                   	']' +
                   '}' +
               	'}';
-	return newLocation;
+	return JSON.stringify(newLocation);
 }
