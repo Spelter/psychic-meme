@@ -308,6 +308,7 @@ function generateDummyClusterForStretch (stretch) {
 
 function generateCoordinatesForStretch (stretch) {
 	var returnValue = [];
+	console.log(stretch);
 	for (var i = 0; i < stretch.stasjoner.length; i++) {
 		returnValue.push(stretch.stasjoner[i]);
 	};
