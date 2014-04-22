@@ -225,21 +225,13 @@ function generateDummyClusterForArea (area) {
 function generateCoordinatesForArea (area) {
 	var subStretchesArray = [];
 	for (var i = 0; i < area.baner.length; i++) {
-		subStretchesArray.push(generateCoordinatesForLine(area.baner[i]));
+		subStretchesArray.push(generateDummyClusterForLine(area.baner[i]));
 	};
-	var stretchesCounter = 0;
-	var lat = 0;
-	var lon = 0;
-	for (var i = 0; i < subStretchesArray.length; i++) {
-		stretchesCounter++;
-		lat += subStretchesArray[i].geometry.coordinates[0];
-		lon += subStretchesArray[i].geometry.coordinates[1];
-	};
-	
+
 	return subStretchesArray;
 }
 
-function generateCoordinatesForLine (line) {
+function generateDummyClusterForLine (line) {
 	var subStretchesArray = [];
 	for (var i = 0; i < line.banestrekninger.length; i++) {
 		subStretchesArray.push(generateCoordinatesForStretch(line.banestrekninger[i]));
@@ -275,7 +267,16 @@ function generateCoordinatesForLine (line) {
 	return newLocation;
 }
 
-function generateCoordinatesForStretch (stretch) {
+function generateCoordinatesForLine (line) {
+	var subStretchesArray = [];
+	for (var i = 0; i < line.banestrekninger.length; i++) {
+		subStretchesArray.push(generateDummyClusterForLine(line.banestrekninger[i]));
+	};
+
+	return subStretchesArray;
+}
+
+function generateDummyClusterForLine (stretch) {
 	var stationCounter = 0;
 	var lat = 0;
 	var lon = 0;
