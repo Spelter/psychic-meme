@@ -127,8 +127,8 @@ function handleViewQuery(request, response){
 					} else {
 						for (var j = 0; j < docs.baner[i].banestrekninger.length; j++) {
 							if (docs.baner[i].banestrekninger[j].banestrekning) {
-								//generateCoordinatesForStretch(returnValue, docs.baner[i].banestrekninger[j]);
-								returnValue = docs.baner[i].banestrekninger[j];
+								generateCoordinatesForStretch(returnValue, docs.baner[i].banestrekninger[j]);
+								//returnValue = docs.baner[i].banestrekninger[j];
 								isStretch = true;
 								break;
 							}
@@ -140,6 +140,7 @@ function handleViewQuery(request, response){
 				};
 			}
 		});
+		response.send(returnValue);
 	};
 	response.send(500);
 }
