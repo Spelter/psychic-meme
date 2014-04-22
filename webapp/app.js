@@ -113,6 +113,7 @@ function handleViewQuery(request, response){
 	//var returnValue = '{ "type": "FeatureCollection",' +
     //            						'"features": [';
     var returnValue = "";
+    console.log(requestedArea);
 	if (requestedArea === 'Norge') {
 		returnValue = generateCoordinatesForNorway();
 		response.send(returnValue);
@@ -244,7 +245,7 @@ function generateDummyClusterForLine (line) {
 	var lon = 0;
 	for (var i = 0; i < subStretchesArray.length; i++) {
 		stretchesCounter++;
-		
+
 		lat += subStretchesArray[i].geometry.coordinates[0];
 		lon += subStretchesArray[i].geometry.coordinates[1];
 	};
