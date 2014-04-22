@@ -184,7 +184,7 @@ function generateCoordinatesForArea (area) {
 function generateCoordinatesForLine (line) {
 	var subStretchesArray = [];
 	for (var i = 0; i < line.banestrekninger.length; i++) {
-		subStretchesArray.push{generateCoordinatesForStretch(line.banestrekninger[i])};
+		subStretchesArray.push(generateCoordinatesForStretch(line.banestrekninger[i]));
 	};	
 	subStretches += ']';
 	var stretchesCounter = 0;
