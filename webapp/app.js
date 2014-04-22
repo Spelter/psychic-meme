@@ -144,7 +144,7 @@ function handleViewQuery(request, response){
 					}
 				};
 			}
-			//console.log(returnValue);
+			console.log(returnValue);
 			response.send(returnValue);
 		});
 	};
@@ -248,5 +248,4 @@ function generateCoordinatesForStretch (returnValue, stretch) {
                   	']' +
                   '}' +
               	'}';
-	console.log(returnValue);
 }
