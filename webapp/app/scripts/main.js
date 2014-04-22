@@ -267,7 +267,7 @@ function createDemoList () {
 
 
 function adaptMapToCurrentSelection (searchName) {
-    railStations.clearLayers;
+    //railStations.clearLayers;
     $.getJSON('http://localhost:8080/rail/view/' + searchName)
         .done(function(data) {
         var railStations = L.geoJson(data, {
