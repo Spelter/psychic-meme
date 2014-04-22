@@ -182,13 +182,10 @@ function generateCoordinatesForArea (area) {
 }
 
 function generateCoordinatesForLine (line) {
-	var subStretches = '[';
+	var subStretchesArray = [];
 	for (var i = 0; i < line.banestrekninger.length; i++) {
-		if (i > 0) {
-			subStretches += ',';
-		}
-		subStretches += generateCoordinatesForStretch(line.banestrekninger[i]);
-	};
+		subStretchesArray.push{generateCoordinatesForStretch(line.banestrekninger[i])};
+	};	
 	subStretches += ']';
 	var stretchesCounter = 0;
 	var lat = 0;
