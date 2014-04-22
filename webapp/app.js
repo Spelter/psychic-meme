@@ -129,7 +129,7 @@ function handleViewQuery(request, response){
 							if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
 								returnValue += '{ "type": "FeatureCollection",' +
                 						'"features": [';
-								generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
+								returnValue += generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
 								//console.log("found stretch");
 								//returnValue = area[0].baner[i].banestrekninger[j];
 								returnValue += ']' +
@@ -233,7 +233,7 @@ function generateCoordinatesForStretch (returnValue, stretch) {
 	lat = lat / stationCounter;
 	lon = lon / stationCounter;
 	console.log(returnValue);
-	returnValue += '{ "type": "Feature",' +
+	var newLocation; = '{ "type": "Feature",' +
                 '"properties": {' +
                   '"type": "node",' +
                   '"tags": {' +
@@ -248,5 +248,5 @@ function generateCoordinatesForStretch (returnValue, stretch) {
                   	']' +
                   '}' +
               	'}';
-	console.log(returnValue);
+	return newLocation;
 }
