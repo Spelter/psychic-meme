@@ -117,8 +117,6 @@ function handleViewQuery(request, response){
 		returnValue = generateCoordinatesForNorway(function (returnObjectForNorway) {
 			response.json(returnObjectForNorway);
 		});
-		console.log(returnValue);
-		response.json(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
 			if (area[0].omrade === requestedArea) {
@@ -180,7 +178,6 @@ function generateCoordinatesForNorway (callback) {
 			for (var i = 0; i < docs.length; i++) {
 				subStretchesArray.push(generateCoordinatesForArea(docs[i]));
 			};
-
 			callback(subStretchesArray);
 		}
 	});
