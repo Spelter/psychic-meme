@@ -114,7 +114,14 @@ function handleViewQuery(request, response){
     //            						'"features": [';
     var returnValue = "";
 	if (requestedArea === 'Norge') {
-		returnValue = generateCoordinatesForNorway();
+		returnValue = generateCoordinatesForNorway(function (returnObjectForNorway) {
+			if (returnObjectForNorway.size > 0) {
+				returnValue = returnObjectForNorway;
+				response.json(returnValue);
+			} else {
+				response.send(500);
+			}
+		});
 		console.log(returnValue);
 		response.json(returnValue);
 	} else {
@@ -168,7 +175,7 @@ function databaseLocateWantedLocation(areaName, response, callback) {
 	});
 }
 
-function generateCoordinatesForNorway () {
+function generateCoordinatesForNorway (callback) {
 	baner.find({}, function(err, docs){
 		if (err) {
 			console.log(err);
@@ -179,7 +186,7 @@ function generateCoordinatesForNorway () {
 				subStretchesArray.push(generateCoordinatesForArea(docs[i]));
 			};
 
-			return subStretchesArray;
+			callback(subStretchesArray);
 		}
 	});
 }
