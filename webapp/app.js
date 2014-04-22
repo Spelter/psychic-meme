@@ -234,7 +234,7 @@ function generateCoordinatesForArea (area) {
 function generateDummyClusterForLine (line) {
 	var subStretchesArray = [];
 	for (var i = 0; i < line.banestrekninger.length; i++) {
-		subStretchesArray.push(generateCoordinatesForStretch(line.banestrekninger[i]));
+		subStretchesArray.push(generateDummyClusterForLine(line.banestrekninger[i]));
 	};
 	var stretchesCounter = 0;
 	var lat = 0;
