@@ -279,4 +279,3 @@ function adaptMapToCurrentSelection (searchName) {
             }
         }).addTo(railStations);
     }
-}
