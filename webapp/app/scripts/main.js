@@ -122,7 +122,7 @@ $(document).ready(function() {
 
             /*onEachFeature: function (feature, layer) {
                 layer.bindPopup(feature.properties.tags.name);
-            }*/
+            }
             pointToLayer: function (feature, latlng) {
                 //var popupOptions = {maxWidth: 20};
                 var popupContent = feature.properties.tags.name;
