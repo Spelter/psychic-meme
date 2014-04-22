@@ -119,7 +119,8 @@ function handleViewQuery(request, response){
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
 			if (area[0].omrade === requestedArea) {
-				returnValue = generateCoordinatesForArea(area[0]);
+				//returnValue = generateCoordinatesForArea(area[0]);
+				returnValue = area;
 			} else {
 				for (var i = 0; i < area[0].baner.length; i++) {
 					var isStretch = false;
