@@ -248,4 +248,5 @@ function generateCoordinatesForStretch (returnValue, stretch) {
                   	']' +
                   '}' +
               	'}';
+	console.log(returnValue);
 }
