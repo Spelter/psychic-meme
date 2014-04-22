@@ -110,7 +110,7 @@ function station(request, response){
 
 function handleViewQuery(request, response){
 	var requestedArea = request.params.id;
-	console.log(requestedArea);
+	//console.log(requestedArea);
 	var returnValue = "";
 	if (requestedArea === 'Norway') {
 		generateCoordinatesForNorway(returnValue);
@@ -232,6 +232,7 @@ function generateCoordinatesForStretch (returnValue, stretch) {
 	};
 	lat = lat / stationCounter;
 	lon = lon / stationCounter;
+	console.log(returnValue);
 	returnValue += '{ "type": "Feature",' +
                 '"properties": {' +
                   '"type": "node",' +
@@ -247,4 +248,5 @@ function generateCoordinatesForStretch (returnValue, stretch) {
                   	']' +
                   '}' +
               	'}';
+	console.log(returnValue);
 }
