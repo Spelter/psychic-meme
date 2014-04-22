@@ -113,10 +113,10 @@ function handleViewQuery(request, response){
 	//var returnValue = '{ "type": "FeatureCollection",' +
     //            						'"features": [';
     var returnValue = "";
-    console.log(requestedArea);
 	if (requestedArea === 'Norge') {
 		returnValue = generateCoordinatesForNorway();
-		response.send(returnValue);
+		console.log(returnValue);
+		response.json(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
 			if (area[0].omrade === requestedArea) {
@@ -173,20 +173,12 @@ function generateCoordinatesForNorway () {
 		if (err) {
 			console.log(err);
 		} else {
-			var ret = [];
-			for (var i = 0; i < docs.length; i++) {
-					ret.push(docs[i].omrade);
-				
-			};
-			//response.json(ret);
-			//response.json(docs);
 
 			var subStretchesArray = [];
 			for (var i = 0; i < docs.length; i++) {
 				subStretchesArray.push(generateCoordinatesForArea(docs[i]));
 			};
 
-			console.log(subStretchesArray);
 			return subStretchesArray;
 		}
 	});
