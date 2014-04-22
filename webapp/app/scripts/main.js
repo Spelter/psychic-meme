@@ -1,6 +1,6 @@
 'use strict';
 var map;
-var railStations = new L.LayerGroup();
+var railStations = new L.featureGroup();
 $(document).ready(function() {
     L.Icon.Default.imagePath = '/images/';
     var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/733e599a1fe841afaceb855b0ac0f833/{styleId}/256/{z}/{x}/{y}.png',
@@ -277,6 +277,7 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
         });
+        map.fitBounds(railStations.getBounds());
     };
 
 });
