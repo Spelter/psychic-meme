@@ -1,6 +1,6 @@
 'use strict';
 var map;
-var railStations;
+var railStations = new L.LayerGroup();
 $(document).ready(function() {
     L.Icon.Default.imagePath = '/images/';
     var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/733e599a1fe841afaceb855b0ac0f833/{styleId}/256/{z}/{x}/{y}.png',
@@ -111,7 +111,7 @@ $(document).ready(function() {
     map = L.map('map', {
         center: new L.LatLng(64.4367, 16.39882),
         zoom: 5,
-        layers: [Thunderforest_Transport],
+        layers: [Thunderforest_Transport, railStations],
         worldCopyJump: true
     });
     $.getJSON('http://localhost:8080/rail/station')
@@ -129,7 +129,7 @@ $(document).ready(function() {
                 //return generatePieChartForCluster(latlng);
                 return L.marker(latlng).bindPopup(popupContent);
             }
-        }).addTo(map);
+        }).addTo(railStations);
  
 
         //legg til punktene til "layer control"
@@ -263,3 +263,25 @@ function createDemoList () {
         $('.collapsed').children().hide('medium');
     })
 }
+
+
+function adaptMapToCurrentSelection (searchName) {
+    railStations.clearLayers;
+}
+
+$.getJSON('http://localhost:8080/rail/station')
+        .done(function(data) {
+        //Start "geoJson"-motoren til Leaflet. Den tar inn et JSON-objekt i en variabel. Denne har vi definert i JSON-filen i index.html
+        var railStations = L.geoJson(data, {
+            //onEachFeature: visPopup,//vi refererer til funksjonen vi skal kalle. Husk at funksjonen også er et objekt
+
+            /*onEachFeature: function (feature, layer) {
+                layer.bindPopup(feature.properties.tags.name);
+            }*/
+            pointToLayer: function (feature, latlng) {
+                //var popupOptions = {maxWidth: 20};
+                var popupContent = feature.properties.tags.name;
+                //return generatePieChartForCluster(latlng);
+                return L.marker(latlng).bindPopup(popupContent);
+            }
+        }).addTo(map);
