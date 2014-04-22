@@ -122,13 +122,13 @@ function handleViewQuery(request, response){
 			} else {
 				for (var i = 0; i < area[0].baner.length; i++) {
 					var isStretch = false;
-					if (area.baner[i].banesjef === requestedArea) {
-						generateCoordinatesForLine(returnValue, area.baner[i]);
+					if (area[0].baner[i].banesjef === requestedArea) {
+						generateCoordinatesForLine(returnValue, area[0].baner[i]);
 						break;
 					} else {
-						for (var j = 0; j < area.baner[i].banestrekninger.length; j++) {
-							if (area.baner[i].banestrekninger[j].banestrekning) {
-								generateCoordinatesForStretch(returnValue, area.baner[i].banestrekninger[j]);
+						for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
+							if (area[0].baner[i].banestrekninger[j].banestrekning) {
+								generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
 								//returnValue = area.baner[i].banestrekninger[j];
 								isStretch = true;
 								break;
