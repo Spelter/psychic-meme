@@ -128,8 +128,8 @@ function handleViewQuery(request, response){
 					} else {
 						for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 							if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
-								//returnValue += generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
-								returnValue = area[0].baner[i].banestrekninger[j];
+								//returnValue = area[0].baner[i].banestrekninger[j];
+								returnValue = generateCoordinatesForStretch(area.[0].baner[i]);
 								isStretch = true;
 								break;
 							}
@@ -304,4 +304,12 @@ function generateDummyClusterForStretch (stretch) {
 	newLocation.geometry = geometry;
 
 	return newLocation;
+}
+
+function generateCoordinatesForStretch (stretch) {
+	var returnValue = [];
+	for (var i = 0; i < stretch.stasjoner.length; i++) {
+		returnValue.push(stretch.stasjoner[i]);
+	};
+	return returnValue;
 }
