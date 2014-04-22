@@ -263,25 +263,3 @@ function createDemoList () {
         $('.collapsed').children().hide('medium');
     })
 }
-
-
-function adaptMapToCurrentSelection (searchName) {
-    railStations.clearLayers;
-}
-
-$.getJSON('http://localhost:8080/rail/station')
-        .done(function(data) {
-        //Start "geoJson"-motoren til Leaflet. Den tar inn et JSON-objekt i en variabel. Denne har vi definert i JSON-filen i index.html
-        var railStations = L.geoJson(data, {
-            //onEachFeature: visPopup,//vi refererer til funksjonen vi skal kalle. Husk at funksjonen også er et objekt
-
-            /*onEachFeature: function (feature, layer) {
-                layer.bindPopup(feature.properties.tags.name);
-            }*/
-            pointToLayer: function (feature, latlng) {
-                //var popupOptions = {maxWidth: 20};
-                var popupContent = feature.properties.tags.name;
-                //return generatePieChartForCluster(latlng);
-                return L.marker(latlng).bindPopup(popupContent);
-            }
-        }).addTo(map);
