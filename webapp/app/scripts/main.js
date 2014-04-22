@@ -239,9 +239,9 @@ $(document).ready(function() {
         .click( function(event) {
             if (this == event.target) {
                 $(this).toggleClass('expanded');
-                adaptMapToCurrentSelection(event.target.firstChild.nodeValue);
                 $(this).children('ul').toggle('medium');
             }
+            adaptMapToCurrentSelection(event.target.firstChild.nodeValue);
             return false;
         })
         .addClass('collapsed')
