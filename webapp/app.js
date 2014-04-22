@@ -280,6 +280,7 @@ function generateDummyClusterForLine (stretch) {
 	var stationCounter = 0;
 	var lat = 0;
 	var lon = 0;
+	console.log(stretch);
 	for (var i = 0; i < stretch.stasjoner.length; i++) {
 		stationCounter++;
 		lat += stretch.stasjoner[i].geometry.coordinates[0];
