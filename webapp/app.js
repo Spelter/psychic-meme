@@ -114,7 +114,7 @@ function handleViewQuery(request, response){
     //            						'"features": [';
     var returnValue = "";
 	if (requestedArea === 'Norge') {
-		generateCoordinatesForNorway(returnValue);
+		returnValue = generateCoordinatesForNorway();
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
 			if (area[0].omrade === requestedArea) {
@@ -166,7 +166,7 @@ function databaseLocateWantedLocation(areaName, response, callback) {
 	});
 }
 
-function generateCoordinatesForNorway (returnValue) {
+function generateCoordinatesForNorway () {
 	baner.find({}, function(err, docs){
 		if (err) {
 			console.log(err);
