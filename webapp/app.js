@@ -186,9 +186,6 @@ function generateCoordinatesForNorway () {
 			};
 
 			return subStretchesArray;
-
-			console.log(docs);
-			return docs;
 		}
 	});
 }
@@ -208,7 +205,6 @@ function generateDummyClusterForArea (area) {
 	};
 	lat = lat / stretchesCounter;
 	lon = lon / stretchesCounter;
-	//console.log(area);
 	var newLocation = new Object();
 	newLocation.type = "Feature";
 	var properties = new Object();
@@ -248,7 +244,7 @@ function generateDummyClusterForLine (line) {
 	var lon = 0;
 	for (var i = 0; i < subStretchesArray.length; i++) {
 		stretchesCounter++;
-		console.log(subStretchesArray[i].geometry);
+		
 		lat += subStretchesArray[i].geometry.coordinates[0];
 		lon += subStretchesArray[i].geometry.coordinates[1];
 	};
