@@ -126,7 +126,7 @@ function handleViewQuery(request, response){
 						break;
 					} else {
 						for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
-							if (area[0].baner[i].banestrekninger[j].banestrekning) {
+							if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
 								//generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
 								console.log("found stretch");
 								returnValue = area[0].baner[i].banestrekninger[j];
