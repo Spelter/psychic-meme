@@ -113,6 +113,7 @@ function handleViewQuery(request, response){
 	//var returnValue = '{ "type": "FeatureCollection",' +
     //            						'"features": [';
     var returnValue = "";
+    console.log(requestedArea);
 	if (requestedArea === 'Norway') {
 		generateCoordinatesForNorway(returnValue);
 	} else {
