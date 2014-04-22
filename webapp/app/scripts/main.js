@@ -277,7 +277,7 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
         });
-        //console.log(railStations.getBounds());
+        console.log(railStations);
         //map.fitBounds(railStations.getBounds());
     };
 
