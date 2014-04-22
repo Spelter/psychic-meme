@@ -123,7 +123,7 @@ function handleViewQuery(request, response){
 				for (var i = 0; i < area[0].baner.length; i++) {
 					var isStretch = false;
 					if (area[0].baner[i].banesjef === requestedArea) {
-						returnValue += generateCoordinatesForLine(area[0].baner[i]);
+						returnValue = generateCoordinatesForLine(area[0].baner[i]);
 						break;
 					} else {
 						for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
@@ -192,7 +192,6 @@ function generateCoordinatesForLine (line) {
 	var lon = 0;
 	for (var i = 0; i < subStretchesArray.length; i++) {
 		stretchesCounter++;
-		console.log(subStretchesArray[i]);
 		lat += subStretchesArray[i].geometry.coordinates[0];
 		lon += subStretchesArray[i].geometry.coordinates[1];
 	};
