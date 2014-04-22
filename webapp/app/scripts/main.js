@@ -194,6 +194,7 @@ $(document).ready(function() {
     event.preventDefault();
     showAlert();
   });
+    adaptMapToCurrentSelection(Norge);
 
 
     //map.layerControl = L.control.layers(baseMaps, overlayMaps, {position:'topRight'}).addTo(map);
@@ -240,7 +241,7 @@ function createDemoList () {
     .click( function(event) {
         if (this == event.target) {
             $(this).toggleClass('expanded');
-            //fetasdcdhufvbiwqkdnsfbbbbbbb(oslo)
+            adaptMapToCurrentSelection(event.target.firstChild.nodeValue);
             $(this).children('ul').toggle('medium');
         }
         console.log(event.target.firstChild.nodeValue);
@@ -262,4 +263,19 @@ function createDemoList () {
         $('.collapsed').removeClass('expanded');
         $('.collapsed').children().hide('medium');
     })
+}
+
+
+function adaptMapToCurrentSelection (searchName) {
+    railStations.clearLayers;
+    $.getJSON('http://localhost:8080/rail/view/' + searchName)
+        .done(function(data) {
+        var railStations = L.geoJson(data, {
+            pointToLayer: function (feature, latlng) {
+                //var popupOptions = {maxWidth: 20};
+                var popupContent = feature.properties.tags.name;
+                //return generatePieChartForCluster(latlng);
+                return L.marker(latlng).bindPopup(popupContent);
+            }
+    }).addTo(railStations);
 }
