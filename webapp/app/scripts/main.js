@@ -277,8 +277,8 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
         });
-            console.log(railStations.getBounds());
-        map.fitBounds(railStations.getBounds());
+        //console.log(railStations.getBounds());
+        //map.fitBounds(railStations.getBounds());
     };
 
 });
