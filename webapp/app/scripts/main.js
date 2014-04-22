@@ -234,19 +234,6 @@ $(document).ready(function() {
 
     map.on('click', onMapClick);*/
 
-    function adaptMapToCurrentSelection (searchName) {
-        railStations.clearLayers;
-        $.getJSON('http://localhost:8080/rail/view/' + searchName)
-            .done(function(data) {
-            var railStations = L.geoJson(data, {
-                pointToLayer: function (feature, latlng) {
-                    //var popupOptions = {maxWidth: 20};
-                    var popupContent = feature.properties.tags.name;
-                    //return generatePieChartForCluster(latlng);
-                    return L.marker(latlng).bindPopup(popupContent);
-                }
-        }).addTo(railStations);
-    }
 });
 
 function createDemoList () {                    
@@ -279,3 +266,17 @@ function createDemoList () {
 }
 
 
+function adaptMapToCurrentSelection (searchName) {
+    railStations.clearLayers;
+    $.getJSON('http://localhost:8080/rail/view/' + searchName)
+        .done(function(data) {
+        var railStations = L.geoJson(data, {
+            pointToLayer: function (feature, latlng) {
+                //var popupOptions = {maxWidth: 20};
+                var popupContent = feature.properties.tags.name;
+                //return generatePieChartForCluster(latlng);
+                return L.marker(latlng).bindPopup(popupContent);
+            }
+        }).addTo(railStations);
+    }
+}
