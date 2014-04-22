@@ -234,48 +234,50 @@ $(document).ready(function() {
 
     map.on('click', onMapClick);*/
 
-    function adaptMapToCurrentSelection (searchName) {
-    //railStations.clearLayers;
-    $.getJSON('http://localhost:8080/rail/station')
-        .done(function(data) {
-        var railStations = L.geoJson(data, {
-            pointToLayer: function (feature, latlng) {
-                //var popupOptions = {maxWidth: 20};
-                var popupContent = feature.properties.tags.name;
-                //return generatePieChartForCluster(latlng);
-                return L.marker(latlng).bindPopup(popupContent);
+    function createDemoList () {                    
+        $('#expList').find('li:has(ul)')
+        .click( function(event) {
+            if (this == event.target) {
+                $(this).toggleClass('expanded');
+                adaptMapToCurrentSelection(event.target.firstChild.nodeValue);
+                $(this).children('ul').toggle('medium');
             }
-        }).addTo(railStations);
-    });
-};
+            console.log(event.target.firstChild.nodeValue);
+            return false;
+        })
+        .addClass('collapsed')
+        .children('ul').hide();
+
+        //Create the button funtionality
+        $('#expandList')
+        .unbind('click')
+        .click( function() {
+            $('.collapsed').addClass('expanded');
+            $('.collapsed').children().show('medium');
+        })
+        $('#collapseList')
+        .unbind('click')
+        .click( function() {
+            $('.collapsed').removeClass('expanded');
+            $('.collapsed').children().hide('medium');
+        })
+    }
+
+    function adaptMapToCurrentSelection (searchName) {
+        //railStations.clearLayers;
+        $.getJSON('http://localhost:8080/rail/station')
+            .done(function(data) {
+            var railStations = L.geoJson(data, {
+                pointToLayer: function (feature, latlng) {
+                    //var popupOptions = {maxWidth: 20};
+                    var popupContent = feature.properties.tags.name;
+                    //return generatePieChartForCluster(latlng);
+                    return L.marker(latlng).bindPopup(popupContent);
+                }
+            }).addTo(railStations);
+        });
+    };
 
 });
 
-function createDemoList () {                    
-    $('#expList').find('li:has(ul)')
-    .click( function(event) {
-        if (this == event.target) {
-            $(this).toggleClass('expanded');
-            adaptMapToCurrentSelection(event.target.firstChild.nodeValue);
-            $(this).children('ul').toggle('medium');
-        }
-        console.log(event.target.firstChild.nodeValue);
-        return false;
-    })
-    .addClass('collapsed')
-    .children('ul').hide();
 
-    //Create the button funtionality
-    $('#expandList')
-    .unbind('click')
-    .click( function() {
-        $('.collapsed').addClass('expanded');
-        $('.collapsed').children().show('medium');
-    })
-    $('#collapseList')
-    .unbind('click')
-    .click( function() {
-        $('.collapsed').removeClass('expanded');
-        $('.collapsed').children().hide('medium');
-    })
-}
