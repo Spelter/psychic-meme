@@ -120,7 +120,7 @@ function handleViewQuery(request, response){
 			if (area.omrade === requestedArea) {
 				generateCoordinatesForArea(returnValue, docs);
 			} else {
-				for (var i = 0; i < area.baner.length; i++) {
+				for (var i = 0; i < area[0].baner.length; i++) {
 					var isStretch = false;
 					if (area.baner[i].banesjef === requestedArea) {
 						generateCoordinatesForLine(returnValue, area.baner[i]);
