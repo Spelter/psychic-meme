@@ -190,11 +190,11 @@ function generateCoordinatesForLine (line) {
 	var stretchesCounter = 0;
 	var lat = 0;
 	var lon = 0;
-	for (var i = 0; i < subStretches.length; i++) {
+	for (var i = 0; i < subStretchesArray.length; i++) {
 		stretchesCounter++;
-		console.log(subStretches[i]);
-		lat += subStretches[i].geometry.coordinates[0];
-		lon += subStretches[i].geometry.coordinates[1];
+		console.log(subStretchesArray[i]);
+		lat += subStretchesArray[i].geometry.coordinates[0];
+		lon += subStretchesArray[i].geometry.coordinates[1];
 	};
 	lat = lat / stationCounter;
 	lon = lon / stationCounter;
