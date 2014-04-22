@@ -130,7 +130,7 @@ function handleViewQuery(request, response){
 							if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
 								generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
 								//console.log("found stretch");
-								returnValue = area[0].baner[i].banestrekninger[j];
+								//returnValue = area[0].baner[i].banestrekninger[j];
 								isStretch = true;
 								break;
 							}
