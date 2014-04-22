@@ -279,9 +279,9 @@ $(document).ready(function() {
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
+            console.log(coordinates);
+            map.fitBounds(new L.latLngBounds(coordinates));
         });
-        console.log(coordinates);
-        map.fitBounds(new L.latLngBounds(coordinates));
         //map.fitBounds(railStations.getBounds());
     };
 
