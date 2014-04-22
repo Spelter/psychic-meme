@@ -195,8 +195,8 @@ function generateCoordinatesForLine (line) {
 		lat += subStretchesArray[i].geometry.coordinates[0];
 		lon += subStretchesArray[i].geometry.coordinates[1];
 	};
-	lat = lat / stationCounter;
-	lon = lon / stationCounter;
+	lat = lat / stretchesCounter;
+	lon = lon / stretchesCounter;
 	returnValue += '{ "type": "Feature",' +
                 '"properties": {' +
                   '"type": "node",' +
@@ -241,5 +241,6 @@ function generateCoordinatesForStretch (stretch) {
 	coordinates.push(lon);
 	geometry.coordinates = coordinates;
 	newLocation.geometry = geometry;
+	
 	return newLocation;
 }
