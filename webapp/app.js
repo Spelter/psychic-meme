@@ -115,6 +115,7 @@ function handleViewQuery(request, response){
     var returnValue = "";
 	if (requestedArea === 'Norge') {
 		returnValue = generateCoordinatesForNorway();
+		response.json(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
 			if (area[0].omrade === requestedArea) {
