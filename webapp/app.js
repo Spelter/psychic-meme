@@ -306,5 +306,5 @@ function generateDummyClusterForLine (stretch) {
 	geometry.coordinates = coordinates;
 	newLocation.geometry = geometry;
 
-	return newLocation;
+	return stretch;
 }
