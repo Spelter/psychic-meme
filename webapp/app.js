@@ -111,7 +111,7 @@ function station(request, response){
 function handleViewQuery(request, response){
 	var requestedArea = request.params.id;
 	console.log(requestedArea);
-	var returnValue;
+	var returnValue = "";
 	if (requestedArea === 'Norway') {
 		generateCoordinatesForNorway(returnValue);
 	} else {
