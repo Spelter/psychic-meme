@@ -115,12 +115,7 @@ function handleViewQuery(request, response){
     var returnValue = "";
 	if (requestedArea === 'Norge') {
 		returnValue = generateCoordinatesForNorway(function (returnObjectForNorway) {
-			if (returnObjectForNorway.size > 0) {
-				returnValue = returnObjectForNorway;
-			} else {
-				returnValue = 500;
-			}
-			response.json(returnValue);
+			response.json(returnObjectForNorway);
 		});
 		console.log(returnValue);
 		response.json(returnValue);
