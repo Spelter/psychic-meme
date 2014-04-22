@@ -157,7 +157,6 @@ function databaseLocateWantedLocation(areaName, response, callback) {
 			console.log(err);
 			response.send(500)
 		} else {
-			console.log(docs);
 			if (docs.length > 0) {
 				callback(docs);
 			} else {
