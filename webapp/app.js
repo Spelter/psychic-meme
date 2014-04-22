@@ -238,7 +238,7 @@ function generateDummyClusterForLine (line) {
 	var lon = 0;
 	for (var i = 0; i < subStretchesArray.length; i++) {
 		stretchesCounter++;
-		console.log(subStretchesArray[i]);
+		console.log(subStretchesArray[i].geometry);
 		lat += subStretchesArray[i].geometry.coordinates[0];
 		lon += subStretchesArray[i].geometry.coordinates[1];
 	};
