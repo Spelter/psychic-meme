@@ -179,6 +179,7 @@ function generateCoordinatesForNorway () {
 			};
 			//response.json(ret);
 			//response.json(docs);
+			console.log(docs);
 			return docs;
 		}
 	});
