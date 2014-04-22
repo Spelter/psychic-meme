@@ -110,30 +110,25 @@ function station(request, response){
 
 function handleViewQuery(request, response){
 	var requestedArea = request.params.id;
-	//console.log(requestedArea);
-	var returnValue = "";
+	var returnValue = '{ "type": "FeatureCollection",' +
+                						'"features": [';
 	if (requestedArea === 'Norway') {
 		generateCoordinatesForNorway(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, function (area) {
 			if (area.omrade === requestedArea) {
-				generateCoordinatesForArea(returnValue, docs);
+				returnValue += generateCoordinatesForArea(docs);
 			} else {
 				for (var i = 0; i < area[0].baner.length; i++) {
 					var isStretch = false;
 					if (area[0].baner[i].banesjef === requestedArea) {
-						generateCoordinatesForLine(returnValue, area[0].baner[i]);
+						returnValue += generateCoordinatesForLine(area[0].baner[i]);
 						break;
 					} else {
 						for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 							if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
-								returnValue += '{ "type": "FeatureCollection",' +
-                						'"features": [';
-								returnValue += generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
-								//console.log("found stretch");
-								//returnValue = area[0].baner[i].banestrekninger[j];
-								returnValue += ']' +
-											 '}';
+								//returnValue += generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
+								returnValue = area[0].baner[i].banestrekninger[j];
 								isStretch = true;
 								break;
 							}
@@ -144,11 +139,13 @@ function handleViewQuery(request, response){
 					}
 				};
 			}
+			returnValue += ']' +
+						 '}';
 			console.log(returnValue);
 			response.send(returnValue);
 		});
 	};
-	//response.send(500);
+	response.send(500);
 }
 
 
@@ -182,10 +179,10 @@ function generateCoordinatesForNorway (returnValue) {
 	});
 }
 
-function generateCoordinatesForArea (returnValue, area) {
+function generateCoordinatesForArea (area) {
 }
 
-function generateCoordinatesForLine (returnValue, line) {
+function generateCoordinatesForLine (line) {
 	var subStretches = '[';
 	for (var i = 0; i < line.banestrekninger.length; i++) {
 		if (i > 0) {
@@ -221,7 +218,7 @@ function generateCoordinatesForLine (returnValue, line) {
               '}';
 }
 
-function generateCoordinatesForStretch (returnValue, stretch) {
+function generateCoordinatesForStretch (stretch) {
 	var stationCounter = 0;
 	var lat = 0;
 	var lon = 0;
@@ -232,7 +229,6 @@ function generateCoordinatesForStretch (returnValue, stretch) {
 	};
 	lat = lat / stationCounter;
 	lon = lon / stationCounter;
-	console.log(returnValue);
 	var newLocation = '{ "type": "Feature",' +
                 '"properties": {' +
                   '"type": "node",' +
