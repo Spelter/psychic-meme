@@ -114,7 +114,6 @@ function handleViewQuery(request, response){
     //            						'"features": [';
     var returnValue = "";
 	if (requestedArea === 'Norge') {
-    	console.log(requestedArea);
 		generateCoordinatesForNorway(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
@@ -143,7 +142,6 @@ function handleViewQuery(request, response){
 			}
 			//returnValue += ']' +
 			//			 '}';
-			console.log(returnValue);
 			response.json(returnValue);
 		});
 	};
