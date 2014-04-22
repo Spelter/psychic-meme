@@ -179,6 +179,14 @@ function generateCoordinatesForNorway () {
 			};
 			//response.json(ret);
 			//response.json(docs);
+
+			var subStretchesArray = [];
+			for (var i = 0; i < area.baner.length; i++) {
+				subStretchesArray.push(generateCoordinatesForArea(docs[i]);
+			};
+
+			return subStretchesArray;
+
 			console.log(docs);
 			return docs;
 		}
