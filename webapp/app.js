@@ -193,9 +193,9 @@ function generateCoordinatesForLine (line) {
 	var stretchesCounter = 0;
 	var lat = 0;
 	var lon = 0;
-	console.log(subStretches);
 	for (var i = 0; i < subStretches.length; i++) {
 		stretchesCounter++;
+		console.log(subStretches[i]);
 		lat += subStretches[i].geometry.coordinates[0];
 		lon += subStretches[i].geometry.coordinates[1];
 	};
