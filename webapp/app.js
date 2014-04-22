@@ -116,7 +116,6 @@ function handleViewQuery(request, response){
 		generateCoordinatesForNorway(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, function (area) {
-			console.log(area);
 			if (area.omrade === requestedArea) {
 				generateCoordinatesForArea(returnValue, docs);
 			} else {
