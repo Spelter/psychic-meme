@@ -128,13 +128,13 @@ function handleViewQuery(request, response){
 						for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 							//console.log(area[0].baner[i].banestrekninger[j].banestrekning);
 							if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
-								returnValue += '{ "type": "FeatureCollection",' +
-                						'"features": [';
+								//returnValue += '{ "type": "FeatureCollection",' +
+                				//		'"features": [';
 								generateCoordinatesForStretch(returnValue, area[0].baner[i].banestrekninger[j]);
 								//console.log("found stretch");
 								//returnValue = area[0].baner[i].banestrekninger[j];
-								returnValue += ']' +
-											 '}';
+								//returnValue += ']' +
+								//			 '}';
 								isStretch = true;
 								break;
 							}
