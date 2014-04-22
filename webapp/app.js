@@ -142,7 +142,7 @@ function handleViewQuery(request, response){
 			returnValue += ']' +
 						 '}';
 			console.log(returnValue);
-			response.send(returnValue);
+			response.json(returnValue);
 		});
 	};
 }
