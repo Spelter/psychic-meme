@@ -149,7 +149,7 @@ function handleViewQuery(request, response){
 }
 
 
-function databaseLocateWantedLocation(areaName, respone, callback) {
+function databaseLocateWantedLocation(areaName, response, callback) {
 	baner.find({ $or: [ {omrade: areaName },
 		{baner: { $elemMatch: { banesjef: areaName } } }, 
 		{baner: { $elemMatch: { banestrekninger: { $elemMatch: { banestrekning: areaName } } } } } ] }, 
