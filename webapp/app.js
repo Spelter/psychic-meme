@@ -186,7 +186,7 @@ function generateCoordinatesForNorway (callback) {
 function generateDummyClusterForArea (area) {
 	var subStretchesArray = [];
 	for (var i = 0; i < area.baner.length; i++) {
-		subStretchesArray.push(generateCoordinatesForLine(area.baner[i]));
+		subStretchesArray.push(generateDummyClusterForLine(area.baner[i]));
 	};
 	var stretchesCounter = 0;
 	var lat = 0;
