@@ -264,6 +264,7 @@ $(document).ready(function() {
 
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers;
+        console.log(searchName);
         $.getJSON('http://localhost:8080/rail/station')
             .done(function(data) {
             //console.log(data);
