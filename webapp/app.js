@@ -175,7 +175,7 @@ function generateCoordinatesForNorway (callback) {
 		} else {
 			var subStretchesArray = [];
 			for (var i = 0; i < docs.length; i++) {
-				subStretchesArray.push(generateCoordinatesForArea(docs[i]));
+				subStretchesArray.push(generateDummyClusterForArea(docs[i]));
 				console.log(subStretchesArray[i]);
 			};
 			callback(subStretchesArray);
