@@ -117,7 +117,7 @@ function handleViewQuery(request, response){
 		generateCoordinatesForNorway(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
-			if (area.omrade === requestedArea) {
+			if (area[0].omrade === requestedArea) {
 				returnValue = generateCoordinatesForArea(area[0]);
 			} else {
 				for (var i = 0; i < area[0].baner.length; i++) {
