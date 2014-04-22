@@ -182,7 +182,7 @@ function generateCoordinatesForNorway () {
 
 			var subStretchesArray = [];
 			for (var i = 0; i < area.baner.length; i++) {
-				subStretchesArray.push(generateCoordinatesForArea(docs[i]);
+				subStretchesArray.push(generateCoordinatesForArea(docs[i]));
 			};
 
 			return subStretchesArray;
