@@ -200,7 +200,7 @@ function generateCoordinatesForArea (area) {
 	var properties = new Object();
 	properties.type = "node";
 	var tags = new Object();
-	tags.name = area.banesjef;
+	tags.name = area.omrade;
 	properties.tags = tags;
 	newLocation.properties = properties;
 
