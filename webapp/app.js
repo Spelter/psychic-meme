@@ -129,7 +129,7 @@ function handleViewQuery(request, response){
 						for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 							if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
 								//returnValue = area[0].baner[i].banestrekninger[j];
-								returnValue = generateCoordinatesForStretch(area[0].baner[i]);
+								returnValue = generateCoordinatesForStretch(area[0].baner[i].banestrekninger[j]);
 								isStretch = true;
 								break;
 							}
