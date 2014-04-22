@@ -181,7 +181,7 @@ function generateCoordinatesForNorway (returnValue) {
 
 function generateCoordinatesForArea (area) {
 	var subStretchesArray = [];
-	for (var i = 0; i < area.banestrekninger.length; i++) {
+	for (var i = 0; i < area.baner.length; i++) {
 		subStretchesArray.push(generateCoordinatesForLine(area.baner[i]));
 	};
 	var stretchesCounter = 0;
