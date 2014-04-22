@@ -114,7 +114,7 @@ $(document).ready(function() {
         layers: [Thunderforest_Transport, railStations],
         worldCopyJump: true
     });
-    $.getJSON('http://localhost:8080/rail/station')
+    /*$.getJSON('http://localhost:8080/rail/station')
         .done(function(data) {
         //Start "geoJson"-motoren til Leaflet. Den tar inn et JSON-objekt i en variabel. Denne har vi definert i JSON-filen i index.html
         L.geoJson(data, {
@@ -135,7 +135,7 @@ $(document).ready(function() {
         //legg til punktene til "layer control"
         //markers.addLayer(railStations);
 //        map.layerControl.addOverlay(railStations, 'Datalag (geojson)');
-    });
+    });*/
 
 
     var baseMaps = {
