@@ -268,7 +268,7 @@ function createDemoList () {
 
 function adaptMapToCurrentSelection (searchName) {
     //railStations.clearLayers;
-    $.getJSON('http://localhost:8080/rail/view/' + searchName)
+    $.getJSON('http://localhost:8080/rail/station')
         .done(function(data) {
         var railStations = L.geoJson(data, {
             pointToLayer: function (feature, latlng) {
