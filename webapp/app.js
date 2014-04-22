@@ -227,12 +227,19 @@ function generateCoordinatesForStretch (stretch) {
 	lon = lon / stationCounter;
 	var newLocation = new Object();
 	newLocation.type = "Feature";
-	newLocation.properties.type = "node";
-	newLocation.properties.tags.name = stretch.banestrekning;
-	newLocation.geometry.type = "Point";
+	var properties = new Object();
+	properties.type = "node";
+	var tags = new Object();
+	tags.name = stretch.banestrekning;
+	properties.tags = tags;
+	newLocation.properties = properties;
+
+	var geometry = new Object();
+	geometry.type = "Point";
 	var coordinates = [];
 	coordinates.push(lat);
 	coordinates.push(lon);
-	newLocation.geometry.coordinates = coordinates;
+	geometry.coordinates = coordinates;
+	newLocation.geometry = geometry;
 	return newLocation;
 }
