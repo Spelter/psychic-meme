@@ -186,7 +186,7 @@ function generateCoordinatesForNorway (returnValue) {
 	});
 }
 
-function generateCoordinatesForArea (area) {
+function generateDummyClusterForArea (area) {
 	var subStretchesArray = [];
 	for (var i = 0; i < area.baner.length; i++) {
 		subStretchesArray.push(generateCoordinatesForLine(area.baner[i]));
@@ -220,6 +220,23 @@ function generateCoordinatesForArea (area) {
 	newLocation.geometry = geometry;
 
 	return newLocation;
+}
+
+function generateCoordinatesForArea (area) {
+	var subStretchesArray = [];
+	for (var i = 0; i < area.baner.length; i++) {
+		subStretchesArray.push(generateCoordinatesForLine(area.baner[i]));
+	};
+	var stretchesCounter = 0;
+	var lat = 0;
+	var lon = 0;
+	for (var i = 0; i < subStretchesArray.length; i++) {
+		stretchesCounter++;
+		lat += subStretchesArray[i].geometry.coordinates[0];
+		lon += subStretchesArray[i].geometry.coordinates[1];
+	};
+	
+	return subStretchesArray;
 }
 
 function generateCoordinatesForLine (line) {
