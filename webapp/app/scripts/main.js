@@ -274,7 +274,7 @@ $(document).ready(function() {
                     //var popupOptions = {maxWidth: 20};
                     var popupContent = feature.properties.tags.name;
                     //return generatePieChartForCluster(latlng);
-                    coordinates.push(feature.geometry.coordinates);
+                    coordinates.push(new L.latLng(feature.geometry.coordinates[0], feature.geometry.coordinates[1]));
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
