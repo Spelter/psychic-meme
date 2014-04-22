@@ -141,9 +141,9 @@ function handleViewQuery(request, response){
 					}
 				};
 			}
+			console.log(returnValue);
+			response.send(returnValue);
 		});
-		console.log(returnValue);
-		response.send(returnValue);
 	};
 	//response.send(500);
 }
