@@ -225,20 +225,14 @@ function generateCoordinatesForStretch (stretch) {
 	};
 	lat = lat / stationCounter;
 	lon = lon / stationCounter;
-	var newLocation = '{ "type": "Feature",' +
-                '"properties": {' +
-                  '"type": "node",' +
-                  '"tags": {' +
-                    '"name": "' + stretch.banestrekning + '"' +
-	                  '}' +
-	                '},' +
-                '"geometry": {' +
-                  '"type": "Point",' +
-                  '"coordinates": [' +
-                    + lat + ',' +
-                    + lon + 
-                  	']' +
-                  '}' +
-              	'}';
-	return JSON.stringify(newLocation);
+	var newLocation = new Object();
+	newLocation.type = "Feature";
+	newLocation.properties.type = node;
+	newLocation.properties.tags.name = stretch.banestrekning;
+	newLocation.geometry.type = "Point";
+	var coordinates = [];
+	coordinates.push(lat);
+	coordinates.push(lon);
+	newLocation.geometry.coordinates = coordinates;
+	return newLocation;
 }
