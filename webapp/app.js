@@ -233,7 +233,7 @@ function generateCoordinatesForStretch (returnValue, stretch) {
 	lat = lat / stationCounter;
 	lon = lon / stationCounter;
 	console.log(returnValue);
-	var newLocation; = '{ "type": "Feature",' +
+	var newLocation = '{ "type": "Feature",' +
                 '"properties": {' +
                   '"type": "node",' +
                   '"tags": {' +
