@@ -178,7 +178,6 @@ function generateCoordinatesForNorway (callback) {
 				subStretchesArray.push(generateCoordinatesForArea(docs[i]));
 				console.log(subStretchesArray[i]);
 			};
-			console.log(subStretchesArray)
 			callback(subStretchesArray);
 		}
 	});
