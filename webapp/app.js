@@ -173,11 +173,11 @@ function generateCoordinatesForNorway (callback) {
 		if (err) {
 			console.log(err);
 		} else {
-
 			var subStretchesArray = [];
 			for (var i = 0; i < docs.length; i++) {
 				subStretchesArray.push(generateCoordinatesForArea(docs[i]));
 			};
+			console.log(subStretchesArray)
 			callback(subStretchesArray);
 		}
 	});
