@@ -267,7 +267,7 @@ $(document).ready(function() {
         railStations.clearLayers;
         $.getJSON('http://localhost:8080/rail/station')
             .done(function(data) {
-            var railStations = L.geoJson(data, {
+            L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
                     //var popupOptions = {maxWidth: 20};
                     var popupContent = feature.properties.tags.name;

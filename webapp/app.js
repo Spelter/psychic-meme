@@ -113,7 +113,7 @@ function handleViewQuery(request, response){
 	//var returnValue = '{ "type": "FeatureCollection",' +
     //            						'"features": [';
     var returnValue = "";
-	if (requestedArea === 'Norway') {
+	if (requestedArea === 'Norge') {
 		generateCoordinatesForNorway(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
