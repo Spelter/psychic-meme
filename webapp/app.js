@@ -180,6 +180,7 @@ function generateCoordinatesForNorway () {
 			};
 			//response.json(ret);
 			//response.json(docs);
+			console.log(docs.length);
 
 			var subStretchesArray = [];
 			for (var i = 0; i < docs.length; i++) {
