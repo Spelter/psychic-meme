@@ -50,7 +50,7 @@ function baneSjefer(request, response){
 }
 
 function omradeSjefer(request, response){
-	baner.find({}, '-_id', function(err, docs){
+	baner.find({}, '-baner -_id', function(err, docs){
 		if (err) {
 			console.log(err);
 		} else {
@@ -118,7 +118,7 @@ function handleViewQuery(request, response){
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
 			if (area.omrade === requestedArea) {
-				returnValue = generateCoordinatesForArea(docs);
+				returnValue = generateCoordinatesForArea(area[0]);
 			} else {
 				for (var i = 0; i < area[0].baner.length; i++) {
 					var isStretch = false;
@@ -181,8 +181,8 @@ function generateCoordinatesForNorway (returnValue) {
 
 function generateCoordinatesForArea (area) {
 	var subStretchesArray = [];
-	for (var i = 0; i < line.banestrekninger.length; i++) {
-		subStretchesArray.push(generateCoordinatesForLine(line.banestrekninger[i]));
+	for (var i = 0; i < area.banestrekninger.length; i++) {
+		subStretchesArray.push(generateCoordinatesForLine(area.baner[i]));
 	};
 	var stretchesCounter = 0;
 	var lat = 0;
@@ -200,7 +200,7 @@ function generateCoordinatesForArea (area) {
 	var properties = new Object();
 	properties.type = "node";
 	var tags = new Object();
-	tags.name = line.banesjef;
+	tags.name = area.banesjef;
 	properties.tags = tags;
 	newLocation.properties = properties;
 
