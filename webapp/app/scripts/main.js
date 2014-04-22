@@ -278,5 +278,5 @@ function adaptMapToCurrentSelection (searchName) {
                 return L.marker(latlng).bindPopup(popupContent);
             }
         }).addTo(railStations);
-    }
+    });
 };
