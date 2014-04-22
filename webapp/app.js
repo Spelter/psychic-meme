@@ -110,8 +110,9 @@ function station(request, response){
 
 function handleViewQuery(request, response){
 	var requestedArea = request.params.id;
-	var returnValue = '{ "type": "FeatureCollection",' +
-                						'"features": [';
+	//var returnValue = '{ "type": "FeatureCollection",' +
+    //            						'"features": [';
+    var returnValue = "";
 	if (requestedArea === 'Norway') {
 		generateCoordinatesForNorway(returnValue);
 	} else {
@@ -139,8 +140,8 @@ function handleViewQuery(request, response){
 					}
 				};
 			}
-			returnValue += ']' +
-						 '}';
+			//returnValue += ']' +
+			//			 '}';
 			console.log(returnValue);
 			response.json(returnValue);
 		});
