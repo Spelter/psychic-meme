@@ -270,7 +270,7 @@ function generateDummyClusterForLine (line) {
 function generateCoordinatesForLine (line) {
 	var subStretchesArray = [];
 	for (var i = 0; i < line.banestrekninger.length; i++) {
-		subStretchesArray.push(generateDummyClusterForLine(line.banestrekninger[i]));
+		subStretchesArray.push(generateDummyClusterForStretch(line.banestrekninger[i]));
 	};
 
 	return subStretchesArray;
@@ -280,7 +280,6 @@ function generateDummyClusterForStretch (stretch) {
 	var stationCounter = 0;
 	var lat = 0;
 	var lon = 0;
-	console.log(stretch);
 	for (var i = 0; i < stretch.stasjoner.length; i++) {
 		stationCounter++;
 		lat += stretch.stasjoner[i].geometry.coordinates[0];
