@@ -227,7 +227,7 @@ function generateCoordinatesForStretch (stretch) {
 	lon = lon / stationCounter;
 	var newLocation = new Object();
 	newLocation.type = "Feature";
-	newLocation.properties.type = node;
+	newLocation.properties.type = "node";
 	newLocation.properties.tags.name = stretch.banestrekning;
 	newLocation.geometry.type = "Point";
 	var coordinates = [];
