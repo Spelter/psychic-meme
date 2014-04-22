@@ -303,5 +303,5 @@ function generateDummyClusterForStretch (stretch) {
 	geometry.coordinates = coordinates;
 	newLocation.geometry = geometry;
 
-	return stretch;
+	return newLocation;
 }
