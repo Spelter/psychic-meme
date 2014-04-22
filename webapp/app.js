@@ -238,15 +238,16 @@ function generateCoordinatesForStretch (returnValue, stretch) {
                   '"type": "node",' +
                   '"tags": {' +
                     '"name": "' + stretch.banestrekning + '"' +
-                  '}' +
-                '},' +
+	                  '}' +
+	                '},' +
                 '"geometry": {' +
                   '"type": "Point",' +
                   '"coordinates": [' +
                     + lat + ',' +
                     + lon + 
-                  ']' +
-                '}' +
-              '}';
+                  	']' +
+                  '}' +
+              	'}' + 
+              	'}';
     console.log(returnValue);
 }
