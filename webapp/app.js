@@ -50,7 +50,7 @@ function baneSjefer(request, response){
 }
 
 function omradeSjefer(request, response){
-	baner.find({}, '-baner -_id', function(err, docs){
+	baner.find({}, '-_id', function(err, docs){
 		if (err) {
 			console.log(err);
 		} else {
@@ -59,8 +59,8 @@ function omradeSjefer(request, response){
 					ret.push(docs[i].omrade);
 				
 			};
-			response.json(ret);
-			//response.json(docs);
+			//response.json(ret);
+			response.json(docs);
 		}
 	});
 }
