@@ -78,8 +78,8 @@ function seksjoner(request, response){
 					};
 				};
 			};
-			//response.json(ret);
-			response.json(docs);
+			response.json(ret);
+			//response.json(docs);
 		}
 	});
 }
