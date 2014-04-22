@@ -116,19 +116,19 @@ function handleViewQuery(request, response){
 		generateCoordinatesForNorway(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, function (area) {
-			if (docs.omrade === requestedArea) {
+			if (area.omrade === requestedArea) {
 				generateCoordinatesForArea(returnValue, docs);
 			} else {
-				for (var i = 0; i < docs.baner.length; i++) {
+				for (var i = 0; i < area.baner.length; i++) {
 					var isStretch = false;
-					if (docs.baner[i].banesjef === requestedArea) {
-						generateCoordinatesForLine(returnValue, docs.baner[i]);
+					if (area.baner[i].banesjef === requestedArea) {
+						generateCoordinatesForLine(returnValue, area.baner[i]);
 						break;
 					} else {
-						for (var j = 0; j < docs.baner[i].banestrekninger.length; j++) {
-							if (docs.baner[i].banestrekninger[j].banestrekning) {
-								generateCoordinatesForStretch(returnValue, docs.baner[i].banestrekninger[j]);
-								//returnValue = docs.baner[i].banestrekninger[j];
+						for (var j = 0; j < area.baner[i].banestrekninger.length; j++) {
+							if (area.baner[i].banestrekninger[j].banestrekning) {
+								generateCoordinatesForStretch(returnValue, area.baner[i].banestrekninger[j]);
+								//returnValue = area.baner[i].banestrekninger[j];
 								isStretch = true;
 								break;
 							}
