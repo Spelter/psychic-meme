@@ -115,7 +115,7 @@ function handleViewQuery(request, response){
 	if (requestedArea === 'Norway') {
 		generateCoordinatesForNorway(returnValue);
 	} else {
-		databaseLocateWantedLocation(requestedArea, function (area) {
+		databaseLocateWantedLocation(requestedArea, response, function (area) {
 			if (area.omrade === requestedArea) {
 				returnValue += generateCoordinatesForArea(docs);
 			} else {
@@ -145,7 +145,6 @@ function handleViewQuery(request, response){
 			response.send(returnValue);
 		});
 	};
-	response.send(500);
 }
 
 
@@ -156,8 +155,8 @@ function databaseLocateWantedLocation(areaName, callback) {
 		 function(err, docs){
 		if (err) {
 			console.log(err);
+			response.send(500)
 		} else {
-			//console.log(docs);
 			callback(docs);
 		}
 	});
@@ -186,14 +185,15 @@ function generateCoordinatesForLine (line) {
 	var subStretches = '[';
 	for (var i = 0; i < line.banestrekninger.length; i++) {
 		if (i > 0) {
-			subStretches += '';
+			subStretches += ',';
 		}
-		generateCoordinatesForStretch(subStretches, line.banestrekninger[i]);
+		subStretches += generateCoordinatesForStretch(line.banestrekninger[i]);
 	};
 	subStretches += ']';
 	var stretchesCounter = 0;
 	var lat = 0;
 	var lon = 0;
+	console.log(subStretches);
 	for (var i = 0; i < subStretches.length; i++) {
 		stretchesCounter++;
 		lat += subStretches[i].geometry.coordinates[0];
