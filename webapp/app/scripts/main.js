@@ -1,8 +1,7 @@
 'use strict';
 var map;
-var railStations;
+var railStations = new L.LayerGroup();
 $(document).ready(function() {
-    railStations = new L.LayerGroup();
     L.Icon.Default.imagePath = '/images/';
     var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/733e599a1fe841afaceb855b0ac0f833/{styleId}/256/{z}/{x}/{y}.png',
         cloudmadeAttribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade';
@@ -235,6 +234,19 @@ $(document).ready(function() {
 
     map.on('click', onMapClick);*/
 
+    function adaptMapToCurrentSelection (searchName) {
+        railStations.clearLayers;
+        $.getJSON('http://localhost:8080/rail/view/' + searchName)
+            .done(function(data) {
+            var railStations = L.geoJson(data, {
+                pointToLayer: function (feature, latlng) {
+                    //var popupOptions = {maxWidth: 20};
+                    var popupContent = feature.properties.tags.name;
+                    //return generatePieChartForCluster(latlng);
+                    return L.marker(latlng).bindPopup(popupContent);
+                }
+        }).addTo(railStations);
+    }
 });
 
 function createDemoList () {                    
@@ -267,16 +279,3 @@ function createDemoList () {
 }
 
 
-function adaptMapToCurrentSelection (searchName) {
-    railStations.clearLayers;
-    $.getJSON('http://localhost:8080/rail/view/' + searchName)
-        .done(function(data) {
-        var railStations = L.geoJson(data, {
-            pointToLayer: function (feature, latlng) {
-                //var popupOptions = {maxWidth: 20};
-                var popupContent = feature.properties.tags.name;
-                //return generatePieChartForCluster(latlng);
-                return L.marker(latlng).bindPopup(popupContent);
-            }
-    }).addTo(railStations);
-}
