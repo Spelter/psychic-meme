@@ -179,8 +179,9 @@ function generateCoordinatesForNorway (returnValue) {
 					ret.push(docs[i].omrade);
 				
 			};
-			response.json(ret);
+			//response.json(ret);
 			//response.json(docs);
+			return ret;
 		}
 	});
 }
