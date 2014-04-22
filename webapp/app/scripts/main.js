@@ -1,5 +1,6 @@
 'use strict';
 var map;
+var railStations;
 $(document).ready(function() {
     L.Icon.Default.imagePath = '/images/';
     var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/733e599a1fe841afaceb855b0ac0f833/{styleId}/256/{z}/{x}/{y}.png',
@@ -116,7 +117,7 @@ $(document).ready(function() {
     $.getJSON('http://localhost:8080/rail/station')
         .done(function(data) {
         //Start "geoJson"-motoren til Leaflet. Den tar inn et JSON-objekt i en variabel. Denne har vi definert i JSON-filen i index.html
-        var railStations = L.geoJson(data, {
+        L.geoJson(data, {
             //onEachFeature: visPopup,//vi refererer til funksjonen vi skal kalle. Husk at funksjonen også er et objekt
 
             /*onEachFeature: function (feature, layer) {
