@@ -59,8 +59,8 @@ function omradeSjefer(request, response){
 					ret.push(docs[i].omrade);
 				
 			};
-			//response.json(ret);
-			response.json(docs);
+			response.json(ret);
+			//response.json(docs);
 		}
 	});
 }
@@ -118,7 +118,7 @@ function handleViewQuery(request, response){
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
 			if (area.omrade === requestedArea) {
-				returnValue += generateCoordinatesForArea(docs);
+				returnValue = generateCoordinatesForArea(docs);
 			} else {
 				for (var i = 0; i < area[0].baner.length; i++) {
 					var isStretch = false;
@@ -180,6 +180,39 @@ function generateCoordinatesForNorway (returnValue) {
 }
 
 function generateCoordinatesForArea (area) {
+	var subStretchesArray = [];
+	for (var i = 0; i < line.banestrekninger.length; i++) {
+		subStretchesArray.push(generateCoordinatesForLine(line.banestrekninger[i]));
+	};
+	var stretchesCounter = 0;
+	var lat = 0;
+	var lon = 0;
+	for (var i = 0; i < subStretchesArray.length; i++) {
+		stretchesCounter++;
+		lat += subStretchesArray[i].geometry.coordinates[0];
+		lon += subStretchesArray[i].geometry.coordinates[1];
+	};
+	lat = lat / stretchesCounter;
+	lon = lon / stretchesCounter;
+
+	var newLocation = new Object();
+	newLocation.type = "Feature";
+	var properties = new Object();
+	properties.type = "node";
+	var tags = new Object();
+	tags.name = line.banesjef;
+	properties.tags = tags;
+	newLocation.properties = properties;
+
+	var geometry = new Object();
+	geometry.type = "Point";
+	var coordinates = [];
+	coordinates.push(lat);
+	coordinates.push(lon);
+	geometry.coordinates = coordinates;
+	newLocation.geometry = geometry;
+
+	return newLocation;
 }
 
 function generateCoordinatesForLine (line) {
