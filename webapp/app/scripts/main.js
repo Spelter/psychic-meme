@@ -194,7 +194,7 @@ $(document).ready(function() {
     event.preventDefault();
     showAlert();
   });
-    //adaptMapToCurrentSelection('Norge');
+    adaptMapToCurrentSelection('Norge');
 
 
     //map.layerControl = L.control.layers(baseMaps, overlayMaps, {position:'topRight'}).addTo(map);
@@ -267,6 +267,7 @@ $(document).ready(function() {
         railStations.clearLayers;
         $.getJSON('http://localhost:8080/rail/station')
             .done(function(data) {
+                log.console(data);
             L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
                     //var popupOptions = {maxWidth: 20};
