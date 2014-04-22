@@ -247,7 +247,6 @@ function generateCoordinatesForStretch (returnValue, stretch) {
                     + lon + 
                   	']' +
                   '}' +
-              	'}' + 
               	'}';
     console.log(returnValue);
 }
