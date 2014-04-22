@@ -116,7 +116,7 @@ function handleViewQuery(request, response){
 		generateCoordinatesForNorway(returnValue);
 	} else {
 		databaseLocateWantedLocation(requestedArea, function (area) {
-			response.send(area);
+			console.log(area);
 			if (area.omrade === requestedArea) {
 				generateCoordinatesForArea(returnValue, docs);
 			} else {
@@ -141,7 +141,7 @@ function handleViewQuery(request, response){
 				};
 			}
 		});
-		//response.send(returnValue);
+		response.send(returnValue);
 	};
 	//response.send(500);
 }
