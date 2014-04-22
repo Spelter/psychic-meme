@@ -237,7 +237,7 @@ function generateCoordinatesForStretch (returnValue, stretch) {
                 '"properties": {' +
                   '"type": "node",' +
                   '"tags": {' +
-                    '"name": ' + stretch.banestrekning + 
+                    '"name": "' + stretch.banestrekning + '"' +
                   '}' +
                 '},' +
                 '"geometry": {' +
