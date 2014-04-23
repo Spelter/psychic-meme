@@ -130,7 +130,6 @@ function handleViewQuery(request, response){
 					} else {
 						for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 							if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
-								//returnValue = area[0].baner[i].banestrekninger[j];
 								returnValue = generateCoordinatesForStretch(area[0].baner[i].banestrekninger[j]);
 								isStretch = true;
 								break;
@@ -142,8 +141,6 @@ function handleViewQuery(request, response){
 					}
 				};
 			}
-			//returnValue += ']' +
-			//			 '}';
 			response.json(returnValue);
 		});
 	};
@@ -183,36 +180,33 @@ function generateCoordinatesForNorway (callback) {
 }
 
 function generateDummyClusterForArea (area) {
-	var subStretchesArray = [];
-	for (var i = 0; i < area.baner.length; i++) {
-		subStretchesArray.push(generateDummyClusterForLine(area.baner[i]));
-	};
-	var stretchesCounter = 0;
+	var subStretchesArray = generateCoordinatesForArea(area);
 	var lat = 0;
 	var lon = 0;
 	for (var i = 0; i < subStretchesArray.length; i++) {
-		stretchesCounter++;
 		lat += subStretchesArray[i].geometry.coordinates[0];
 		lon += subStretchesArray[i].geometry.coordinates[1];
 	};
-	lat = lat / stretchesCounter;
-	lon = lon / stretchesCounter;
-	var newLocation = new Object();
-	newLocation.type = "Feature";
-	var properties = new Object();
-	properties.type = "node";
-	var tags = new Object();
-	tags.name = area.omrade;
-	properties.tags = tags;
-	newLocation.properties = properties;
 
-	var geometry = new Object();
-	geometry.type = "Point";
-	var coordinates = [];
-	coordinates.push(lat);
-	coordinates.push(lon);
-	geometry.coordinates = coordinates;
-	newLocation.geometry = geometry;
+	lat = lat / subStretchesArray.length;
+	lon = lon / subStretchesArray.length;
+
+	var newLocation = {
+		type: 'Feature',
+		properties: {
+			type: 'node',
+			tags: {
+				name: area.omrade
+			}
+		},
+		geometry: {
+			type: 'Point',
+			coordinates: [
+				lat,
+				lon
+			]
+		}
+	};
 
 	return newLocation;
 }
@@ -227,38 +221,32 @@ function generateCoordinatesForArea (area) {
 }
 
 function generateDummyClusterForLine (line) {
-	var subStretchesArray = [];
-	for (var i = 0; i < line.banestrekninger.length; i++) {
-		subStretchesArray.push(generateDummyClusterForStretch(line.banestrekninger[i]));
-	};
-	var stretchesCounter = 0;
+	var subStretchesArray = generateCoordinatesForLine(line);
 	var lat = 0;
 	var lon = 0;
 	for (var i = 0; i < subStretchesArray.length; i++) {
-		stretchesCounter++;
-
 		lat += subStretchesArray[i].geometry.coordinates[0];
 		lon += subStretchesArray[i].geometry.coordinates[1];
 	};
-	lat = lat / stretchesCounter;
-	lon = lon / stretchesCounter;
+	lat = lat / subStretchesArray.length;
+	lon = lon / subStretchesArray.length;
 
-	var newLocation = new Object();
-	newLocation.type = "Feature";
-	var properties = new Object();
-	properties.type = "node";
-	var tags = new Object();
-	tags.name = line.banesjef;
-	properties.tags = tags;
-	newLocation.properties = properties;
-
-	var geometry = new Object();
-	geometry.type = "Point";
-	var coordinates = [];
-	coordinates.push(lat);
-	coordinates.push(lon);
-	geometry.coordinates = coordinates;
-	newLocation.geometry = geometry;
+	var newLocation = {
+		type: 'Feature',
+		properties: {
+			type: 'node',
+			tags: {
+				name: line.banesjef
+			}
+		},
+		geometry: {
+			type: 'Point',
+			coordinates: [
+				lat,
+				lon
+			]
+		}
+	};
 
 	return newLocation;
 }
@@ -284,22 +272,22 @@ function generateDummyClusterForStretch (stretch) {
 	lat = lat / stationCounter;
 	lon = lon / stationCounter;
 
-	var newLocation = new Object();
-	newLocation.type = "Feature";
-	var properties = new Object();
-	properties.type = "node";
-	var tags = new Object();
-	tags.name = stretch.banestrekning;
-	properties.tags = tags;
-	newLocation.properties = properties;
-
-	var geometry = new Object();
-	geometry.type = "Point";
-	var coordinates = [];
-	coordinates.push(lat);
-	coordinates.push(lon);
-	geometry.coordinates = coordinates;
-	newLocation.geometry = geometry;
+	var newLocation = {
+		type: 'Feature',
+		properties: {
+			type: 'node',
+			tags: {
+				name: stretch.banestrekning
+			}
+		},
+		geometry: {
+			type: 'Point',
+			coordinates: [
+				lat,
+				lon
+			]
+		}
+	};
 
 	return newLocation;
 }
