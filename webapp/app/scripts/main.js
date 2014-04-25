@@ -276,7 +276,8 @@ $(document).ready(function() {
                     var popupContent = feature.properties.tags.name;
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
-                    return L.marker(latlng, L.divIcon({ html: 'foo bar' }));
+                    var htmlIcon = L.divIcon({ iconSize: new L.Point(50, 50), html: 'foo bar' });
+                    return L.marker(latlng, {icon: htmlIcon}).bindPopup(popupContent);
                     //return L.divIcon({ iconSize: new L.Point(50, 50), html: 'foo bar' });
                 }
             }).addTo(railStations);
