@@ -172,6 +172,22 @@
                     60.74673
                   ]
                 }
+              },
+              {
+                "type": "Feature",
+                "properties": {
+                  "type": "node",
+                  "tags": {
+                    "name": "HMR"
+                  }
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [
+                    11.07715,
+                    60.79128
+                  ]
+                }
               }
             ]
           },

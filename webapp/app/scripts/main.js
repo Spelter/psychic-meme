@@ -2,6 +2,8 @@
 var map;
 var railStations = new L.featureGroup();
 $(document).ready(function() {
+    //var host = 'http://' + window.document.location.host.replace(/:.*/, ''); //for build
+    var host = 'http://localhost:8080'; //for local testing
     L.Icon.Default.imagePath = '/images/';
     var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/733e599a1fe841afaceb855b0ac0f833/{styleId}/256/{z}/{x}/{y}.png',
         cloudmadeAttribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade';
@@ -163,7 +165,7 @@ $(document).ready(function() {
         this._div.innerHTML = htmlList;
     };
 
-    $.getJSON('http://localhost:8080/rail/section').done( function generateLayoutList(jsonList) {
+    $.getJSON(host + '/rail/section').done( function generateLayoutList(jsonList) {
                         var htmlListFromJson = '<div id="listContainer"><ul id="expList"><li>Norge<ul>';
                         for (var i = 0; i < jsonList.length; i++) {
                             htmlListFromJson += '<li>' + jsonList[i].omrade + '<ul>';
@@ -265,7 +267,7 @@ $(document).ready(function() {
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers();
         var coordinates = [];
-        $.getJSON('http://localhost:8080/rail/view/' + searchName)
+        $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
             //console.log(data);
             L.geoJson(data, {
@@ -274,10 +276,11 @@ $(document).ready(function() {
                     var popupContent = feature.properties.tags.name;
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
-                    return L.marker(latlng).bindPopup(popupContent);
+                    //return L.marker(latlng).bindPopup(popupContent);
+                    return L.divIcon({ html: '<textarea rows="4" cols="20" readonly>Testing textbox for statistical data</textarea'});
                 }
             }).addTo(railStations);
-            map.fitBounds(new L.latLngBounds(coordinates).pad(0.5));
+            map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
         });
         //map.fitBounds(railStations.getBounds());
     };
