@@ -276,7 +276,7 @@ $(document).ready(function() {
                     var popupContent = feature.properties.tags.name;
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
-                    var htmlIcon = L.divIcon({ classname: 'info', iconSize: new L.Point(50, 50), html: 'asdasdasd asd asd  <img src="../images/marker-icon.png" alt="" align="right">' });
+                    var htmlIcon = L.divIcon({ L.DomUtil.create('div', 'info'), iconSize: new L.Point(50, 50), html: 'asdasdasd asd asd  <img src="../images/marker-icon.png" alt="" align="right">' });
                     return L.marker(latlng, {icon: htmlIcon}).bindPopup(popupContent);
                     //return L.divIcon({ iconSize: new L.Point(50, 50), html: 'foo bar' });
                 }
