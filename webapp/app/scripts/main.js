@@ -277,7 +277,7 @@ $(document).ready(function() {
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
                     //return L.marker(latlng).bindPopup(popupContent);
-                    return L.divIcon({ html: '<textarea rows="4" cols="20" readonly>Testing textbox for statistical data</textarea'});
+                    return L.divIcon({ iconSize: new L.Point(50, 50), html: 'foo bar' });
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
