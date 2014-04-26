@@ -283,13 +283,14 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
+            console.log(map.getZoom());
             var infoBoxOffset;
             if (map.getZoom() > 8) {
                 infoBoxOffset = 0.1;
             } else if (map.getZoom > 6) {
                 infoBoxOffset = 0.5;
             } else {
-                infoBoxOffset = 2;
+                infoBoxOffset = 3;
             }
             railStationsInfoBoxes.eachLayer(function (info) {
                 info.setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
