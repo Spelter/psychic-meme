@@ -294,7 +294,7 @@ $(document).ready(function() {
             }
             console.log(infoBoxOffset);
             railStationsInfoBoxes.eachLayer(function (info) {
-                console.log(info.getLatLng());
+                console.log(info);
                 info.setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
             });
         });
