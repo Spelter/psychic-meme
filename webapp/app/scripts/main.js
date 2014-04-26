@@ -305,7 +305,7 @@ $(document).ready(function() {
         });
     };
 
-    map.on('zoomend' function (e) { console.log('ZOOMEND', e);});
+    map.on('zoomend', function (e) { console.log('ZOOMEND', e); });
 
 });
 
