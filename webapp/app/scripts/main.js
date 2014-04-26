@@ -283,7 +283,7 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
             console.log(map.getZoom());
-            console.log(10-(map.getZoom()%8));
+            console.log(10-(map.getZoom()%9));
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
         });
     };
