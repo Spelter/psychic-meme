@@ -271,7 +271,6 @@ $(document).ready(function() {
         var coordinates = [];
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
-            var infoBoxOffset;
             L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
                     //var popupOptions = {maxWidth: 20};
@@ -284,7 +283,17 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
-            console.log(map.getZoom());
+            var infoBoxOffset;
+            if (map.getZoom() > 8) {
+                infoBoxOffset = 0.1;
+            } else if (map.getZoom > 6) {
+                infoBoxOffset = 0.5;
+            } else {
+                infoBoxOffset = 2;
+            }
+            railStationsInfoBoxes.eachLayer(function (info) {
+                info.setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
+            });
         });
         //map.fitBounds(railStations.getBounds());
     };
