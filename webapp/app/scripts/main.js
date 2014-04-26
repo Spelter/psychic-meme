@@ -293,6 +293,7 @@ $(document).ready(function() {
                 infoBoxOffset = 3;
             }
             console.log(infoBoxOffset);
+            console.log(railStationsInfoBoxes);
             railStationsInfoBoxes.eachLayer(function (info) {
                 console.log(info);
                 info.setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
