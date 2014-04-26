@@ -303,8 +303,9 @@ $(document).ready(function() {
                 info.setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
             });*/
         });
-        //map.fitBounds(railStations.getBounds());
     };
+
+    map.on('zoomend' function (e) { console.log('ZOOMEND', e)});
 
 });
 
