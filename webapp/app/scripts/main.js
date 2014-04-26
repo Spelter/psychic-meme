@@ -114,7 +114,7 @@ $(document).ready(function() {
     map = L.map('map', {
         center: new L.LatLng(64.4367, 16.39882),
         zoom: 5,
-        layers: [Thunderforest_Transport, railStations],
+        layers: [Thunderforest_Transport, railStations, railStationsInfoBoxes],
         worldCopyJump: true
     });
     /*$.getJSON('http://localhost:8080/rail/station')
