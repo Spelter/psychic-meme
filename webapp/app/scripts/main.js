@@ -284,7 +284,6 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
-            console.log(map.getZoom());
             var infoBoxOffset;
             if (map.getZoom() > 8) {
                 infoBoxOffset = 0.1;
@@ -293,7 +292,7 @@ $(document).ready(function() {
             } else {
                 infoBoxOffset = 3;
             }
-            console.log(infoBoxOffset);
+            //console.log(infoBoxOffset);
             console.log(railStations);
             for (var i = 0; i < infoBoxes.length; i++) {
                 infoBoxes[i].setLatLng(infoBoxes[i].getLatLng().lat, infoBoxes[i].getLatLng().lng-infoBoxOffset);
