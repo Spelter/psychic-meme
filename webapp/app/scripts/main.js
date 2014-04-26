@@ -1,6 +1,7 @@
 'use strict';
 var map;
 var railStations = new L.featureGroup();
+var railStationsInfoBoxes = new L.featureGroup();
 $(document).ready(function() {
     //var host = 'http://' + window.document.location.host.replace(/:.*/, ''); //for build
     var host = 'http://localhost:8080'; //for local testing
@@ -266,6 +267,7 @@ $(document).ready(function() {
 
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers();
+        railStationsInfoBoxes.clearLayers();
         var coordinates = [];
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
@@ -276,9 +278,9 @@ $(document).ready(function() {
                     var popupContent = feature.properties.tags.name;
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
-                    var htmlIcon = L.divIcon({ classname: 'info', iconSize: new L.Point(50, 50), html: 'asdasdasd asd asd  <img src="../images/marker-icon.png" alt="" align="right">' });
-                    return L.marker(latlng, {icon: htmlIcon}).bindPopup(popupContent);
-                    //return L.divIcon({ iconSize: new L.Point(50, 50), html: 'foo bar' });
+                    var htmlIcon = L.divIcon({ classname: 'info', iconSize: new L.Point(50, 50), html: 'asdasdasd asd asd' });
+                    L.marker(new L.latLng(latlng.lat-2,latlng.lng), {icon: htmlIcon}).bindPopup(popupContent).addTo(railStationsInfoBoxes);
+                    return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
