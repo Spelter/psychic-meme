@@ -279,7 +279,7 @@ $(document).ready(function() {
                     coordinates.push(latlng);
                     var htmlIcon = L.divIcon({ classname: 'info', iconSize: new L.Point(50, 50), html: popupContent });
                     L.marker(new L.latLng(latlng.lat,latlng.lng-((map.getZoom()*0.9))), {icon: htmlIcon}).bindPopup(popupContent).addTo(railStationsInfoBoxes);
-                    console.log(map.getZoom()*0.1);
+                    console.log(map.getZoom()*0.9);
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
