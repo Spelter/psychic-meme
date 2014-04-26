@@ -271,8 +271,8 @@ $(document).ready(function() {
         var coordinates = [];
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
-            //console.log(data);
-            console.log((2-(map.getZoom()*0.1)));
+            var infoBoxOffset;
+            console.log(map.getZoom());
             L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
                     //var popupOptions = {maxWidth: 20};
