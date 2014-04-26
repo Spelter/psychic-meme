@@ -278,7 +278,7 @@ $(document).ready(function() {
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
                     var htmlIcon = L.divIcon({ classname: 'iconbox', iconSize: new L.Point(50, 50), html: popupContent });
-                    L.marker(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))), {icon: htmlIcon}).bindPopup(popupContent).addTo(railStationsInfoBoxes);
+                    L.marker(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))), {icon: htmlIcon}).addTo(railStationsInfoBoxes);
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
