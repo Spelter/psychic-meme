@@ -277,12 +277,11 @@ $(document).ready(function() {
                     var popupContent = feature.properties.tags.name;
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
-                    var htmlIcon = L.divIcon({ classname: 'info', iconSize: new L.Point(50, 50), html: popupContent });
+                    var htmlIcon = L.divIcon({ classname: 'iconbox', iconSize: new L.Point(50, 50), html: popupContent });
                     L.marker(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))), {icon: htmlIcon}).bindPopup(popupContent).addTo(railStationsInfoBoxes);
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
-            //console.log(map.getZoom());
             console.log(7-(map.getZoom()*0.7));
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
         });
