@@ -296,7 +296,7 @@ $(document).ready(function() {
             console.log(infoBoxOffset);
             console.log(railStationsInfoBoxes);
             for (var i = 0; i < infoBoxes.length; i++) {
-                infoBoxes[i].setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
+                infoBoxes[i].setLatLng(infoBoxes[i].getLatLng().lat, infoBoxes[i].getLatLng().lng-infoBoxOffset);
             };/*
             railStationsInfoBoxes.eachLayer(function (info) {
                 console.log(info);
