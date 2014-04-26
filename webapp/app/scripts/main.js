@@ -293,11 +293,11 @@ $(document).ready(function() {
                 infoBoxOffset = 3;
             }
             //console.log(infoBoxOffset);
-            console.log(infoBoxes);
+            /*console.log(infoBoxes);
             for (var i = 0; i < infoBoxes.length; i++) {
                 console.log(infoBoxes[i]);
                 infoBoxes[i].setLatLng(infoBoxes[i].getLatLng().lat, infoBoxes[i].getLatLng().lng-infoBoxOffset);
-            };/*
+            };*
             railStationsInfoBoxes.eachLayer(function (info) {
                 console.log(info);
                 info.setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
