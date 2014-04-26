@@ -272,7 +272,6 @@ $(document).ready(function() {
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
             L.geoJson(data, {
-                console.log(map.getZoom()*0.9);
                 pointToLayer: function (feature, latlng) {
                     //var popupOptions = {maxWidth: 20};
                     var popupContent = feature.properties.tags.name;
@@ -283,6 +282,7 @@ $(document).ready(function() {
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
+            console.log(map.getZoom()*0.9);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
         });
     };
