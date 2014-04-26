@@ -272,13 +272,13 @@ $(document).ready(function() {
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
             //console.log(data);
+            console.log(map.getZoom());
             L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
                     //var popupOptions = {maxWidth: 20};
                     var popupContent = feature.properties.tags.name;
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
-                    console.log(map.getZoom());
                     var htmlIcon = L.divIcon({ classname: 'info', iconSize: new L.Point(50, 50), html: 'asdasdasd asd asd' });
                     L.marker(new L.latLng(latlng.lat,latlng.lng-2), {icon: htmlIcon}).bindPopup(popupContent).addTo(railStationsInfoBoxes);
                     return L.marker(latlng).bindPopup(popupContent);
