@@ -272,7 +272,7 @@ $(document).ready(function() {
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
             //console.log(data);
-            console.log(map.getZoom());
+            console.log(map.getZoom()/2);
             L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
                     //var popupOptions = {maxWidth: 20};
