@@ -278,46 +278,13 @@ $(document).ready(function() {
                     //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
                     var htmlIcon = L.divIcon({ classname: 'info', iconSize: new L.Point(50, 50), html: popupContent });
-                    L.marker(new L.latLng(latlng.lat,latlng.lng-(2-(map.getZoom()*0.2))), {icon: htmlIcon}).bindPopup(popupContent).addTo(railStationsInfoBoxes);
+                    L.marker(new L.latLng(latlng.lat,latlng.lng-(2-(map.getZoom()*0.3))), {icon: htmlIcon}).bindPopup(popupContent).addTo(railStationsInfoBoxes);
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
-            /*var infoBoxOffset;
-            if (map.getZoom() > 8) {
-                infoBoxOffset = 0.1;
-            } else if (map.getZoom > 6) {
-                infoBoxOffset = 0.5;
-            } else {
-                infoBoxOffset = 3;
-            }
-            //console.log(infoBoxOffset);
-            console.log(infoBoxes);
-            for (var i = 0; i < infoBoxes.length; i++) {
-                console.log(infoBoxes[i]);
-                infoBoxes[i].setLatLng(infoBoxes[i].getLatLng().lat, infoBoxes[i].getLatLng().lng-infoBoxOffset);
-            };*
-            railStationsInfoBoxes.eachLayer(function (info) {
-                console.log(info);
-                info.setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
-            });*/
         });
     };
-
-    map.on('zoomend', function (e) { 
-        var infoBoxOffset;
-        if (map.getZoom() > 8) {
-            infoBoxOffset = 0.1;
-        } else if (map.getZoom > 6) {
-            infoBoxOffset = 0.5;
-        } else {
-            infoBoxOffset = 3;
-        }
-        railStationsInfoBoxes.eachLayer(function (info) {
-            console.log(info);
-            info.setLatLng(info.getLatLng().lat, info.getLatLng().lng-infoBoxOffset);
-        });
-    });
 
 });
 
