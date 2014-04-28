@@ -268,6 +268,7 @@ $(document).ready(function() {
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers();
         railStationsInfoBoxes.clearLayers();
+        map.removeLayer(railStationsInfoBoxes);
         var coordinates = [];
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
@@ -289,8 +290,8 @@ $(document).ready(function() {
                     layer.setLatLng(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))));
                 }
             });
+            map.addLayer(railStationsInfoBoxes);
         });
-        L.Util.requestAnimFrame(map.invalidateSize, map, false, map._container);
     };
 
 });
