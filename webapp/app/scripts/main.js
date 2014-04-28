@@ -285,14 +285,8 @@ $(document).ready(function() {
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
             for (var i = 0; i < coordinates.length; i++) {
                 var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: 'test' });
-                L.marker(new L.latLng(coordinates[i].lat,coordinates[i].lng-((7-(map.getZoom()*0.7)))), {icon: htmlIcon}).addTo(railStationsInfoBoxes);
-            };/*
-            railStationsInfoBoxes.eachLayer(function (layer) {
-                var latlng = layer.getLatLng();
-                if (latlng != null && latlng.lat != null && latlng.lng != null)  {
-                    layer.setLatLng(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))));
-                }
-            });*/
+                L.marker(new L.latLng(coordinates[i].lat,coordinates[i].lng-((8-(map.getZoom()*0.7)))), {icon: htmlIcon}).addTo(railStationsInfoBoxes);
+            };
         });
     };
 
