@@ -288,7 +288,7 @@ $(document).ready(function() {
                 if (latlng != null && latlng.lat != null && latlng.lng != null)  {
                     layer.setLatLng(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))));
                 }
-                map.invalidateSize();
+                map.invalidateSize(true);
             });
         });
     };
