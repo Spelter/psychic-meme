@@ -278,6 +278,7 @@ $(document).ready(function() {
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
+            console.log(map.getZoom());
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
             for (var i = 0; i < coordinates.length; i++) {
                 var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: 'test' });
