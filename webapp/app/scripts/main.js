@@ -282,8 +282,8 @@ $(document).ready(function() {
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
-                map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
-            console.log(railStationsInfoBoxes);
+            map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
+            console.log(map.getZoom());
             for (var i = 0; i < railStationsInfoBoxes.length; i++) {
                 var latlng = railStationsInfoBoxes[i].getLatLng();
                 if (latlng != null) {
