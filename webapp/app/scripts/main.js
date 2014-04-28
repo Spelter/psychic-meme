@@ -283,8 +283,8 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
-            console.log(map.getZoom());
             for (var i = 0; i < railStationsInfoBoxes.length; i++) {
+                console.log(map.getZoom());
                 var latlng = railStationsInfoBoxes[i].getLatLng();
                 if (latlng != null) {
                     railStationsInfoBoxes[i].setLatLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7))));
