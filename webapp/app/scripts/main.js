@@ -268,6 +268,7 @@ $(document).ready(function() {
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers();
         railStationsInfoBoxes.clearLayers();
+        console.log(railStations);
         var coordinates = [];
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
@@ -282,7 +283,8 @@ $(document).ready(function() {
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
-            console.log(7-(map.getZoom()*0.7));
+            console.log(railStations);
+            //console.log(7-(map.getZoom()*0.7));
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
         });
     };
