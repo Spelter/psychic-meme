@@ -283,14 +283,14 @@ $(document).ready(function() {
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
+            console.log('map zoomed');
             railStationsInfoBoxes.eachLayer(function (layer) {
                 var latlng = layer.getLatLng();
-                console.log(latlng);
                 if (latlng != null && latlng.lat != null && latlng.lng != null)  {
                     layer.setLatLng(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))));
                 }
             });
-            //console.log(7-(map.getZoom()*0.7));
+            console.log('info boxes moved');
         });
     };
 
