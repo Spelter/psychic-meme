@@ -286,7 +286,7 @@ $(document).ready(function() {
             railStationsInfoBoxes.eachLayer(function (layer) {
                 var latlng = layer.getLatLng();
                 console.log(latlng);
-                if (latlng != null) {
+                if (latlng != null && latlng.lat != null && latlng.lng != null)  {
                     layer.setLatLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7))));
                 }
             });
