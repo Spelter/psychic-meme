@@ -265,6 +265,10 @@ $(document).ready(function() {
         })
     }
 
+    map.on('zoomend', function() {
+    console.log(map.getZoom());
+    });
+
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers();
         railStationsInfoBoxes.clearLayers();
@@ -273,19 +277,15 @@ $(document).ready(function() {
             .done(function(data) {
             L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
-                    //var popupOptions = {maxWidth: 20};
                     var popupContent = feature.properties.tags.name;
-                    //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
-                    //var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: popupContent });
-                    //L.marker(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))), {icon: htmlIcon}).addTo(railStationsInfoBoxes);
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
             for (var i = 0; i < coordinates.length; i++) {
                 var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: 'test' });
-                L.marker(new L.latLng(coordinates[i].lat,coordinates[i].lng-((8-(map.getZoom()*0.7)))), {icon: htmlIcon}).addTo(railStationsInfoBoxes);
+                L.marker(new L.latLng(coordinates[i].lat,coordinates[i].lng-((7-(map.getZoom()*0.7)))), {icon: htmlIcon}).addTo(railStationsInfoBoxes);
             };
         });
     };
