@@ -291,6 +291,7 @@ $(document).ready(function() {
                 }
                 console.log(map.getZoom());
             });
+            map.invalidateSize();
         });
     };
 
