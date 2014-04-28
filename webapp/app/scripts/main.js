@@ -284,8 +284,8 @@ $(document).ready(function() {
             }).addTo(railStations);
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
             railStationsInfoBoxes.eachLayer(function (layer) {
-                console.log(map.getZoom());
                 var latlng = layer.getLatLng();
+                console.log(latlng);
                 if (latlng != null) {
                     layer.setLatLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7))));
                 }
