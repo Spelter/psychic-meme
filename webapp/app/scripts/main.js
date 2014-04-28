@@ -289,7 +289,7 @@ $(document).ready(function() {
                     layer.setLatLng(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))));
                 }
             });
-                L.Util.requestAnimFrame(map.invalidateSize, map, false, map._container)
+                L.Util.requestAnimFrame(map.invalidateSize, map, false, map._container);
         });
     };
 
