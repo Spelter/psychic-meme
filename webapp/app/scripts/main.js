@@ -268,7 +268,6 @@ $(document).ready(function() {
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers();
         railStationsInfoBoxes.clearLayers();
-        console.log(railStations);
         var coordinates = [];
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
@@ -283,10 +282,10 @@ $(document).ready(function() {
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
-            console.log(railStations);
             //console.log(7-(map.getZoom()*0.7));
             for (var i = 0; i < railStationsInfoBoxes.length; i++) {
                 var latlng = railStationsInfoBoxes[i].getLatLng();
+                console.log(latlng);
                 if (latlng != null) {
                     railStationsInfoBoxes[i].setLatLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7))));
                 }
