@@ -287,7 +287,7 @@ $(document).ready(function() {
                 var latlng = layer.getLatLng();
                 console.log(latlng);
                 if (latlng != null && latlng.lat != null && latlng.lng != null)  {
-                    layer.setLatLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7))));
+                    layer.setLatLng(new L.latLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7)))));
                 }
             });
             //console.log(7-(map.getZoom()*0.7));
