@@ -285,6 +285,12 @@ $(document).ready(function() {
             }).addTo(railStations);
             console.log(railStations);
             //console.log(7-(map.getZoom()*0.7));
+            for (var i = 0; i < railStationsInfoBoxes.length; i++) {
+                var latlng = railStationsInfoBoxes[i].getLatLng();
+                if (latlng != null) {
+                    railStationsInfoBoxes[i].setLatLng(latlng.lat,latlng.lng-((7-(map.getZoom()*0.7))));
+                }
+            };
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
         });
     };
