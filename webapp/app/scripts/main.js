@@ -1,6 +1,7 @@
 'use strict';
 var map;
 var railStations = new L.featureGroup();
+var railStationsInfoBoxes = new L.featureGroup();
 $(document).ready(function() {
     //var host = 'http://' + window.document.location.host.replace(/:.*/, ''); //for build
     var host = 'http://localhost:8080'; //for local testing
@@ -113,7 +114,7 @@ $(document).ready(function() {
     map = L.map('map', {
         center: new L.LatLng(64.4367, 16.39882),
         zoom: 5,
-        layers: [Thunderforest_Transport, railStations],
+        layers: [Thunderforest_Transport, railStations, railStationsInfoBoxes],
         worldCopyJump: true
     });
     /*$.getJSON('http://localhost:8080/rail/station')
@@ -266,24 +267,24 @@ $(document).ready(function() {
 
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers();
+        railStationsInfoBoxes.clearLayers();
         var coordinates = [];
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
-            //console.log(data);
             L.geoJson(data, {
                 pointToLayer: function (feature, latlng) {
-                    //var popupOptions = {maxWidth: 20};
                     var popupContent = feature.properties.tags.name;
-                    //return generatePieChartForCluster(latlng);
                     coordinates.push(latlng);
                     return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
-            map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
+            console.log(map.getZoom());
+            //map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
+            map.setZoom(4);
+            for (var i = 0; i < coordinates.length; i++) {
+                var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: 'test' });
+                L.marker(new L.latLng(coordinates[i].lat, coordinates[i].lng-((3-(map.getZoom()*0.2)))), {icon: htmlIcon}).addTo(railStationsInfoBoxes);
+            };
         });
-        //map.fitBounds(railStations.getBounds());
     };
-
 });
-
-
