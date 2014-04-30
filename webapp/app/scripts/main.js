@@ -5,6 +5,8 @@ var railStationsInfoBoxes = new L.featureGroup();
 $(document).ready(function() {
     //var host = 'http://' + window.document.location.host.replace(/:.*/, ''); //for build
     var host = 'http://localhost:8080'; //for local testing
+    var timeInterval = [];
+    timeInterval.length = 4;
     L.Icon.Default.imagePath = '/images/';
     var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/733e599a1fe841afaceb855b0ac0f833/{styleId}/256/{z}/{x}/{y}.png',
         cloudmadeAttribution = 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2011 CloudMade';
@@ -12,43 +14,6 @@ $(document).ready(function() {
     var Thunderforest_Transport = L.tileLayer('http://{s}.tile2.opencyclemap.org/transport/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>, &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
     });
-
-    var htmlList = "";
-       /* var htmlList = ' <div id="listContainer">
-                        <ul id="expList">
-                          <li>Item A
-                            <ul>
-                              <li>Item A.1
-                                <ul>
-                                  <li><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis ultricies arcu, quis porttitor risus placerat et. Proin quis metus diam, quis bibendum dolor. Nulla nec dapibus nunc. Quisque ac erat sit amet nisl venenatis consequat nec in nibh. Aliquam viverra vestibulum elit faucibus sollicitudin.</span>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li>Item A.2</li>
-                              <li>Item A.3
-                                <ul>
-                                  <li>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis ultricies arcu, quis porttitor risus placerat et. Proin quis metus diam, quis bibendum dolor. Nulla nec dapibus nunc. Quisque ac erat sit amet nisl venenatis consequat nec in nibh. Aliquam viverra vestibulum elit faucibus sollicitudin.</span>
-                                  </li>
-                                </ul>
-                              </li>
-                           </ul>
-                        </li>
-                        <li>Item B</li>
-                        <li>Item C
-                          <ul>
-                            <li>Item C.1</li>
-                            <li>Item C.2
-                              <ul>
-                                <li>
-                                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis ultricies arcu, quis porttitor risus placerat et. Proin quis metus diam, quis bibendum dolor. Nulla nec dapibus nunc. Quisque ac erat sit amet nisl venenatis consequat nec in nibh. Aliquam viverra vestibulum elit faucibus sollicitudin.</span>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>';*/
 
     var rail   = L.tileLayer(cloudmadeUrl, {styleId: 33738, attribution: cloudmadeAttribution});
     var railAndRoad  = L.tileLayer(cloudmadeUrl, {styleId: 12790,   attribution: cloudmadeAttribution});
@@ -146,13 +111,8 @@ $(document).ready(function() {
         'Rail and road': railAndRoad,
         'Thunderforest Transport' : Thunderforest_Transport
     };
-    /*var overlayMaps = {
-        'Datalag (cluster)' : markers
-    };*/
-    function showAlert() {
-        window.alert("helloWorld!")
-        return false;
-    }
+
+    var htmlList = "";
 
     var info = L.control();
 
@@ -281,137 +241,111 @@ $(document).ready(function() {
                     //return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
-            console.log(map.getZoom());
             map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
         });
     };
 
-    L.Control.Button = L.Control.extend({
-      options: {
-        position: 'bottomleft'
-      },
-      initialize: function (options) {
-        this._button = {};
-        this.setButton(options);
-      },
-     
-      onAdd: function (map) {
-        this._map = map;
-        var container = L.DomUtil.create('div', 'info');
+    L.Control.timeControl = L.Control.extend({
+        options: {
+            position: 'bottomleft'
+        },
         
-        this._container = container;
+        onAdd: function (map) {
+            this._map = map;
+            var container = L.DomUtil.create('div', 'info');
+            this._fromDate = this._createDateInput('fromDate', container);
+            this._fromTime = this._createTimeInput('fromTime', container);
+            this._toDate = this._createDateInput('toDate', container);
+            this._toTime = this._createTimeInput('toTime', container);
+            this._changeButton = this._createChangeTimeButton('changeTimeButton', container, 
+                                                              this._changeTimeVariables, this);
+            this._container = container;
+            this._changeTimeVariables();
         
-        this._update();
-        return this._container;
-      },
-     
-      onRemove: function (map) {
-      },
-     
-      setButton: function (options) {
-        var button = {
-          'text': options.text,                 //string
-          'iconUrl': options.iconUrl,           //string
-          'onClick': options.onClick,           //callback function
-          'hideText': !!options.hideText,         //forced bool
-          'maxWidth': options.maxWidth || 70,     //number
-          'doToggle': options.toggle,           //bool
-          'toggleStatus': false                 //bool
-        };
-     
-        this._button = button;
-        this._update();
-      },
-      
-      getText: function () {
-        return this._button.text;
-      },
-      
-      getIconUrl: function () {
-        return this._button.iconUrl;
-      },
-      
-      destroy: function () {
-        this._button = {};
-        this._update();
-      },
-      
-      toggle: function (e) {
-        if(typeof e === 'boolean'){
-            this._button.toggleStatus = e;
-        }
-        else{
-            this._button.toggleStatus = !this._button.toggleStatus;
-        }
-        this._update();
-      },
-      
-      _update: function () {
-        if (!this._map) {
-          return;
-        }
-     
-        this._container.innerHTML = '';
-        this._makeButton(this._button);
-     
-      },
-     
-      _makeButton: function (button) {
-        var newButton = L.DomUtil.create('div', 'leaflet-buttons-control-button', this._container);
-        if(button.toggleStatus)
-            L.DomUtil.addClass(newButton,'leaflet-buttons-control-toggleon');
-            
-        var image = L.DomUtil.create('img', 'leaflet-buttons-control-img', newButton);
-        image.setAttribute('src',button.iconUrl);
-        
-        if(button.text !== ''){
-     
-          L.DomUtil.create('br','',newButton);  //there must be a better way
-     
-          var span = L.DomUtil.create('span', 'leaflet-buttons-control-text', newButton);
-          var text = document.createTextNode(button.text);  //is there an L.DomUtil for this?
-          span.appendChild(text);
-          if(button.hideText)
-            L.DomUtil.addClass(span,'leaflet-buttons-control-text-hide');
-        }
-     
-        L.DomEvent
-          .addListener(newButton, 'click', L.DomEvent.stop)
-          .addListener(newButton, 'click', button.onClick,this)
-          .addListener(newButton, 'click', this._clicked,this);
-        L.DomEvent.disableClickPropagation(newButton);
-        return newButton;
-     
-      },
-      
-      _clicked: function () {  //'this' refers to button
-        if(this._button.doToggle){
-            if(this._button.toggleStatus) { //currently true, remove class
-                L.DomUtil.removeClass(this._container.childNodes[0],'leaflet-buttons-control-toggleon');
+            //this._update();
+            return this._container;
+        },
+
+        _createDateInput: function (className, container) {
+            var link = L.DomUtil.create('a', className, container);
+            var today = new Date();
+            var year = today.getFullYear();
+            var month = today.getMonth() + 1;
+            if (className === 'fromDate') {
+                if (month > 1) {
+                    month--;
+                } else {
+                    month = 12;
+                }
             }
-            else{
-                L.DomUtil.addClass(this._container.childNodes[0],'leaflet-buttons-control-toggleon');
+            if (month < 10) {
+                month = '0' + month;
             }
-            this.toggle();
+            var date = today.getDate();
+            if (date < 10) {
+                date = '0' + date;
+            }
+            var html = '<input type="text" name="'+className+'" value="'+year+'-'+month+'-'+date+'" size="7">';
+            link.innerHTML = html;
+            return link;
+        },
+
+        _createTimeInput: function (className, container) {
+            var link = L.DomUtil.create('a', className, container);
+            var today = new Date();
+            var hours = today.getHours();
+            var minutes = today.getMinutes();
+            if (hours < 10) {
+                hours = '0' + hours;
+            };
+            if (minutes < 10) {
+                minutes = '0' + minutes;
+            };
+            var html = '<input type="text" name="'+className+'" value="'+hours+':'+minutes+'" size="2">';
+            link.innerHTML = html;
+            return link;
+        },
+
+        _createChangeTimeButton: function (className, container, fn, context) {
+            var link = L.DomUtil.create('a', className, container);
+            link.innerHTML = 'Change';
+            link.href = '#';
+            link.title = 'Change time interval';
+
+            var stop = L.DomEvent.stopPropagation;
+
+            L.DomEvent
+                .on(link, 'click', stop)
+                .on(link, 'mousedown', stop)
+                .on(link, 'dblclick', stop)
+                .on(link, 'click', L.DomEvent.preventDefault)
+                .on(link, 'click', fn, context);
+        },
+
+        _changeTimeVariables: function  () {
+            var newTimeInterval = [];
+            newTimeInterval.length = 4;
+            var dateRegex = /^(19|20)\d\d[- /.]((0[1-9]|[0-9])|1[012])[- /.]((0[1-9]|[1-9])|[12][0-9]|3[01])$/;
+            var timeRegex = /^([\d]|[0-5][\d])[: /.]([\d]|[0-5][\d])$/;
+            var fromDate = this._fromDate.children.fromDate.value;
+            var toDate = this._toDate.children.toDate.value;
+            var fromTime = this._fromTime.children.fromTime.value;
+            var toTime = this._toTime.children.toTime.value;
+            if (dateRegex.test(fromDate) && dateRegex.test(toDate) &&
+                timeRegex.test(fromTime) && timeRegex.test(toTime)) {
+                newTimeInterval[0] = fromDate;
+                newTimeInterval[2] = toDate; 
+                newTimeInterval[1] = fromTime;
+                newTimeInterval[3] = toTime;
+                timeInterval = newTimeInterval;
+            } else {
+                console.log('Invalid time input');
+            }
+            //for (var i = 0; i < newTimeInterval.length; i++) {
+            //    console.log(newTimeInterval[i]);
+            //};
         }
-        return;
-      }
-     
     });
 
-    var myButtonOptions = {
-          'text': 'test',  // string
-          'iconUrl': 'images/marker-icon.png',  // string
-          'onClick': my_button_onClick,  // callback function
-          'hideText': true,  // bool
-          'maxWidth': 30,  // number
-          'doToggle': false,  // bool
-          'toggleStatus': false  // bool
-    }   
-
-    var myButton = new L.Control.Button(myButtonOptions).addTo(map);
-
-    function my_button_onClick() {
-        console.log("someone clicked my button");
-    }
+    var myButton = new L.Control.timeControl().addTo(map);
 });
