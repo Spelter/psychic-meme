@@ -247,20 +247,27 @@ $(document).ready(function() {
 
     L.Control.timeControl = L.Control.extend({
         options: {
-            position: 'bottomleft'
+            position: 'topleft'
         },
         
         onAdd: function (map) {
             this._map = map;
-            var container = L.DomUtil.create('div', 'info');
-            this._fromDate = this._createDateInput('fromDate', container);
-            this._fromTime = this._createTimeInput('fromTime', container);
-            this._toDate = this._createDateInput('toDate', container);
-            this._toTime = this._createTimeInput('toTime', container);
-            this._changeButton = this._createChangeTimeButton('changeTimeButton', container, 
+            var container = L.DomUtil.create('div');
+            var datePickerContainer = L.DomUtil.create('div', 'info', container);
+            var timeContainer = L.DomUtil.create('div', 'info', container);
+            this._fromDate = this._createDateInput('fromDate', timeContainer);
+            this._fromTime = this._createTimeInput('fromTime', timeContainer);
+            this._toDate = this._createDateInput('toDate', timeContainer);
+            this._toTime = this._createTimeInput('toTime', timeContainer);
+            this._changeButton = this._createChangeTimeButton('changeTimeButton', timeContainer, 
                                                               this._changeTimeVariables, this);
             this._container = container;
             this._changeTimeVariables();
+            container.append($('#fromDate').glDatePicker(
+            {
+                dowOffset: 1
+
+            }));
         
             //this._update();
             return this._container;
@@ -271,6 +278,7 @@ $(document).ready(function() {
             var today = new Date();
             var year = today.getFullYear();
             var month = today.getMonth() + 1;
+            console.log(today.getTime());
             if (className === 'fromDate') {
                 if (month > 1) {
                     month--;
@@ -285,7 +293,7 @@ $(document).ready(function() {
             if (date < 10) {
                 date = '0' + date;
             }
-            var html = '<input type="text" name="'+className+'" value="'+year+'-'+month+'-'+date+'" size="7">';
+            var html = '<input type="text" id ="' + className +'" name="'+className+'" value="'+year+'-'+month+'-'+date+'">';
             link.innerHTML = html;
             return link;
         },
@@ -348,4 +356,9 @@ $(document).ready(function() {
     });
 
     var myButton = new L.Control.timeControl().addTo(map);
+    /*$('#fromDate').glDatePicker(
+    {
+        dowOffset: 1
+
+    });*/
 });
