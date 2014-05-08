@@ -341,7 +341,7 @@ $(document).ready(function() {
             //console.log(new Date(fromDate).getTime()/1000);
             //console.log(new Date(toDate).getTime());
             console.log(fromDate);
-            console.log(today);
+            console.log(toDay);
             if (dateRegex.test(fromDate) && dateRegex.test(toDate) &&
                 timeRegex.test(fromTime) && timeRegex.test(toTime)) {
                 newTimeInterval[0] = fromDate;
