@@ -340,7 +340,7 @@ $(document).ready(function() {
             var fromTime = this._fromTime.children.fromTime.value;
             var toTime = this._toTime.children.toTime.value;
             console.log(new Date(fromDate).getTime()/1000);
-            console.log(toDate);
+            console.log(new Date(toDate).getTime());
             if (dateRegex.test(fromDate) && dateRegex.test(toDate) &&
                 timeRegex.test(fromTime) && timeRegex.test(toTime)) {
                 newTimeInterval[0] = fromDate;
