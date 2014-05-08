@@ -340,8 +340,8 @@ function fetchSeveralStationsFromDatabase (stretch) {
 
 		for (var i = 0; i < stations.length-1; i++) {
 			queryString += stations[i] + ',';
+			console.log(queryString);	
 		};
-		console.log(queryString);
 		queryString += stations[stations.length-1] + ');';
 	  	var query = client.query(queryString);
 	    query.on('row', function(row) {
