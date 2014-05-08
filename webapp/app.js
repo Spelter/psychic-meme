@@ -336,7 +336,7 @@ function fetchSeveralStationsFromDatabase (stretch) {
 			response.send('error fetching client from pool', err);
 		}
 
-		var queryString = 'SELECT * from kryss where a_stasjon_kd = OSL';
+		var queryString = 'SELECT * from kryss where a_stasjon_kd = "OSL"';
 
 		/*for (var i = 0; i < stations.length-1; i++) {
 			queryString += stations[i] + ',';
