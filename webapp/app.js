@@ -347,8 +347,8 @@ function fetchSeveralStationsFromDatabase (stretch) {
 	  	
 	    query.on('row', function(row) {
 	      //fired once for each row returned
-	      rows.push(row);
 	      console.log(row);
+	      rows.push(row);
 	    });
 
 	    query.on('end', function(result) {
