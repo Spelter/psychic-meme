@@ -278,7 +278,6 @@ $(document).ready(function() {
             var today = new Date();
             var year = today.getFullYear();
             var month = today.getMonth() + 1;
-            console.log(today.getTime());
             if (className === 'fromDate') {
                 if (month > 1) {
                     month--;
@@ -339,8 +338,10 @@ $(document).ready(function() {
             var toDate = this._toDate.children.toDate.value;
             var fromTime = this._fromTime.children.fromTime.value;
             var toTime = this._toTime.children.toTime.value;
-            console.log(new Date(fromDate).getTime()/1000);
-            console.log(new Date(toDate).getTime());
+            //console.log(new Date(fromDate).getTime()/1000);
+            //console.log(new Date(toDate).getTime());
+            console.log(fromDate);
+            console.log(today);
             if (dateRegex.test(fromDate) && dateRegex.test(toDate) &&
                 timeRegex.test(fromTime) && timeRegex.test(toTime)) {
                 newTimeInterval[0] = fromDate;

@@ -34,6 +34,7 @@ app.get('/rail/view/:id', handleViewQuery);
 app.get('/rail/db', testDb);
 
 function testDb (request, response) {
+	console.log(request.params);
 	var requestedArea = '(Elverum) - Koppang';
 	databaseLocateWantedLocation(requestedArea, response, function (area) {
 		for (var i = 0; i < area[0].baner.length; i++) {
