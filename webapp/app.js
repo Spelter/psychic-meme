@@ -37,6 +37,7 @@ function testDb (request, response) {
 	var requestedArea = '(Fauske) - Bodø';
 	databaseLocateWantedLocation(requestedArea, response, function (area) {
 		for (var i = 0; i < area[0].baner.length; i++) {
+			var isStretch = false;
 			for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 				if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
 					returnValue = fetchSeveralStationsFromDatabase(area[0].baner[i].banestrekninger[j]);
