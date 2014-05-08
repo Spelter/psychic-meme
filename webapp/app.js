@@ -3,8 +3,8 @@ var logfmt = require('logfmt'); //heroku logger
 var app = express();
 var http = require('http');
 var cors = require('cors');
-var db = require('monk')(process.env.MONGOLAB_URI || 'localhost/rail');
-var baner = db.get('baner');
+var mongoDB = require('monk')(process.env.MONGOLAB_URI || 'localhost/rail');
+var baner = mongoDB.get('baner');
 
 var ALLOW_CORS = process.env.MONGOLAB_URI != '' ? true : false ;
 
