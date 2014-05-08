@@ -35,13 +35,15 @@ app.get('/rail/db/:fromDate/:toDate', testDb);
 
 function testDb (request, response) {
 	console.log(request.params);
+	var fromDate = request.params.fromDate;
+	var toDate = request.params.toDate;
 	var requestedArea = '(Elverum) - Koppang';
 	databaseLocateWantedLocation(requestedArea, response, function (area) {
 		for (var i = 0; i < area[0].baner.length; i++) {
 			var isStretch = false;
 			for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 				if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
-					fetchSeveralStationsFromDatabase(response, area[0].baner[i].banestrekninger[j]);
+					fetchSeveralStationsFromDatabase(response, fromDate, toDate, area[0].baner[i].banestrekninger[j]);
 					//returnValue = fetchSeveralStationsFromDatabase(area[0].baner[i].banestrekninger[j]);
 					//isStretch = true;
 					//break;
@@ -326,10 +328,12 @@ function generateCoordinatesForStretch (stretch) {
 	return returnValue;
 }
 
-function fetchSeveralStationsFromDatabase (response, stretch) {
+function fetchSeveralStationsFromDatabase (response, fromDate, toDate, stretch) {
     var rows = [];
-
+    var fromDateTime = new Date(fromDate).getTime() / 1000;
+    var toDateTime = new Date(toDate).getTime() / 1000;
     var stations = [];
+
 	for (var i = 0; i < stretch.stasjoner.length; i++) {
 		stations.push(stretch.stasjoner[i].properties.tags.name);
 	};
@@ -344,7 +348,8 @@ function fetchSeveralStationsFromDatabase (response, stretch) {
 		for (var i = 0; i < stations.length-1; i++) {
 			queryString += '\'' + stations[i] + '\',';
 		};
-		queryString += '\'' + stations[stations.length-1] + '\')';
+		queryString += '\'' + stations[stations.length-1] + '\') AND a_atd_tid >= \'' + fromDateTime +
+    						'\' AND a_atd_tid <= \'' + toDateTime + '\'';
 		console.log(queryString);
 	  	var query = client.query(queryString);
 	  
