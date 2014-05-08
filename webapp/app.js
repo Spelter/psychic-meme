@@ -38,7 +38,7 @@ function testDb (request, response) {
 	  if(err) {
 	  	response.send('error fetching client from pool', err);
 	  }
-	  client.query('SELECT * from kryss limit 10' function(err, result) {
+	  client.query('SELECT * from kryss limit 10', function(err, result) {
 	    //call `done()` to release the client back to the pool
 	    if(err) {
 	      response.send('error running query', err);
