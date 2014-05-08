@@ -341,7 +341,7 @@ function fetchSeveralStationsFromDatabase (stretch) {
 		for (var i = 0; i < stations.length-1; i++) {
 			queryString += stations[i] + ',';
 		};
-		queryString += stations[stations.length-1] + ');';
+		queryString += stations[stations.length-1] + ')';
 		console.log(queryString);
 	  	var query = client.query(queryString);
 	    query.on('row', function(row) {
