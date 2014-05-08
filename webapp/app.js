@@ -164,6 +164,7 @@ function handleViewQuery(request, response){
 					}
 				};
 			}
+			console.log(returnValue);
 			response.json(returnValue);
 		});
 	};
