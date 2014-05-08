@@ -40,16 +40,17 @@ function testDb (request, response) {
 			var isStretch = false;
 			for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 				if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
-					returnValue = fetchSeveralStationsFromDatabase(area[0].baner[i].banestrekninger[j]);
-					isStretch = true;
-					break;
+					fetchSeveralStationsFromDatabase(response, area[0].baner[i].banestrekninger[j]);
+					//returnValue = fetchSeveralStationsFromDatabase(area[0].baner[i].banestrekninger[j]);
+					//isStretch = true;
+					//break;
 				}
 			};
-			if (isStretch) {
-				break;
-			}
+			//if (isStretch) {
+			//	break;
+			//}
 		};
-		response.json(returnValue);
+		//response.json(returnValue);
 	});
 }
 
@@ -324,7 +325,7 @@ function generateCoordinatesForStretch (stretch) {
 	return returnValue;
 }
 
-function fetchSeveralStationsFromDatabase (stretch) {
+function fetchSeveralStationsFromDatabase (response, stretch) {
     var rows = [];
 
     var stations = [];
