@@ -247,7 +247,7 @@ $(document).ready(function() {
 
     L.Control.timeControl = L.Control.extend({
         options: {
-            position: 'topleft'
+            position: 'bottomleft'
         },
         
         onAdd: function (map) {
@@ -263,11 +263,11 @@ $(document).ready(function() {
                                                               this._changeTimeVariables, this);
             this._container = container;
             this._changeTimeVariables();
-            container.append($('#fromDate').glDatePicker(
-            {
-                dowOffset: 1
+            //container.append($('#fromDate').glDatePicker(
+            //{
+                //dowOffset: 1
 
-            }));
+            //}));
         
             //this._update();
             return this._container;
