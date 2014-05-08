@@ -34,18 +34,20 @@ app.get('/rail/view/:id', handleViewQuery);
 app.get('/rail/db', testDb);
 
 function testDb (request, response) {
-	pg.connect(pgConString, function(err, client, done) {
-	  if(err) {
-	  	response.send('error fetching client from pool', err);
-	  }
-	  client.query('SELECT * from kryss limit 10', function(err, result) {
-	    //call `done()` to release the client back to the pool
-	    if(err) {
-	      response.send('error running query', err);
-	    }
-	    response.send(result);
-
-	  });
+	databaseLocateWantedLocation('(Fauske) - Bodø', response, function (area) {
+		for (var i = 0; i < area[0].baner.length; i++) {
+			for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
+				if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
+					returnValue = fetchSeveralStationsFromDatabase(area[0].baner[i].banestrekninger[j]);
+					isStretch = true;
+					break;
+				}
+			};
+			if (isStretch) {
+				break;
+			}
+		};
+		response.json(returnValue);
 	});
 }
 
@@ -317,4 +319,37 @@ function generateCoordinatesForStretch (stretch) {
 		returnValue.push(stretch.stasjoner[i]);
 	};
 	return returnValue;
+}
+
+function fetchSeveralStationsFromDatabase (stretch) {
+    var rows = [];
+
+    var stations = [];
+	for (var i = 0; i < stretch.stasjoner.length; i++) {
+		stations.push(stretch.stasjoner[i].properties.tags.name);
+	};
+
+    pg.connect(pgConString, function(err, client, done) {
+		if(err) {
+			response.send('error fetching client from pool', err);
+		}
+
+		var queryString = 'SELECT a_tog_nr, b_tog_nr from kryss where a_stasjon_kd in(';
+
+		for (var i = 0; i < stations.length-1; i++) {
+			queryString += stations[i] + ',';
+		};
+		queryString += stations[stations.length-1] + ');';
+	  	client.query(queryString);
+	    query.on('row', function(row) {
+	      //fired once for each row returned
+	      rows.push(row);
+	    });
+	    query.on('end', function(result) {
+		  //fired once and only once, after the last row has been returned and after all 'row' events are emitted
+		  //in this example, the 'rows' array now contains an ordered set of all the rows which we received from postgres
+		  console.log(result.rowCount + ' rows were received');
+		})
+		return rows;
+	});
 }
