@@ -31,7 +31,7 @@ app.get('/rail/line', baneSjefer)
 app.get('/rail/section', seksjoner);
 app.get('/rail/station', station);
 app.get('/rail/view/:id', handleViewQuery);
-app.get('rail/db');
+app.get('rail/db', testDb);
 
 function testDb (request, response) {
 	pg.connect(conString, function(err, client, done) {
