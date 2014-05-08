@@ -340,9 +340,9 @@ function fetchSeveralStationsFromDatabase (stretch) {
 		var queryString = 'SELECT a_stasjon_kd from kryss where a_stasjon_kd in (';
 
 		for (var i = 0; i < stations.length-1; i++) {
-			queryString += stations[i] + ',';
+			queryString += '\'' + stations[i] + '\',';
 		};
-		queryString += stations[stations.length-1] + ')';
+		queryString += '\'' + stations[stations.length-1] + '\')';
 		console.log(queryString);
 	  	var query = client.query(queryString);
 	  
