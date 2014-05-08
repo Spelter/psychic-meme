@@ -34,7 +34,7 @@ app.get('/rail/view/:id', handleViewQuery);
 app.get('/rail/db', testDb);
 
 function testDb (request, response) {
-	pg.connect(conString, function(err, client, done) {
+	pg.connect(pgConString, function(err, client, done) {
 	  if(err) {
 	  	response.send('error fetching client from pool', err);
 	  }
