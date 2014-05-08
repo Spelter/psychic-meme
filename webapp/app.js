@@ -344,12 +344,18 @@ function fetchSeveralStationsFromDatabase (stretch) {
 		queryString += stations[stations.length-1] + ')';
 		console.log(queryString);
 	  	var query = client.query(queryString);
-	  	console.log(queryString);
+	  	
 	    query.on('row', function(row) {
 	      //fired once for each row returned
 	      rows.push(row);
+	      console.log(row);
 	    });
-	    console.log(queryString);
+
+	    query.on('end', function(result) {
+		  //fired once and only once, after the last row has been returned and after all 'row' events are emitted
+		  //in this example, the 'rows' array now contains an ordered set of all the rows which we received from postgres
+		  console.log(result.rowCount + ' rows were received');
+		})
 		return rows;
 	});
 }
