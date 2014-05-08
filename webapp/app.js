@@ -356,6 +356,7 @@ function fetchSeveralStationsFromDatabase (stretch) {
 		  //in this example, the 'rows' array now contains an ordered set of all the rows which we received from postgres
 		  console.log(result.rowCount + ' rows were received');
 		})
+		console.log(rows.length);
 		return rows;
 	});
 }
