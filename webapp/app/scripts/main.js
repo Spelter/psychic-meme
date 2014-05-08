@@ -339,6 +339,8 @@ $(document).ready(function() {
             var toDate = this._toDate.children.toDate.value;
             var fromTime = this._fromTime.children.fromTime.value;
             var toTime = this._toTime.children.toTime.value;
+            console.log(fromDate);
+            console.log(toDate);
             if (dateRegex.test(fromDate) && dateRegex.test(toDate) &&
                 timeRegex.test(fromTime) && timeRegex.test(toTime)) {
                 newTimeInterval[0] = fromDate;
