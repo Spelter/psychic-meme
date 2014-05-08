@@ -31,7 +31,7 @@ app.get('/rail/line', baneSjefer)
 app.get('/rail/section', seksjoner);
 app.get('/rail/station', station);
 app.get('/rail/view/:id', handleViewQuery);
-app.get('/rail/db', testDb);
+app.get('/rail/db:fromDate:toDate', testDb);
 
 function testDb (request, response) {
 	console.log(request.params);
