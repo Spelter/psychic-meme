@@ -336,12 +336,12 @@ function fetchSeveralStationsFromDatabase (stretch) {
 			response.send('error fetching client from pool', err);
 		}
 
-		var queryString = 'SELECT a_tog_nr from kryss where a_stasjon_kd in(';
+		var queryString = 'SELECT a_tog_nr from kryss where a_stasjon_kd = OSL';
 
-		for (var i = 0; i < stations.length-1; i++) {
+		/*for (var i = 0; i < stations.length-1; i++) {
 			queryString += stations[i] + ',';
 		};
-		queryString += stations[stations.length-1] + ')';
+		queryString += stations[stations.length-1] + ')';*/
 		console.log(queryString);
 	  	var query = client.query(queryString);
 	  	console.log(query);
