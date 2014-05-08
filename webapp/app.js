@@ -34,7 +34,8 @@ app.get('/rail/view/:id', handleViewQuery);
 app.get('/rail/db', testDb);
 
 function testDb (request, response) {
-	databaseLocateWantedLocation('(Fauske) - Bodø', response, function (area) {
+	var requestedArea = '(Fauske) - Bodø';
+	databaseLocateWantedLocation(requestedArea, response, function (area) {
 		for (var i = 0; i < area[0].baner.length; i++) {
 			for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 				if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
