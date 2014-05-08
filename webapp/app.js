@@ -344,7 +344,7 @@ function fetchSeveralStationsFromDatabase (stretch) {
 		queryString += stations[stations.length-1] + ')';
 		console.log(queryString);
 	  	var query = client.query(queryString);
-	  	
+	  	console.log(query);
 	    query.on('row', function(row) {
 	      //fired once for each row returned
 	      console.log(row);
