@@ -3,8 +3,10 @@ var logfmt = require('logfmt'); //heroku logger
 var app = express();
 var http = require('http');
 var cors = require('cors');
-var db = require('monk')(process.env.MONGOLAB_URI || 'localhost/rail');
-var baner = db.get('baner');
+var pg = require('pg');
+var pgConString = "postgres://krane:KranesLasteBil@Postgres@ds1.baess.no/krane";
+var mongoDB = require('monk')(process.env.MONGOLAB_URI || 'localhost/rail');
+var baner = mongoDB.get('baner');
 
 var ALLOW_CORS = process.env.MONGOLAB_URI != '' ? true : false ;
 
@@ -29,6 +31,31 @@ app.get('/rail/line', baneSjefer)
 app.get('/rail/section', seksjoner);
 app.get('/rail/station', station);
 app.get('/rail/view/:id', handleViewQuery);
+app.get('/rail/db/:fromDate/:toDate/:stretch', testDb);
+
+function testDb (request, response) {
+	console.log(request.params);
+	var fromDate = request.params.fromDate;
+	var toDate = request.params.toDate;
+	var requestedArea = request.params.stretch;
+	databaseLocateWantedLocation(requestedArea, response, function (area) {
+		for (var i = 0; i < area[0].baner.length; i++) {
+			var isStretch = false;
+			for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
+				if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
+					fetchSeveralStationsFromDatabase(response, fromDate, toDate, area[0].baner[i].banestrekninger[j]);
+					//returnValue = fetchSeveralStationsFromDatabase(area[0].baner[i].banestrekninger[j]);
+					//isStretch = true;
+					//break;
+				}
+			};
+			//if (isStretch) {
+			//	break;
+			//}
+		};
+		//response.json(returnValue);
+	});
+}
 
 function baneSjefer(request, response){
 	baner.find({}, '-baner.banestrekninger', function(err, docs){
@@ -141,6 +168,7 @@ function handleViewQuery(request, response){
 					}
 				};
 			}
+			console.log('return'  + returnValue);
 			response.json(returnValue);
 		});
 	};
@@ -298,4 +326,43 @@ function generateCoordinatesForStretch (stretch) {
 		returnValue.push(stretch.stasjoner[i]);
 	};
 	return returnValue;
+}
+
+function fetchSeveralStationsFromDatabase (response, fromDate, toDate, stretch) {
+    var rows = [];
+    var fromDateTime = new Date(fromDate).getTime() / 1000;
+    var toDateTime = new Date(toDate).getTime() / 1000;
+    var stations = [];
+
+	for (var i = 0; i < stretch.stasjoner.length; i++) {
+		stations.push(stretch.stasjoner[i].properties.tags.name);
+	};
+
+    pg.connect(pgConString, function(err, client, done) {
+		if(err) {
+			response.send('error fetching client from pool', err);
+		}
+
+		var queryString = 'SELECT a_stasjon_kd from kryss where a_stasjon_kd in (';
+
+		for (var i = 0; i < stations.length-1; i++) {
+			queryString += '\'' + stations[i] + '\',';
+		};
+		queryString += '\'' + stations[stations.length-1] + '\') AND a_atd_tid >= \'' + fromDateTime +
+    						'\' AND a_atd_tid <= \'' + toDateTime + '\'';
+		console.log(queryString);
+	  	var query = client.query(queryString);
+	  
+	    query.on('row', function(row) {
+	      //fired once for each row returned
+	      rows.push(row);
+	    });
+
+	    query.on('end', function(result) {
+		  	//fired once and only once, after the last row has been returned and after all 'row' events are emitted
+		  	//in this example, the 'rows' array now contains an ordered set of all the rows which we received from postgres
+		 	console.log(result.rowCount + ' rows were received');
+			response.send(rows);
+		})
+	});
 }
