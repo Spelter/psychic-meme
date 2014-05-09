@@ -31,13 +31,13 @@ app.get('/rail/line', baneSjefer)
 app.get('/rail/section', seksjoner);
 app.get('/rail/station', station);
 app.get('/rail/view/:id', handleViewQuery);
-app.get('/rail/db/:fromDate/:toDate', testDb);
+app.get('/rail/db/:fromDate/:toDate/:stretch', testDb);
 
 function testDb (request, response) {
 	console.log(request.params);
 	var fromDate = request.params.fromDate;
 	var toDate = request.params.toDate;
-	var requestedArea = '(Elverum) - Koppang';
+	var requestedArea = request.params.stretch;
 	databaseLocateWantedLocation(requestedArea, response, function (area) {
 		for (var i = 0; i < area[0].baner.length; i++) {
 			var isStretch = false;
