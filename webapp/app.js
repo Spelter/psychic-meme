@@ -31,31 +31,8 @@ app.get('/rail/line', baneSjefer)
 app.get('/rail/section', seksjoner);
 app.get('/rail/station', station);
 app.get('/rail/view/:id', handleViewQuery);
-app.get('/rail/db/:fromDate/:toDate/:stretch', testDb);
+app.get('/rail/db/:fromDate/:toDate/:id', pgDbFetchCrossingsByStationsAndTime);
 
-function testDb (request, response) {
-	console.log(request.params);
-	var fromDate = request.params.fromDate;
-	var toDate = request.params.toDate;
-	var requestedArea = request.params.stretch;
-	databaseLocateWantedLocation(requestedArea, response, function (area) {
-		for (var i = 0; i < area[0].baner.length; i++) {
-			var isStretch = false;
-			for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
-				if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
-					fetchSeveralStationsFromDatabase(response, fromDate, toDate, area[0].baner[i].banestrekninger[j]);
-					//returnValue = fetchSeveralStationsFromDatabase(area[0].baner[i].banestrekninger[j]);
-					//isStretch = true;
-					//break;
-				}
-			};
-			//if (isStretch) {
-			//	break;
-			//}
-		};
-		//response.json(returnValue);
-	});
-}
 
 function baneSjefer(request, response){
 	baner.find({}, '-baner.banestrekninger', function(err, docs){
@@ -140,12 +117,14 @@ function handleViewQuery(request, response){
 	//var returnValue = '{ "type": "FeatureCollection",' +
     //            						'"features": [';
     var returnValue = "";
+    console.log(requestedArea);
 	if (requestedArea === 'Norge') {
 		returnValue = generateCoordinatesForNorway(function (returnObjectForNorway) {
 			response.json(returnObjectForNorway);
 		});
 	} else {
 		databaseLocateWantedLocation(requestedArea, response, function (area) {
+			console.log(area);
 			if (area[0].omrade === requestedArea) {
 				returnValue = generateCoordinatesForArea(area[0]);
 			} else {
@@ -174,11 +153,72 @@ function handleViewQuery(request, response){
 	};
 }
 
+function pgDbFetchCrossingsByStationsAndTime (request, response) {
+	var fromDate = request.params.fromDate;
+	var toDate = request.params.toDate;
+	var requestedArea = request.params.id; 
+	console.log(requestedArea);
+	databaseLocateWantedLocation(requestedArea, response, function (area) {
+		var stations = [];
+		if (area[0].omrade === requestedArea) {
+			for (var i = 0; i < area[0].baner.length; i++) {
+				for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
+					for (var k = 0; k < area[0].baner[i].banestrekninger[j].stasjoner.length; k++) {
+						stations.push(area[0].baner[i].banestrekninger[j].stasjoner[k].properties.tags.name);
+					};
+				};
+			};
+		} else {
+			for (var i = 0; i < area[0].baner.length; i++) {
+				var bane = area[0].baner[i];
+				if (bane.banesjef === requestedArea) {
+					for (var j = 0; j < bane.banestrekninger.length; j++) {
+						var strekning = bane.banestrekninger[j];
+						for (var i = 0; i < strekning.stasjoner.length; i++) {
+							stations.push(strekning.stasjoner[i].properties.tags.name);
+						};
+					};
+					break;
+				}
+				var isStretch = false;
+				var isStation = false;
+				for (var j = 0; j < bane.banestrekninger.length; j++) {
+					var strekning = bane.banestrekninger[j];
+					if (strekning.banestrekning === requestedArea) {
+						isStretch = true;
+						for (var k = 0; k < strekning.stasjoner.length; k++) {
+							stations.push(strekning.stasjoner[k].properties.tags.name);
+						}
+						break;
+					} else {
+						for (var k = 0; k < strekning.stasjoner.length; k++) {
+							var stasjon = strekning.stasjoner[k];
+							if (stasjon.properties.tags.name === requestedArea) {
+								stations.push(stasjon.properties.tags.name);
+								isStation = true;
+								break;
+							}
+						};
+						if (isStation) {
+							break;
+						}
+					}
+				};
+				if (isStretch || isStation) {
+					break;
+				}
+			};
+		}
+		fetchSeveralStationsFromDatabase(response, fromDate, toDate, stations);
+		//response.json(returnValue);
+	});
+}
 
 function databaseLocateWantedLocation(areaName, response, callback) {
 	baner.find({ $or: [ {omrade: areaName },
 		{baner: { $elemMatch: { banesjef: areaName } } }, 
-		{baner: { $elemMatch: { banestrekninger: { $elemMatch: { banestrekning: areaName } } } } } ] }, 
+		{baner: { $elemMatch: { banestrekninger: { $elemMatch: { banestrekning: areaName } } } } },
+		{baner: { $elemMatch: { banestrekninger: { $elemMatch: { stasjoner: { $elemMatch: { "properties.tags.name": areaName } } } } } } } ] }, 
 		 function(err, docs){
 		if (err) {
 			console.log(err);
@@ -187,6 +227,7 @@ function databaseLocateWantedLocation(areaName, response, callback) {
 			if (docs.length > 0) {
 				callback(docs);
 			} else {
+				console.log(docs);
 				response.send(500);
 			}
 		}
@@ -328,22 +369,17 @@ function generateCoordinatesForStretch (stretch) {
 	return returnValue;
 }
 
-function fetchSeveralStationsFromDatabase (response, fromDate, toDate, stretch) {
+function fetchSeveralStationsFromDatabase (response, fromDate, toDate, stations) {
     var rows = [];
     var fromDateTime = new Date(fromDate).getTime() / 1000;
     var toDateTime = new Date(toDate).getTime() / 1000;
-    var stations = [];
-
-	for (var i = 0; i < stretch.stasjoner.length; i++) {
-		stations.push(stretch.stasjoner[i].properties.tags.name);
-	};
 
     pg.connect(pgConString, function(err, client, done) {
 		if(err) {
 			response.send('error fetching client from pool', err);
 		}
 
-		var queryString = 'SELECT a_stasjon_kd from kryss where a_stasjon_kd in (';
+		var queryString = 'SELECT a_tog_nr, b_tog_nr from kryss where a_stasjon_kd in (';
 
 		for (var i = 0; i < stations.length-1; i++) {
 			queryString += '\'' + stations[i] + '\',';
@@ -362,7 +398,11 @@ function fetchSeveralStationsFromDatabase (response, fromDate, toDate, stretch) 
 		  	//fired once and only once, after the last row has been returned and after all 'row' events are emitted
 		  	//in this example, the 'rows' array now contains an ordered set of all the rows which we received from postgres
 		 	console.log(result.rowCount + ' rows were received');
-			response.send(rows);
+		 	var crossings = {
+		 		numberOfCrossings: result.rowCount
+		 	}
+		 	result.rows = rows;
+			response.send(crossings);
 		})
 	});
 }
