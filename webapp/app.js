@@ -33,7 +33,6 @@ app.get('/rail/station', station);
 app.get('/rail/view/:id', handleViewQuery);
 app.get('/rail/db/:fromDate/:toDate/:id', pgDbFetchCrossingsByStationsAndTime);
 
-
 function baneSjefer(request, response){
 	baner.find({}, '-baner.banestrekninger', function(err, docs){
 		if (err) {
