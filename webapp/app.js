@@ -157,7 +157,6 @@ function pgDbFetchCrossingsByStationsAndTime (request, response) {
 	var fromDate = request.params.fromDate;
 	var toDate = request.params.toDate;
 	var requestedArea = request.params.id; 
-	console.log(requestedArea);
 	databaseLocateWantedLocation(requestedArea, response, function (area) {
 		var stations = [];
 		if (area[0].omrade === requestedArea) {
@@ -386,7 +385,7 @@ function fetchSeveralStationsFromDatabase (response, fromDate, toDate, stations)
 		};
 		queryString += '\'' + stations[stations.length-1] + '\') AND a_atd_tid >= \'' + fromDateTime +
     						'\' AND a_atd_tid <= \'' + toDateTime + '\'';
-		console.log(queryString);
+		//console.log(queryString);
 	  	var query = client.query(queryString);
 	  
 	    query.on('row', function(row) {

@@ -142,7 +142,7 @@ $(document).ready(function() {
                         };
                         htmlListFromJson += '</ul></li></ul></div>';
                         info._div.innerHTML = htmlListFromJson; 
-                        createDemoList();
+                        generateClickableCountryList();
                     })
             .fail(function(jqxhr, textStatus, error){
                 console.dir(arguments);
@@ -197,7 +197,7 @@ $(document).ready(function() {
 
     map.on('click', onMapClick);*/
 
-    function createDemoList () {                    
+    function generateClickableCountryList () {                    
         $('#expList').find('li:has(ul)')
         .click( function(event) {
             if (this == event.target) {
@@ -235,8 +235,15 @@ $(document).ready(function() {
                 pointToLayer: function (feature, latlng) {
                     var popupContent = feature.properties.tags.name;
                     coordinates.push(latlng);
-                    var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: '<div class="info"> test</div>' });
+                    var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: '<div class="dashboard" id="' + popupContent + '"> Crossings: 0</div>' });
                     //L.marker(latlng, {icon: htmlIcon}).addTo(railStationsInfoBoxes);
+                    console.log(timeInterval[0]);
+                    console.log(timeInterval[2]);
+                    $.getJSON(host + '/rail/db/' + timeInterval[0] + '/' +
+                                        timeInterval[2] + '/' + popupContent).
+                        done(function (data) {
+                               $('#' + popupContent).html('Crossings: ' + data.numberOfCrossings);
+                        });
                     return L.marker(latlng, {icon: htmlIcon}).bindPopup(popupContent);
                     //return L.marker(latlng).bindPopup(popupContent);
                 }
@@ -275,9 +282,9 @@ $(document).ready(function() {
 
         _createDateInput: function (className, container) {
             var link = L.DomUtil.create('a', className, container);
-            var today = new Date();
-            var year = today.getFullYear();
-            var month = today.getMonth() + 1;
+            var startDate = new Date('2012-02-01');
+            var year = startDate.getFullYear();
+            var month = startDate.getMonth() + 1;
             if (className === 'fromDate') {
                 if (month > 1) {
                     month--;
@@ -288,7 +295,7 @@ $(document).ready(function() {
             if (month < 10) {
                 month = '0' + month;
             }
-            var date = today.getDate();
+            var date = startDate.getDate();
             if (date < 10) {
                 date = '0' + date;
             }
@@ -338,15 +345,11 @@ $(document).ready(function() {
             var toDate = this._toDate.children.toDate.value;
             var fromTime = this._fromTime.children.fromTime.value;
             var toTime = this._toTime.children.toTime.value;
-            //console.log(new Date(fromDate).getTime()/1000);
-            //console.log(new Date(toDate).getTime());
-            console.log(fromDate);
-            console.log(toDate);
             if (dateRegex.test(fromDate) && dateRegex.test(toDate) &&
                 timeRegex.test(fromTime) && timeRegex.test(toTime)) {
                 newTimeInterval[0] = fromDate;
-                newTimeInterval[2] = toDate; 
                 newTimeInterval[1] = fromTime;
+                newTimeInterval[2] = toDate; 
                 newTimeInterval[3] = toTime;
                 timeInterval = newTimeInterval;
             } else {
