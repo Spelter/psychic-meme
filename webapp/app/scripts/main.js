@@ -3,8 +3,8 @@ var map;
 var railStations = new L.featureGroup();
 var slowDrivingMarkers = new L.featureGroup();
 $(document).ready(function() {
-    //var host = 'http://' + window.document.location.host.replace(/:.*/, ''); //for build
-    var host = 'http://localhost:8080'; //for local testing
+    var host = 'http://' + window.document.location.host.replace(/:.*/, ''); //for build
+    //var host = 'http://localhost:8080'; //for local testing
     var statisticalInformation = 'Speed restriction';
     var lastAreaOptionsClicked = 'Norge';
     var timeInterval = [];
