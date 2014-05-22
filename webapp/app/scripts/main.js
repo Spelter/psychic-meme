@@ -1,10 +1,12 @@
 'use strict';
 var map;
 var railStations = new L.featureGroup();
-var railStationsInfoBoxes = new L.featureGroup();
+var slowDrivingMarkers = new L.featureGroup();
 $(document).ready(function() {
     //var host = 'http://' + window.document.location.host.replace(/:.*/, ''); //for build
     var host = 'http://localhost:8080'; //for local testing
+    var statisticalInformation = 'Speed restriction';
+    var lastAreaOptionsClicked = 'Norge';
     var timeInterval = [];
     timeInterval.length = 4;
     L.Icon.Default.imagePath = '/images/';
@@ -79,7 +81,7 @@ $(document).ready(function() {
     map = L.map('map', {
         center: new L.LatLng(64.4367, 16.39882),
         zoom: 5,
-        layers: [Thunderforest_Transport, railStations, railStationsInfoBoxes],
+        layers: [Thunderforest_Transport, railStations, slowDrivingMarkers],
         worldCopyJump: true
     });
     /*$.getJSON('http://localhost:8080/rail/station')
@@ -127,7 +129,7 @@ $(document).ready(function() {
     };
 
     $.getJSON(host + '/rail/section').done( function generateLayoutList(jsonList) {
-                        var htmlListFromJson = '<div id="listContainer"><ul id="expList"><li>Norge<ul>';
+                        var htmlListFromJson = '<div id="listContainer"><ul><li>Norge<ul id="expList">';
                         for (var i = 0; i < jsonList.length; i++) {
                             htmlListFromJson += '<li>' + jsonList[i].omrade + '<ul>';
 
@@ -157,7 +159,7 @@ $(document).ready(function() {
     event.preventDefault();
     showAlert();
   });
-    adaptMapToCurrentSelection('Norge');
+    adaptMapToCurrentSelection(lastAreaOptionsClicked);
 
 
     //map.layerControl = L.control.layers(baseMaps, overlayMaps, {position:'topRight'}).addTo(map);
@@ -204,6 +206,7 @@ $(document).ready(function() {
                 $(this).toggleClass('expanded');
                 $(this).children('ul').toggle('medium');
             }
+            lastAreaOptionsClicked = event.target.firstChild.nodeValue;
             adaptMapToCurrentSelection(event.target.firstChild.nodeValue);
             return false;
         })
@@ -225,9 +228,12 @@ $(document).ready(function() {
         })
     }
 
+
+
+
     function adaptMapToCurrentSelection (searchName) {
         railStations.clearLayers();
-        railStationsInfoBoxes.clearLayers();
+        slowDrivingMarkers.clearLayers();
         var coordinates = [];
         $.getJSON(host + '/rail/view/' + searchName)
             .done(function(data) {
@@ -235,32 +241,51 @@ $(document).ready(function() {
                 pointToLayer: function (feature, latlng) {
                     var popupContent = feature.properties.tags.name;
                     coordinates.push(latlng);
-                    var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: '<div class="dashboard" id="' + popupContent + '"> Crossings: 0</div>' });
-                    //L.marker(latlng, {icon: htmlIcon}).addTo(railStationsInfoBoxes);
-                    console.log(timeInterval[0]);
-                    console.log(timeInterval[2]);
-                    $.getJSON(host + '/rail/db/' + timeInterval[0] + '/' +
-                                        timeInterval[2] + '/' + popupContent).
-                        done(function (data) {
-                               $('#' + popupContent).html('Crossings: ' + data.numberOfCrossings);
-                        });
+                    var htmlIcon = L.divIcon({ className: 'iconbox', iconSize: new L.Point(50, 50), html: '<div class="dashboard" id="' + popupContent + '"></div>' });
+                    if (statisticalInformation === 'Crossings') {
+                        $.getJSON(host + '/rail/numberOfCrossings/' + timeInterval[0] + '/' +
+                                            timeInterval[2] + '/' + popupContent).
+                            done(function (data) {
+                                   $('#' + popupContent).html('Crossings: ' + data.numberOfCrossings);
+                            });
+                    } else if (statisticalInformation === 'Density') {
+                        $.getJSON(host + '/rail/trafficDensity/' + popupContent + '/' + popupContent + '/' + timeInterval[0] + '/' +
+                                            timeInterval[2]).
+                            done(function (data) {
+                                   $('#' + popupContent).html('Density: ' + data[0].count);
+                            });
+                    }
                     return L.marker(latlng, {icon: htmlIcon}).bindPopup(popupContent);
                     //return L.marker(latlng).bindPopup(popupContent);
                 }
             }).addTo(railStations);
-            map.fitBounds(new L.latLngBounds(coordinates).pad(0.2));
         });
+        if (statisticalInformation === 'Speed restriction') {
+            $.getJSON(host + '/rail/slowDriving/')
+                .done(function(data) {
+                   L.geoJson(data, {
+                    pointToLayer: function (feature, latlng) {
+                        //var popupContent = feature.properties.tags.name;
+                        var popupContent = '<img src="images/' + feature.properties.tags.name + 
+                                '.png" alt="' + feature.properties.tags.name + '"width="600" height="600">';
+                        console.log(popupContent);
+                        coordinates.push(latlng);
+                        return L.marker(latlng).bindPopup(popupContent, {maxWidth: 1400, maxHeight: 800});
+                        //return L.marker(latlng).bindPopup(popupContent);
+                    }
+                }).addTo(slowDrivingMarkers);
+            }); 
+        }
     };
 
     L.Control.timeControl = L.Control.extend({
         options: {
-            position: 'bottomleft'
+            position: 'bottomright'
         },
         
         onAdd: function (map) {
             this._map = map;
-            var container = L.DomUtil.create('div');
-            var datePickerContainer = L.DomUtil.create('div', 'info', container);
+            var container = L.DomUtil.create('div', 'info');
             var timeContainer = L.DomUtil.create('div', 'info', container);
             this._fromDate = this._createDateInput('fromDate', timeContainer);
             this._fromTime = this._createTimeInput('fromTime', timeContainer);
@@ -345,10 +370,6 @@ $(document).ready(function() {
             var toDate = this._toDate.children.toDate.value;
             var fromTime = this._fromTime.children.fromTime.value;
             var toTime = this._toTime.children.toTime.value;
-            //console.log(new Date(fromDate).getTime()/1000);
-            //console.log(new Date(toDate).getTime());
-            console.log(fromDate);
-            console.log(toDate);
             if (dateRegex.test(fromDate) && dateRegex.test(toDate) &&
                 timeRegex.test(fromTime) && timeRegex.test(toTime)) {
                 newTimeInterval[0] = fromDate;
@@ -365,10 +386,66 @@ $(document).ready(function() {
         }
     });
 
-    var myButton = new L.Control.timeControl().addTo(map);
-    /*$('#fromDate').glDatePicker(
-    {
-        dowOffset: 1
+    L.Control.top5Lists = L.Control.extend({
+        options: {
+            position: 'bottomleft'
+        },
+        
+        onAdd: function (map) {
+            this._map = map;
+            var container = L.DomUtil.create('div', 'info');
+            this._list = this._generateList('topList', container);
+            this._container = container;
+            return this._container;
+        },
 
-    });*/
+        _generateList: function (className, container) {
+            var link = L.DomUtil.create('a', className, container);
+            var html = 'Top 5 stations with crossings:<br>' +
+                       '1: OSL 8 400<br>' +
+                       '2: LYS 3 400<br>' +
+                       '3: LLS 451<br>' +
+                       '4: OTT 300<br>' +
+                       '5: REN 162';
+            link.innerHTML = html;
+            return link;
+        }
+    });
+
+    L.Control.changeStatisticalInformation = L.Control.extend({
+        options: {
+            position: 'topleft'
+        },
+        
+        onAdd: function (map) {
+            this._map = map;
+            var container = L.DomUtil.create('div', 'info');
+            this._statInfo = this._createChangeInformation('changeStatisticalInformation', container, 
+                                                              this._changeInformation, this);
+            this._container = container;
+            return this._container;
+        },
+
+        _createChangeInformation: function (className, container, fn, context) {
+            var link = L.DomUtil.create('a', className, container);
+            var html =  'Select views:' +
+                        '<ul id="infoChangeList">' +
+                            '<li>Crossings' +
+                            '<li>Speed restriction' +
+                            '<li>Density' +
+                        '</ul>';
+            link.innerHTML = html;
+
+            return link;
+        }
+    });
+
+    var timeControl = new L.Control.timeControl().addTo(map);
+    var top5Lists = new L.Control.top5Lists().addTo(map);
+    var statInfo = new L.Control.changeStatisticalInformation().addTo(map);
+
+    $('#infoChangeList').on('click', 'li', function(event) {
+        statisticalInformation = event.currentTarget.firstChild.nodeValue;
+        adaptMapToCurrentSelection(lastAreaOptionsClicked);
+    });
 });
