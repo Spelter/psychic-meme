@@ -2,46 +2,19 @@ var pg = require('pg');
 var pgConString = "postgres://krane:KranesLasteBil@Postgres@ds1.baess.no/krane";
 var mongoDB = require('monk')(process.env.MONGOLAB_URI || 'localhost/rail');
 var baner = mongoDB.get('baner');
+
+/* REST methods */ 
 module.exports = {
+
+	/* Calls on db method for finding speed restrictions */ 
 	fetchSlowDrivingStationFromPg: function(request, response){
 		var requestedArea = request.params.id;
 	    console.log(requestedArea);
 	    fetchSlowDrivingFromDatabase(response);
-		/*databaseLocateWantedLocation(requestedArea, response, function (area) {
-			var stations = [];
-			console.log(area);
-			for (var i = 0; i < area[0].baner.length; i++) {
-				for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
-					for (var k = 0; k < area[0].baner[i].banestrekninger[j].stasjoner.length; k++) {
-						if (area[0].baner[i].banestrekninger[j].stasjoner[k].properties.tags.name === )
-					};
-				};
-			};
-			response.json(returnValue);
-		});*/
 	}
 }
 
-function databaseLocateWantedLocation (areaName, response, callback) {
-	baner.find({ $or: [ {omrade: areaName },
-		{baner: { $elemMatch: { banesjef: areaName } } }, 
-		{baner: { $elemMatch: { banestrekninger: { $elemMatch: { banestrekning: areaName } } } } },
-		{baner: { $elemMatch: { banestrekninger: { $elemMatch: { stasjoner: { $elemMatch: { "properties.tags.name": areaName } } } } } } } ] }, 
-		 function(err, docs){
-		if (err) {
-			console.log(err);
-			response.send(500)
-		} else {
-			if (docs.length > 0) {
-				callback(docs);
-			} else {
-				console.log(docs);
-				response.send(500);
-			}
-		}
-	});
-}
-
+/* Call to db for finding all speed restrictions */
 function fetchSlowDrivingFromDatabase (response) {
     var rows = [];
 
@@ -68,6 +41,7 @@ function fetchSlowDrivingFromDatabase (response) {
 	});
 }
 
+/* Find all stations within a speed restriction */
 function fetchStationsCoordinates (response, rows){
 	baner.find({}, 'baner.banestrekninger.stasjoner', function(err, docs){
 		if (err) {
@@ -96,6 +70,7 @@ function fetchStationsCoordinates (response, rows){
 	});
 }
 
+/* Generate a dummy marker for a speed restriction */
 function generateSlowDrivingMarkers (response, slowDrivingIdAndStations) {
 	var slowDrivingMarkers = [];
 	for (var i = 0; i < slowDrivingIdAndStations.length; i++) {

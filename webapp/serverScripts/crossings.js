@@ -4,7 +4,9 @@ var mongoDB = require('monk')(process.env.MONGOLAB_URI || 'localhost/rail');
 var baner = mongoDB.get('baner');
 var http = require('http');
 
+/* REST methods */ 
 module.exports = {
+	/* Finds and return with the wanted stretch director */
 	baneSjefer: function(request, response){
 		baner.find({}, '-baner.banestrekninger', function(err, docs){
 			if (err) {
@@ -16,14 +18,13 @@ module.exports = {
 						ret.push(docs[i].baner[j]);
 					};
 				};
-				//response.send(ret);
-				response.json(docs);
+				//response.send(ret);		//Only stations
+				response.json(docs);		//Unfiltered
 			}
-		/*listAllLinesInArea('', function(json){
-			response.json(json);*/
 		});
 	},
 
+	/* Finds and return with the wanted area director */
 	omradeSjefer: function(request, response){
 		baner.find({}, '-baner -_id', function(err, docs){
 			if (err) {
@@ -34,12 +35,13 @@ module.exports = {
 						ret.push(docs[i].omrade);
 					
 				};
-				//response.json(ret);
-				response.json(docs);
+				//response.json(ret);		//Only areas
+				response.json(docs);		//Unfiltered
 			}
 		});
 	},
 
+	/* Finds and return with the wanted segment director */
 	seksjoner: function(request, response){
 		baner.find({}, '-baner.banestrekninger.stasjoner', function(err, docs){
 			if (err) {
@@ -53,12 +55,13 @@ module.exports = {
 						};
 					};
 				};
-				//response.json(ret);
-				response.json(docs);
+				//response.json(ret);		//Only segments
+				response.json(docs);		//Unfiltered
 			}
 		});
 	},
 
+	/* Finds and return with the wanted stations */
 	station: function(request, response){
 		baner.find({}, 'baner.banestrekninger.stasjoner', function(err, docs){
 			if (err) {
@@ -77,36 +80,37 @@ module.exports = {
 					};
 				};
 				features.features = ret;
-				response.json(features);
-				//response.json(docs);
+				response.json(features);		//All stations
+				//response.json(docs);			//Unfiltered
 			}
 		});
 	},
 
+	/* Finds and return with the wanted stakeholder */
 	handleViewQuery: function(request, response){
 		var requestedArea = request.params.id;
-		//var returnValue = '{ "type": "FeatureCollection",' +
-	    //            						'"features": [';
 	    var returnValue = "";
-	    console.log(requestedArea);
-		if (requestedArea === 'Norge') {
+		if (requestedArea === 'Norge') {		//All of Norway
 			returnValue = generateCoordinatesForNorway(function (returnObjectForNorway) {
 				response.json(returnObjectForNorway);
 			});
 		} else {
 			databaseLocateWantedLocation(requestedArea, response, function (area) {
 				console.log(area);
-				if (area[0].omrade === requestedArea) {
+				if (area[0].omrade === requestedArea) {		
+					//Wanted stakeholder is an area director
 					returnValue = generateCoordinatesForArea(area[0]);
 				} else {
 					for (var i = 0; i < area[0].baner.length; i++) {
 						var isStretch = false;
 						if (area[0].baner[i].banesjef === requestedArea) {
+							//Wanted stakeholder is an stretch director
 							returnValue = generateCoordinatesForLine(area[0].baner[i]);
 							break;
 						} else {
 							for (var j = 0; j < area[0].baner[i].banestrekninger.length; j++) {
 								if (area[0].baner[i].banestrekninger[j].banestrekning === requestedArea) {
+									//Wanted stakeholder is an segment director
 									returnValue = generateCoordinatesForStretch(area[0].baner[i].banestrekninger[j]);
 									isStretch = true;
 									break;
@@ -118,12 +122,13 @@ module.exports = {
 						}
 					};
 				}
-				console.log('return'  + returnValue);
 				response.json(returnValue);
 			});
 		};
 	},
 
+	/* Finds and return with the number of crossing for 
+	selected stations within selected time window */
 	pgDbFetchCrossingsByStationsAndTime: function (request, response) {
 		var fromDate = request.params.fromDate;
 		var toDate = request.params.toDate;
@@ -184,6 +189,8 @@ module.exports = {
 		});
 	},
 
+	/* Find top 5 stations with crossings.
+	Not completely working and not integrated with front-end */
 	pgDbFetchTop5Crossings: function (equest, response) {
 		var fromDate = request.params.fromDate;
 		var toDate = request.params.toDate;
@@ -243,7 +250,7 @@ module.exports = {
 		});
 	}
 }
-
+/* Locates the wanted stakeholder in the hierarchy, returns with the area the stakeholder belongs too */
 function databaseLocateWantedLocation (areaName, response, callback) {
 	baner.find({ $or: [ {omrade: areaName },
 		{baner: { $elemMatch: { banesjef: areaName } } }, 
@@ -264,6 +271,7 @@ function databaseLocateWantedLocation (areaName, response, callback) {
 	});
 }
 
+/* Generates markers for each area, returning all areas in Norway */
 function generateCoordinatesForNorway (callback) {
 	baner.find({}, function(err, docs){
 		if (err) {
@@ -278,9 +286,12 @@ function generateCoordinatesForNorway (callback) {
 	});
 }
 
+/* Generates a dummy marker for a area, based on all stretches */
 function generateDummyClusterForArea (area) {
 	var lat = 0;
 	var lon = 0;
+	/*"ost" and "oslo" gets special coordinates for avoiding that
+	they plots on top of eachother, not optimal */
 	if (area.omrade === 'ost' ) {
 			lon = 59.37309;
 			lat = 11.24451;
@@ -318,6 +329,7 @@ function generateDummyClusterForArea (area) {
 	return newLocation;
 }
 
+/* Generates markers for each stretch, returning all stretches within a area */
 function generateCoordinatesForArea (area) {
 	var subStretchesArray = [];
 	for (var i = 0; i < area.baner.length; i++) {
@@ -327,6 +339,7 @@ function generateCoordinatesForArea (area) {
 	return subStretchesArray;
 }
 
+/* Generates a dummy marker for a stretch, based on all segments */
 function generateDummyClusterForLine (line) {
 	var subStretchesArray = generateCoordinatesForLine(line);
 	var lat = 0;
@@ -358,6 +371,7 @@ function generateDummyClusterForLine (line) {
 	return newLocation;
 }
 
+/* Generates markers for each segment, returning all segments within a stretch */
 function generateCoordinatesForLine  (line) {
 	var subStretchesArray = [];
 	for (var i = 0; i < line.banestrekninger.length; i++) {
@@ -367,6 +381,7 @@ function generateCoordinatesForLine  (line) {
 	return subStretchesArray;
 }
 
+/* Generates a dummy marker for a segments, based on all stations */
 function generateDummyClusterForStretch (stretch) {
 	var stationCounter = 0;
 	var lat = 0;
@@ -399,6 +414,7 @@ function generateDummyClusterForStretch (stretch) {
 	return newLocation;
 }
 
+/* returning all stations within a segment */
 function generateCoordinatesForStretch (stretch) {
 	var returnValue = [];
 	for (var i = 0; i < stretch.stasjoner.length; i++) {
@@ -407,6 +423,7 @@ function generateCoordinatesForStretch (stretch) {
 	return returnValue;
 }
 
+/* Query to db for finding crossings */
 function fetchSeveralStationsFromDatabase (response, fromDate, toDate, stations) {
     var rows = [];
     var fromDateTime = new Date(fromDate).getTime() / 1000;

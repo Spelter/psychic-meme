@@ -29,6 +29,8 @@ server.listen(openPort, function(){
   console.log('Listening on port ' + openPort);	
 });
 
+
+//REST calls sorted out in own files
 app.get('/rail/area', crossingsScripts.omradeSjefer);
 app.get('/rail/line', crossingsScripts.baneSjefer)
 app.get('/rail/section', crossingsScripts.seksjoner);
